@@ -12,7 +12,7 @@
 		<tr height="310px">
 			<td> 
 			<h1>Welcome to XCompany</h1>
-			<form  method="POST" action="loginPath.php">
+			<form  method="POST" action="../controllers/loginPath.php">
             Log in as : 
 			<select name="login">
 			<option value="m">Manager</option>

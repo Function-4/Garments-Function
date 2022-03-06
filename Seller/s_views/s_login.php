@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Worker Seller</title>
+	<title> Seller </title>
 </head>
 <body>
 	<form method="POST" action="../s_controllers/s_loginCheck.php">

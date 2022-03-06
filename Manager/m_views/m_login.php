@@ -1,43 +1,23 @@
-<?php
-echo "manager";
-?>
 <html>
 <head>
-	<title>Public Home</title>
+	<title>Manager </title>
 </head>
-<style>
-	h1,h4 
-	{
-		display: inline-block;
-	}
-	p.ex1 
-	{
-		padding-left: 380%;
-	}
-</style>
 <body>
-	<table>
-		<table border="1" width="100%">
-		<tr>
-			<td>
-				 <pre><h1 style=font-size:25px> X Company</h1><h4><p class="ex1"><a href="publicHome.php">Public Home</a> | <a href="login.php">Login</a> | <a href="registration.php">Registration</a></pre></p></h4>
-			</td>
-		</tr>
-		<tr height="310px">
-			<td>
-           
-            <a href="m_Wreg.php">Add Worker</a>
-            <a href="m_Sreg.php">Add Seller</a>
-
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<h3><center>Copyright &copy; 2017</center></h3>
-			</td>
-		</tr>
-	</table>
+	<form method="POST" action="../m_controllers/m_loginCheck.php">
+		<table>
+			<tr>
+				<td>Username</td>
+				<td><input type="text" name="username" value=""></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="password" value=""></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" name="mLogin" value="Submit"></td>
+			</tr>
+		</table>
+	</form>
 </body>
 </html>
-
-                

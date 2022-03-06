@@ -17,6 +17,7 @@
 				
 				if(trim($userArry[0]) == $username && trim($userArry[1]) == $password){
 					$_SESSION['status'] = true;
+					$_SESSION['current_worker'] = $userArry;
 					setcookie('status', 'true', time()+3600, '/');
 					header('location: ../w_views/w_Home.php');
 				}

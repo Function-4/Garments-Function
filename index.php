@@ -24,10 +24,20 @@
 		<tr height="310px">
 			<td>
 				<h1>Welcome to XCompany</h1>
-				<a href="Manager\m_views\m_login.php">Log in as Manager</a>
-				<a href="Worker\w_views\w_login.php">Log in as Worker</a>
-				<a href="Seller\s_views\s_login.php">Log in as Seller</a>
-				<a href="Buyer\b_views\b_login.php">Log in as Buyer</a>
+			<form  method="POST" action="loginPath.php">
+			<select name="login">
+			<option value="m">Manager</option>
+			<option value="w">Worker</option>
+			<option value="s">Seller</option>
+			<option value="b">Buyer</option>
+			
+		</select>
+		<br>
+		<hr style="width:9%;text-align:left;margin-left:2"></hr>
+		<input type="submit" name="loginSubmit" value="Submit">
+
+	</form>
+				
 			</td>
 		</tr>
 		<tr>

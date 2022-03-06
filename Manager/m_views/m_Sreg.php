@@ -1,9 +1,9 @@
 <html>
 <head>
-	<title>Worker Login</title>
+	<title>Add Seller</title>
 </head>
 <body>
-	<form method="POST" action="../w_controllers/w_loginCheck.php">
+	<form method="POST" action="../m_controllers/sRegCheck.php">
 		<table>
 			<tr>
 				<td>Username</td>
@@ -14,8 +14,12 @@
 				<td><input type="password" name="password" value=""></td>
 			</tr>
 			<tr>
+				<td>Email</td>
+				<td><input type="email" name="email" value=""></td>
+			</tr>
+			<tr>
 				<td></td>
-				<td><input type="submit" name="wLogin" value="Submit"></td>
+				<td><input type="submit" name="sRegSubmit" value="Submit"></td>
 			</tr>
 		</table>
 	</form>

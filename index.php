@@ -1,4 +1,10 @@
 
+
+
+<?php
+echo "test done";
+?>
+
 <html>
 <head>
 	<title>Public Home  .... test 02</title>

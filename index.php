@@ -1,3 +1,6 @@
+<?php
+echo "test done";
+?>
 <html>
 <head>
 	<title>Public Home</title>

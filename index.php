@@ -1,3 +1,6 @@
+<?php
+echo "this is test02";
+?>
 <html>
 <head>
 	<title>Public Home</title>

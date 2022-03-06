@@ -1,9 +1,7 @@
-<?php
-echo "this is test02";
-?>
+
 <html>
 <head>
-	<title>Public Home</title>
+	<title>Public Home  .... test 02</title>
 </head>
 <style>
 	h1,h4 

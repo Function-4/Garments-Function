@@ -16,9 +16,9 @@
 				$userArry = explode('|', $user);
 				
 				if(trim($userArry[0]) == $username && trim($userArry[1]) == $password){
-					$_SESSION['status'] = true;
+					$_SESSION['w_status'] = true;
 					$_SESSION['current_worker'] = $userArry;
-					setcookie('status', 'true', time()+3600, '/');
+					setcookie('w_status', 'true', time()+4600, '/');
 					header('location: ../w_views/w_Home.php');
 				}
 			}

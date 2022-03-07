@@ -10,6 +10,8 @@
 			
 			if($username == 'admin' && $password == 'admin')
             {
+				//$_SESSION['m_status'] = true;
+				setcookie('m_status', 'true', time()+4600, '/');
                 header('location: ../m_views/m_Home.php');
             }
 			echo "invalid username/password";

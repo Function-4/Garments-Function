@@ -8,7 +8,7 @@
 
 		if($username != null && $password != null){
 
-		$file = fopen('../../Manager/m_models/buyers.txt', 'r');
+		$file = fopen('../../Manager/m_models/buyer.txt', 'r');
 			
 			while(!feof($file)){
 

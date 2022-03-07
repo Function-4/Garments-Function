@@ -18,7 +18,7 @@
         }
         else if($selected=='b')
         {
-            header('location: ../../Buyer\b_views\b_reg.php');
+            header('location: ../../Buyer\b_views\b_login.php');
         }
 
 	}

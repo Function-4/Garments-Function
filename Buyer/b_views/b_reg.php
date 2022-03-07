@@ -18,13 +18,13 @@
         <center><p style="font-size: 30px;">User Name </p> <input type="text" name="username" value="" /></center>
 
 
-        <center><p style="font-size: 30px;">Password</p> <input type="text" name="password" value="" /></center>
+        <center><p style="font-size: 30px;">Password</p> <input type="password" name="password" value="" /></center>
 
 
-        <center><p style="font-size: 30px;"> Email</p> <input type="text" name="email" value="" /></center>
+        <center><p style="font-size: 30px;"> Email</p> <input type="email" name="email" value="" /></center>
 
 
-        <center><p style="font-size: 30px;">Phone no.</p> <input type="text" name="contact" value="" /></center>
+        <center><p style="font-size: 30px;">Phone no.</p> <input type="number" name="contact" value="" /></center>
 
         </table> 
     </center>

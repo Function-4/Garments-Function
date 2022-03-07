@@ -12,14 +12,14 @@
     <center><p style="font-size: 50px;"><b>Log in as Buyer</b></p></center>
 
 
-        <form>
+    <form method="POST" action="../b_controllers/b_loginCheck.php">
     
-        <center><p style="font-size: 30px;">User Name</p> <input type="text" name="Name" value="" /></center>
-        <center><p style="font-size: 30px;">Password</p> <input type="text" name="Name" value="" /></center>
+        <center><p style="font-size: 30px;">User Name</p> <input type="text" name="username" value="" /></center>
+        <center><p style="font-size: 30px;">Password</p> <input type="password" name="password" value="" /></center>
         <br>
         <br>
      
-       <center> <input type="submit" name="submit" value="Submit" style="height:50px; width:100px"> </center>
+       <center> <input type="submit" name="bLogin" value="Submit" style="height:50px; width:100px"> </center>
         </form>
 
 

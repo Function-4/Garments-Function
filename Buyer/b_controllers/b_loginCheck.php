@@ -1,14 +1,14 @@
 <?php 
 	session_start();
 
-	if(isset($_REQUEST['sLogin'])){
+	if(isset($_REQUEST['bLogin'])){
 		
 		$username = $_REQUEST['username'];
 		$password = $_REQUEST['password'];
 
 		if($username != null && $password != null){
 
-		$file = fopen('../../Manager/m_models/seller.txt', 'r');
+		$file = fopen('../../Manager/m_models/buyers.txt', 'r');
 			
 			while(!feof($file)){
 
@@ -16,10 +16,11 @@
 				$userArry = explode('|', $user);
 				
 				if(trim($userArry[0]) == $username && trim($userArry[1]) == $password){
-					$_SESSION['s_status'] = true;
-					$_SESSION['current_seller'] = $userArry;
-					setcookie('s_status', 'true', time()+4600, '/');
-					header('location: ../s_views/s_Home.php');
+					$_SESSION['b_status'] = true;
+					$_SESSION['current_buyer'] = $userArry;
+					setcookie('b_status', 'true', time()+4600, '/');
+                    echo "maybe ";
+					header('location: ../b_views/b_Home.php');
 				}
 			}
 

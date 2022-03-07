@@ -6,12 +6,13 @@
 		$username = $_REQUEST['username'];
 		$password = $_REQUEST['password'];
 		$email = $_REQUEST['email'];
+		$contact = $_REQUEST['contact'];
+		$age = $_REQUEST['age'];
+		$gender = $_REQUEST['gender'];
 
-		if($username != null && $password != null && $email != null){
-			/*$user = ['username'=> $username, 'password'=> $password, 'email'=>$email];
-			$_SESSION['user'] = $user;*/
-
-			$user = $username."|".$password."|".$email."\r\n";
+		if($username != null && $password != null && $email != null && $contact != null && $age != null && $gender != null)
+		{
+			$user = $username."|".$password."|".$email."|".$contact."|".$age."|".$gender."\r\n";
 			$file = fopen('../m_models/worker.txt', 'a');
 			fwrite($file, $user);
 			fclose($file);

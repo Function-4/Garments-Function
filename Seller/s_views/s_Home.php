@@ -7,5 +7,7 @@
 </head>
 <body>
 	<pre><h1>Welcome home !  <?=$_SESSION['current_seller'][0]?> Seller</h1></pre> 
+	<br><br>
+		<a href="../s_controllers/s_logout.php">Logout</a>
 </body>
 </html>

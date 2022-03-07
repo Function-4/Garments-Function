@@ -16,17 +16,18 @@
 				$userArry = explode('|', $user);
 				
 				if(trim($userArry[0]) == $username && trim($userArry[1]) == $password){
-					$_SESSION['status'] = true;
+					$_SESSION['w_status'] = true;
 					$_SESSION['current_worker'] = $userArry;
-					setcookie('status', 'true', time()+3600, '/');
+					setcookie('w_status', 'true', time()+4600, '/');
 					header('location: ../w_views/w_Home.php');
 				}
 			}
-
-			echo "invalid username/password";
-
+		
+			echo 'invalid username/password   <br><br><a href="../w_views/w_login.php">Back</a>';
+		
 		}else{
-			echo "null submission";
+			echo 'null submission  <br><br><a href="../w_views/w_login.php">Back</a>';
 		}
 	}
+	
 ?>

@@ -1,5 +1,5 @@
-<?php
-echo "manager";
+<?php 
+    require('../m_controllers/m_header.php');
 ?>
 <html>
 <head>
@@ -28,6 +28,8 @@ echo "manager";
            
             <a href="m_Wreg.php">Add Worker</a>
             <a href="m_Sreg.php">Add Seller</a>
+			<br><br>
+			<a href="../m_controllers/m_logout.php">Logout</a>
 
 			</td>
 		</tr>

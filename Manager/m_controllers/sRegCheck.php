@@ -10,7 +10,7 @@
 		$age = $_REQUEST['age'];
 		$gender = $_REQUEST['gender'];
 
-		if($username != null && $password != null && $email != null)
+		if($username != null && $password != null && $email != null && $contact != null && $age != null && $gender != null)
 		{
 			$user = $username."|".$password."|".$email."|".$contact."|".$age."|".$gender."\r\n";
 			$file = fopen('../m_models/seller.txt', 'a');

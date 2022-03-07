@@ -23,10 +23,10 @@
 				}
 			}
 
-			echo "invalid username/password";
+			echo 'invalid username/password   <br><br><a href="../s_views/s_login.php">Back</a>';
 
 		}else{
-			echo "null submission";
+			echo 'null submission  <br><br><a href="../s_views/s_login.php">Back</a>';
 		}
 	}
 ?>

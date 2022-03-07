@@ -22,11 +22,12 @@
 					header('location: ../w_views/w_Home.php');
 				}
 			}
-
-			echo "invalid username/password";
-
+		
+			echo 'invalid username/password   <br><br><a href="../w_views/w_login.php">Back</a>';
+		
 		}else{
-			echo "null submission";
+			echo 'null submission  <br><br><a href="../w_views/w_login.php">Back</a>';
 		}
 	}
+	
 ?>

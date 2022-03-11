@@ -1,7 +1,9 @@
 <html>
+
 <head>
 	<title>Manager </title>
 </head>
+
 <body>
 	<form method="POST" action="../m_controllers/m_loginCheck.php">
 		<table>
@@ -20,4 +22,5 @@
 		</table>
 	</form>
 </body>
+
 </html>

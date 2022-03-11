@@ -8,7 +8,7 @@
 
 		if($username != null && $password != null){
 			
-			if($username == 'admin' && $password == 'admin')
+			if($username == 'a' && $password == 'a')
             {
 				//$_SESSION['m_status'] = true;
 				setcookie('m_status', 'true', time()+4600, '/');

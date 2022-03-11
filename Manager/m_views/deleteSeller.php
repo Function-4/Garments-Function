@@ -1,20 +1,21 @@
 <?php
 require('../m_controllers/m_header.php');
-if(isset($_REQUEST['vSeller']))
-{
-    ?>
+?>
 <html>
 <head>
-	<title>Seller List</title>
+	<title>Remove Seller</title>
 </head>
 <body>
         <table border="1">
 			<tr>
+                
 				<td>USER NAME</td>
-				<td>EMAIL</td>
+				<td><center>Email</center></td>
 				<td>Contact Number</td>
 				<td>Age</td>
                 <td>Gender</td>
+                <td><center>Remove</center></td>
+                
 			</tr>
 
 			<?php 
@@ -36,7 +37,13 @@ if(isset($_REQUEST['vSeller']))
 				<td><?=$userArray[3]?></td>
 				<td><?=$userArray[4]?></td>
                 <td><?=$userArray[5]?></td>
-				
+
+                
+
+				<td><form method="POST" action="../m_controllers/removeSeller.php?id=<?=$userArray[0]?>">
+                <input type="submit" name="rSeller" value="Remove this Seller" style="height:50px; width:150px">
+                </form></td>
+
 			</tr>
 
 			<?php
@@ -50,10 +57,3 @@ if(isset($_REQUEST['vSeller']))
 	</form>
 </body>
 </html>
-<?php
-}
-else 
-{
-    header('location: ../../index.php');
-}
-?>

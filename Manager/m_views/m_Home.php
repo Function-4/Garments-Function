@@ -35,11 +35,14 @@ require('../m_controllers/m_header.php');
 					<br><br>
 					
 					<form method="POST" action="view_worker.php">
-            		<input type="submit" name="bReg" value="View worker" style="height:150px; width:300px">
+            		<input type="submit" name="vWorker" value="View worker" style="height:150px; width:300px">
         			</form>
         			<form method="POST" action="view_seller.php">
-            		<input type="submit" name="bReg" value="View seller" style="height:150px; width:300px">
+            		<input type="submit" name="vSeller" value="View seller" style="height:150px; width:300px">
         			</form>
+
+					<a href="deleteUser.php">Delete user</a>
+					
 
 					<a href="../m_controllers/m_logout.php">Logout</a>
 

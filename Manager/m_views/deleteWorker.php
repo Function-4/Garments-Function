@@ -1,7 +1,5 @@
 <?php
 require('../m_controllers/m_header.php');
-//if(isset($_REQUEST['dWorker']))
-//{
 ?>
 <html>
 <head>
@@ -39,7 +37,9 @@ require('../m_controllers/m_header.php');
 				<td><?=$userArray[3]?></td>
 				<td><?=$userArray[4]?></td>
                 <td><?=$userArray[5]?></td>
-				<td><a href="../m_controllers/removeWorker.php?id=<?=$userArray[0]?>"> Remove this Worker </a></td>
+				<td><form method="POST" action="../m_controllers/removeWorker.php?id=<?=$userArray[0]?>">
+                <input type="submit" name="rWorker" value="Remove this Worker" style="height:50px; width:150px">
+                </form></td>
 			</tr>
 
 			<?php

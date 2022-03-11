@@ -27,6 +27,8 @@
         <form method="POST" action="Buyer/b_views/b_reg.php">
             <input type="submit" name="bReg" value="Sign up as Buyer" style="height:150px; width:300px">
         </form>
+        
+       
 
     </center>
 

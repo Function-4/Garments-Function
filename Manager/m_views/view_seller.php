@@ -3,7 +3,7 @@ require('../m_controllers/m_header.php');
 ?>
 <html>
 <head>
-	<title>Worker List</title>
+	<title>Seller List</title>
 </head>
 <body>
         <table border="1">

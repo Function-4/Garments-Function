@@ -33,10 +33,19 @@ require('../m_controllers/m_header.php');
 					<a href="m_Wreg.php">Add Worker</a>
 					<a href="m_Sreg.php">Add Seller</a>
 					<br><br>
+					
+					<form method="POST" action="view_worker.php">
+            		<input type="submit" name="bReg" value="testing worker" style="height:150px; width:300px">
+        			</form>
+        			<form method="POST" action="view_seller.php">
+            		<input type="submit" name="bReg" value="testing seller" style="height:150px; width:300px">
+        			</form>
+
 					<a href="../m_controllers/m_logout.php">Logout</a>
 
 				</td>
 			</tr>
+			
 			<tr>
 				<td>
 					<h3>

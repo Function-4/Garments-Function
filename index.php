@@ -28,12 +28,7 @@
             <input type="submit" name="bReg" value="Sign up as Buyer" style="height:150px; width:300px">
         </form>
         
-        <form method="POST" action="Manager/m_views/view_worker.php">
-            <input type="submit" name="bReg" value="testing worker" style="height:150px; width:300px">
-        </form>
-        <form method="POST" action="Manager/m_views/view_seller.php">
-            <input type="submit" name="bReg" value="testing seller" style="height:150px; width:300px">
-        </form>
+       
 
     </center>
 

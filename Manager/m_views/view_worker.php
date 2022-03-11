@@ -1,6 +1,8 @@
 <?php
 require('../m_controllers/m_header.php');
-?>
+if(isset($_REQUEST['vWorker']))
+{
+    ?>
 <html>
 <head>
 	<title>Worker List</title>
@@ -21,10 +23,10 @@ require('../m_controllers/m_header.php');
 				while (!feof($file)) 
                 {
 					$user = fgets($file);
-					if($user == null){
+					if($user == null)
+                    {
 						break;
 					}
-					
 					$userArray = explode("|", $user);
 			?>
 
@@ -48,3 +50,10 @@ require('../m_controllers/m_header.php');
 	</form>
 </body>
 </html>
+<?php
+}
+else 
+{
+    header('location: ../../index.php');
+}
+?>

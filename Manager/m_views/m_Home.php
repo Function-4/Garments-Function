@@ -42,6 +42,8 @@ require('../m_controllers/m_header.php');
         			</form>
 
 					<a href="deleteUser.php">Delete user</a>
+
+					<a href="provideSalary.php">Salary</a>
 					
 
 					<a href="../m_controllers/m_logout.php">Logout</a>

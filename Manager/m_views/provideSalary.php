@@ -8,11 +8,12 @@ require('../m_controllers/m_header.php');
     <body>
         <table>
             <tr>
-                <td>
+                
                     <form method="POST" action="../m_controllers/salaryCal.php">
-            		<input type="submit" name="wSalary" value="Provide Salary to Worker" style="height:150px; width:300px">
+                    <td>Provide the Ammount of Salary <input type="number" name="wSalaryAmmount" value="" style="height:100px; width:150px"></td>
+                    <td><input type="submit" name="wSalary" value="Provide Salary to Worker" style="height:150px; width:300px"></td>
         			</form>
-                </td>
+               
             </tr>
             <tr>
                 <td>

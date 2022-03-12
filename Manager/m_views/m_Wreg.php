@@ -1,5 +1,7 @@
+<?php
+require('../m_controllers/m_header.php');
+?>
 <html>
-
 <head>
 	<title>Add Worker</title>
 </head>

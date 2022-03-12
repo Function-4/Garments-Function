@@ -3,7 +3,7 @@
 	if(isset($_REQUEST['wSalary']))
 	{
 		unlink('../m_models/tempSalary.txt');
-		$salary = '2';
+		$salary = $_REQUEST['wSalaryAmmount'];
 	
 	
 				$file = fopen('../m_models/worker.txt', 'r');
@@ -23,6 +23,7 @@
 				fclose($wfile);
 			}
 			copy('../m_models/tempSalary.txt','../m_models/worker.txt');
+			header('location: ../m_views/notify.php');
 	}
 
 	if(isset($_REQUEST['sSalary']))
@@ -48,5 +49,6 @@
 				fclose($wfile);
 			}
 			copy('../m_models/tempSalary.txt','../m_models/seller.txt');
+			header('location: ../m_views/notify.php');
 	}
 ?>

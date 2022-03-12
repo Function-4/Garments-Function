@@ -29,7 +29,7 @@
 	if(isset($_REQUEST['sSalary']))
 	{
 		unlink('../m_models/tempSalary.txt');
-		$salary = '2';
+		$salary = $_REQUEST['sSalaryAmmount'];
 	
 	
 				$file = fopen('../m_models/seller.txt', 'r');

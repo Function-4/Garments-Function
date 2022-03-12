@@ -16,11 +16,12 @@ require('../m_controllers/m_header.php');
                
             </tr>
             <tr>
-                <td>
+                
                     <form method="POST" action="../m_controllers/salaryCal.php">
-            		<input type="submit" name="sSalary" value="Provide Salary to Seller" style="height:150px; width:300px">
+                    <td>Provide the Ammount of Salary <input type="number" name="sSalaryAmmount" value="" style="height:100px; width:150px"></td>
+            		<td><input type="submit" name="sSalary" value="Provide Salary to Seller" style="height:150px; width:300px"></td>
         			</form>
-                </td>
+                
             </tr>
         </table>
     </body>

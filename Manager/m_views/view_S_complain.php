@@ -3,16 +3,16 @@ require('../m_controllers/m_header.php');
 ?>
 <html>
 <head>
-	<title>View Workers complain</title>
+	<title>View Sellers complain</title>
 </head>
 <body>
         <table border="1">
 			<tr>
-                <td><center><b>Workers Complain</b></center></td>
+                <td><center><b>Sellers Complain</b></center></td>
             </tr>
 
 			<?php 
-				$file = fopen('../../Worker/w_models/w_complain.txt', 'r');
+				$file = fopen('../../Seller/s_models/s_complain.txt', 'r');
 				
 				while (!feof($file)) 
                 {

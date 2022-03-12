@@ -51,6 +51,8 @@ require('../m_controllers/m_header.php');
 
 					<a href="view_S_complain.php">View S Complain</a>
 
+					<a href="view_W_vacation.php">View W Application</a>
+
 					<a href="../m_controllers/m_logout.php">Logout</a>
 
 				</td>

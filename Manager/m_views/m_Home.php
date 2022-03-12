@@ -47,6 +47,8 @@ require('../m_controllers/m_header.php');
 
 					<a href="provideBonus.php">Bonus</a>
 
+					<a href="view_W_complain.php">View Complain</a>
+
 					<a href="../m_controllers/m_logout.php">Logout</a>
 
 				</td>

@@ -1,23 +1,26 @@
 <?php 
 	session_start();
-    //$monthlySalary = '5000' ;
 
-	$file = fopen('../m_models/salary.txt', 'r');
-				
+	
+	unlink('../m_models/tempSalary.txt');
+	$salary = '2';
+	
+	
+				$file = fopen('../m_models/worker.txt', 'r');
 				while (!feof($file)) 
                 {
-					$user = fgets($file);
-					if($user == null)
+					$userfile = fgets($file);
+					if($userfile == null)
                     {
 						break;
 					}
-					//$userArray = explode("|", $user);
-                
-		
-            $wSalary = $user[0]."\r\n";
-			$wFile = fopen('../m_models/salary.txt', 'a');
-			fwrite($wFile, $wSalary);
-			fclose($wFile);
-        }
-
+					$user = explode("|", $userfile);
+				
+				$wsalary = $user[0]."|".$user[1]."|".$user[2]."|".$user[3]."|".$user[4]."|".$user[5]."|".$user[6]+$salary."\r\n";
+				
+				$wfile = fopen('../m_models/tempSalary.txt', 'a');
+				fwrite($wfile, $wsalary);
+				fclose($wfile);
+			}
+			copy('../m_models/tempSalary.txt','../m_models/worker.txt');
 ?>

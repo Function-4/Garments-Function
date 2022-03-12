@@ -1,14 +1,14 @@
 <?php 
-    require('../w_controllers/w_header.php');
+    require('../s_controllers/s_header.php');
 ?>
 <html>
 
 <head>
-	<title>Complain to Manager</title>
+	<title>Compalin to Manager</title>
 </head>
 
 <body>
-	<form method="POST" action="../w_controllers/w_complainCheck.php">
+	<form method="POST" action="../s_controllers/s_complainCheck.php">
 		<table>
 			<tr>
 				<td>give complain</td>
@@ -16,7 +16,7 @@
 			</tr>
 			<tr>
 				<td></td>
-				<td><input type="submit" name="wComplain" value="Send"></td>
+				<td><input type="submit" name="sComplain" value="Send"></td>
 			</tr>
 		</table>
 	</form>

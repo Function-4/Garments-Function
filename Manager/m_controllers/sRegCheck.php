@@ -17,7 +17,7 @@
 			$file = fopen('../m_models/seller.txt', 'a');
 			fwrite($file, $user);
 			fclose($file);
-			header('location: ../../seller/s_views/s_login.php');
+			header('location: ../m_views/notify.php');
 		}
 		else
 		{

@@ -17,7 +17,7 @@
 			$file = fopen('../m_models/worker.txt', 'a');
 			fwrite($file, $user);
 			fclose($file);
-			header('location: ../../Worker/w_views/w_login.php');
+			header('location: ../m_views/notify.php');
 			
 		}else{
 			echo "null submission";

@@ -10,14 +10,14 @@ require('../m_controllers/m_header.php');
             <tr>
                 <td>
                     <form method="POST" action="../m_controllers/salaryCal.php">
-            		<input type="submit" name="salary" value="Provide Salary to Worker" style="height:150px; width:300px">
+            		<input type="submit" name="wSalary" value="Provide Salary to Worker" style="height:150px; width:300px">
         			</form>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <form method="POST" action="deleteSeller.php">
-            		<input type="submit" name="dSeller" value="Provide Salary to Seller" style="height:150px; width:300px">
+                    <form method="POST" action="../m_controllers/salaryCal.php">
+            		<input type="submit" name="sSalary" value="Provide Salary to Seller" style="height:150px; width:300px">
         			</form>
                 </td>
             </tr>

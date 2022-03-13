@@ -28,13 +28,13 @@
         <td>
           <center><h1> T-shirt</h1></center> 
            <br>
-           <a href ="../b_views/b_order_product.php">  <img src="../b_assets/shirt.png" ></a>
+           <a href ="../b_views/b_Shirt.php">  <img src="../b_assets/shirt.png" ></a>
         </td>
 
         <td>
           <center><h1>Shirt</h1></center> 
            <br>
-           <a href ="../b_views/b_order_product.php">  <img src="../b_assets/shirts.jpeg"></a>
+           <a href ="../b_views/b_Shirt.php">  <img src="../b_assets/shirts.jpeg"></a>
         </td>
 
         <td>

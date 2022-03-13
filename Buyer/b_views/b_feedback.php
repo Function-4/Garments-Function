@@ -12,7 +12,7 @@
     </tr>
 </table>
 
-<form action="" method="post">
+<form action="../b_controllers/b_feedbackcheck.php" method="post">
     <center>
 <label><p style=font-size:60px> Feedback</p> <br> <textarea cols="60" row="50" name="mes"></textarea></label><br>
     </center>

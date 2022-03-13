@@ -1,6 +1,10 @@
+<?php 
+    require('../b_controllers/b_header.php');
+?>
+
 <html>
 <body>
-<title> Feedback </title>
+<title> Complain</title>
 <table border = "2" width=100%>  
     <tr>
         <td><h1 style=font-size:50px><center>Germents Function</center></h1></td>
@@ -12,12 +16,12 @@
     </tr>
 </table>
 
-<form action="" method="post">
+<form action="../b_controllers/b_complainCheck.php" method="post">
     <center>
 <label><p style=font-size:60px> Complain</p> <br> <textarea cols="60" row="50" name="mes"></textarea></label><br>
     </center>
     <br><br>
-    <center> <input type="submit" name="bLogin" value="Submit" style="height:50px; width:100px"> </center>
+    <center> <input type="submit" name="bsub" value="Submit" style="height:50px; width:100px"> </center>
 
 </form>
 

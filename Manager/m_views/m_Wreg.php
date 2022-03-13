@@ -1,7 +1,11 @@
+<?php
+require('../m_controllers/m_header.php');
+?>
 <html>
 <head>
 	<title>Add Worker</title>
 </head>
+
 <body>
 	<form method="POST" action="../m_controllers/wRegCheck.php">
 		<table>
@@ -28,8 +32,8 @@
 			<tr>
 				<td>Gender</td>
 				<td>
-					<input type="radio" name="gender" value="Male"> Male 
-					<input type="radio" name="gender" value="Female"> Female 
+					<input type="radio" name="gender" value="Male"> Male
+					<input type="radio" name="gender" value="Female"> Female
 					<input type="radio" name="gender" value="Other"> Other
 				</td>
 			</tr>
@@ -40,4 +44,5 @@
 		</table>
 	</form>
 </body>
+
 </html>

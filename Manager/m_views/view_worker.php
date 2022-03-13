@@ -7,7 +7,15 @@ if(isset($_REQUEST['vWorker']))
 <head>
 	<title>Worker List</title>
 </head>
-<body>
+<table border = "2" width=100%>  
+        <tr>
+                <td><h1 style=font-size:50px><center>Garments Function</center></h1></td>
+                <td><center><p style=font-size:30px><a href="../../index.php">Home</a></center></td>
+		<td><center><p style=font-size:30px><a href="m_Home.php">Profile</a></center></td>
+		<td><center><p style=font-size:30px><a href="../m_controllers/m_logout.php">Logout</a></center></td>
+        </tr>
+        </table>
+<body><br>
         <table border="1">
 			<tr>
 				<td>USER NAME</td>
@@ -48,7 +56,16 @@ if(isset($_REQUEST['vWorker']))
 		</table>
 		</fieldset>
 	</form>
-</body>
+</body><br>
+<table border="1"  width="100%">
+			<tr>
+				<td>
+					<h4>
+						<center> &copy; 2022 Function,inc.</center>
+					</h4>
+				</td>
+			</tr>
+			</table>
 </html>
 <?php
 }

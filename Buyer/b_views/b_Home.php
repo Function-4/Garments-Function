@@ -10,7 +10,7 @@ require('../b_controllers/b_header.php');
 <table border = "2" width=100%>  
     <tr>
         <td><h1 style=font-size:50px><center>Germents Function</center></h1></td>
-        <td><center><p style=font-size:30px><a href="../b_views/b_Shirt.php"> Product</a> </p></center></td>
+        <td><center><p style=font-size:30px><a href="../b_views/b_Home.php"> Product</a> </p></center></td>
         <td><center><p style=font-size:30px><a href="../b_views/b_order_product.php"> Oder Product</a> </p></center></td>
         <td><center><p style=font-size:30px><a href="../b_views/b_complain.php"> Complain</a> </p></center></td>
         <td><center><p style=font-size:30px><a href="../b_views/b_feedback.php"> Feedback</a> </p></center></td>

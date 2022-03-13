@@ -16,7 +16,7 @@
 			$file = fopen('../b_models/orderproduct.txt', 'a');
 			fwrite($file, $order);
 			fclose($file);
-			//header('location: ../b_views/b_login.php');
+			
 		}
 		else
 		{

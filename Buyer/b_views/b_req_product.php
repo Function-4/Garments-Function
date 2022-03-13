@@ -17,7 +17,7 @@
 <center>
         <p style=font-size:30px><h1><u>Request for Product</u></h1></p>    
             <p style=font-size:30px>Username</p>
-            <input type="text" name="username" value="">
+           <input type="text" name="username" value="">
 
             <p style=font-size:30px>Item Name</p>
             <input type="text" name="Itemname" value="">

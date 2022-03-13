@@ -13,6 +13,7 @@ require('../b_controllers/b_header.php');
         <td><center><p style=font-size:30px><a href="../b_views/b_Shirt.php"> Product</a> </p></center></td>
         <td><center><p style=font-size:30px><a href="../b_views/b_order_product.php"> Oder Product</a> </p></center></td>
         <td><center><p style=font-size:30px><a href="../b_views/b_complain.php"> Complain</a> </p></center></td>
+        <td><center><p style=font-size:30px><a href="../b_views/b_feedback.php"> Feedback</a> </p></center></td>
         <td><center><p style=font-size:30px><a href="../b_views/b_req_product.php"> Request for Product</a></p></center></td>
 		<td><center><p style=font-size:30px><a href="../b_controllers/b_logout.php">Logout</a></center></td>
     </tr>
@@ -52,16 +53,4 @@ require('../b_controllers/b_header.php');
 </body>
 </html> 
 
-
-<head>
-	<title>Home Page buyer </title>
-</head>
-
-<body>
-	<pre><h1>Welcome home !  <?= $_SESSION['current_buyer'][0] ?> buyer</h1></pre>
-	<br><br>
-	<a href="../b_controllers/b_logout.php">Logout</a>
-</body>
-
-</html>
 

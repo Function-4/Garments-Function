@@ -12,7 +12,7 @@
     </tr>
 </table>
 
-<form action="" method="post">
+<form action="../b_controllers/reqcheck.php" method="post">
     
 <center>
         <p style=font-size:30px><h1><u>Oder of the product</u></h1></p>    

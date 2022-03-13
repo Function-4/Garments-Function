@@ -3,16 +3,16 @@
 <title> Feedback </title>
 <table border = "2" width=100%>  
     <tr>
-        <td><h1 style=font-size:50px><center>Germents Function</center></h1></td>
-        <td><center><p style=font-size:30px><a href="#"> Product</a> </p></center></td>
-        <td><center><p style=font-size:30px><a href="#"> Oder Product</a> </p></center></td>
-        <td><center><p style=font-size:30px><a href="#"> Complain</a> </p></center></td>
-        <td><center><p style=font-size:30px><a href="#"> Request for Product</a></p></center></td>
-        <td><center><p style=font-size:30px><a href="../b_controllers/b_logout.php">Logout</a></center></td>
+    <td><center><p style=font-size:30px><a href="../b_views/b_Home.php"> Product</a> </p></center></td>
+        <td><center><p style=font-size:30px><a href="../b_views/b_order_product.php"> Oder Product</a> </p></center></td>
+        <td><center><p style=font-size:30px><a href="../b_views/b_complain.php"> Complain</a> </p></center></td>
+        <td><center><p style=font-size:30px><a href="../b_views/b_feedback.php"> Feedback</a> </p></center></td>
+        <td><center><p style=font-size:30px><a href="../b_views/b_req_product.php"> Request for Product</a></p></center></td>
+		<td><center><p style=font-size:30px><a href="../b_controllers/b_logout.php">Logout</a></center></td>
     </tr>
 </table>
 
-<form action="" method="post">
+<form action="../b_controllers/b_feedbackcheck.php" method="post">
     <center>
 <label><p style=font-size:60px> Feedback</p> <br> <textarea cols="60" row="50" name="mes"></textarea></label><br>
     </center>

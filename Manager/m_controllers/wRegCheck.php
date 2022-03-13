@@ -23,4 +23,6 @@
 			echo "null submission";
 		}
 	}
+	else 
+	echo "Invalid Request";
 ?>

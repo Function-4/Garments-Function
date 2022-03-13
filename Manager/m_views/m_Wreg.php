@@ -1,5 +1,6 @@
 <?php
 require('../m_controllers/m_header.php');
+if(isset($_REQUEST['rWorker'])){
 ?>
 <html>
 <head>
@@ -46,3 +47,6 @@ require('../m_controllers/m_header.php');
 </body>
 
 </html>
+<?php
+}
+?>

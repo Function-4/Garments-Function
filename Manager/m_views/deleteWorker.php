@@ -45,9 +45,6 @@ require('../m_controllers/m_header.php');
 			<?php
 				}
 			?>
-			
-			
-			
 		</table>
 		</fieldset>
 	</form>

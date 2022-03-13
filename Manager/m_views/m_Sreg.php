@@ -1,5 +1,7 @@
 <?php
 require('../m_controllers/m_header.php');
+if(isset($_REQUEST['rSeller'])){
+
 ?>
 <html>
 
@@ -47,3 +49,6 @@ require('../m_controllers/m_header.php');
 </body>
 
 </html>
+<?php
+}
+?>

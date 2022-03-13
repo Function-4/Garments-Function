@@ -13,14 +13,14 @@ require('../m_controllers/m_header.php');
 <table border = "2" width=100%>  
     <tr>
         <td><h1 style=font-size:50px><center>Garments Function</center></h1></td>
-		<td><center><p style=font-size:30px><a href="../b_controllers/b_logout.php">Home</a></center></td>
-		<td><center><p style=font-size:30px><a href="../b_controllers/b_logout.php">Logout</a></center></td>
+		<td><center><p style=font-size:30px><a href="../../index.php">Home</a></center></td>
+		<td><center><p style=font-size:30px><a href="../m_controllers/m_logout.php">Logout</a></center></td>
     </tr>
 </table>
 <table>
-		<table border="1" width="100%">
+		<table  width="100%">
 			<tr>
-				<td>
+				<td><br>
 					<form method="POST" action="view_Employee.php">
             		<input type="submit" name="" value="View Employee" style="height:100px; width:200px">
         			</form>
@@ -47,6 +47,9 @@ require('../m_controllers/m_header.php');
 					<a href="view_W_complain.php">View W Complain</a>
 
 					<a href="view_S_complain.php">View S Complain</a>
+					<a href="view_W_vacation.php">View W Application</a><br>
+
+					<a href="view_S_vacation.php">View S Application</a><br>
 					-->
 					<form method="POST" action="deleteUser.php">
             		<input type="submit" name="" value="Delete Employee" style="height:100px; width:200px">
@@ -59,32 +62,31 @@ require('../m_controllers/m_header.php');
 					<form method="POST" action="provideBonus.php">
             		<input type="submit" name="" value="Provide Bonus to Worker" style="height:100px; width:200px">
         			</form>
+				</td>
 
+
+				<td>
 					<form method="POST" action="view_E_complain.php">
             		<input type="submit" name="" value="View Employee's Complain" style="height:100px; width:200px">
+        			</form>
+
+					<form method="POST" action="view_overtime.php">
+            		<input type="submit" name="" value="Worker's Overtime Request" style="height:100px; width:200px">
         			</form>
 
 					<form method="POST" action="view_E_vacation.php">
             		<input type="submit" name="" value="View Employee's Application" style="height:100px; width:200px">
         			</form>
 
-					
-
-					<a href="view_W_vacation.php">View W Application</a><br>
-
-					<a href="view_S_vacation.php">View S Application</a><br>
-
-					<a href="view_overtime.php">View over time</a><br>
-
-					<a href="viewProduct.php">View Product</a><br>
-
-					<a href="../m_controllers/m_logout.php">Logout</a>
-					
-					
-
+					<form method="POST" action="viewProduct.php">
+            		<input type="submit" name="" value="View Company's Product" style="height:100px; width:200px">
+        			</form>
 				</td>
+
+
 			</tr>
-			
+			</table>
+			<table border="1"  width="100%">
 			<tr>
 				<td>
 					<h4>
@@ -92,7 +94,8 @@ require('../m_controllers/m_header.php');
 					</h4>
 				</td>
 			</tr>
-		</table>
+			</table>
+		
 </body>
 
 </html>

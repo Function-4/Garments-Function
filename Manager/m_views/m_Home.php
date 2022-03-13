@@ -57,7 +57,11 @@ require('../m_controllers/m_header.php');
 
 					<a href="view_overtime.php">View over time</a><br>
 
+					<a href="viewProduct.php">View Product</a><br>
+
 					<a href="../m_controllers/m_logout.php">Logout</a>
+					
+					
 
 				</td>
 			</tr>

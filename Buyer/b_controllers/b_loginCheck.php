@@ -19,7 +19,6 @@
 					$_SESSION['b_status'] = true;
 					$_SESSION['current_buyer'] = $userArry;
 					setcookie('b_status', 'true', time()+4600, '/');
-                    echo "maybe ";
 					header('location: ../b_views/b_Home.php');
 				}
 			}

@@ -28,9 +28,9 @@
             <input type="submit" name="bReg" value="Sign up as Buyer" style="height:150px; width:300px">
         </form>
         <?php
-        date_default_timezone_set('Asia/Dhaka');
-        $date = date('d/m/y  h:i a');
-        echo $date;
+        //date_default_timezone_set('Asia/Dhaka');
+        //$date = date('d/m/y  h:i a');
+        //echo $date;
         ?>
        
 

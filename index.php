@@ -14,7 +14,7 @@
 
     <h1>
         <center>
-            <p style="font-size: 150px;">Welcome</p>
+            <p style="font-size: 40px;">Welcome</p>
         </center>
     </h1>
 
@@ -38,7 +38,7 @@
 
 
 
-    <br><br><br><br><br><br><br><br><br><br><br><br>
+    
     <table border="2" width=100%>
         <tr rowspan="4">
             <td>

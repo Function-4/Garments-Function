@@ -1,5 +1,4 @@
 s10|10|dffe@gmail.com|42545|22|Male|20496
-s11|11|kuh5@gmail.com|42545|26|Male|30496
 s12|12|fgt95@gmail.com|42545|23|Male|30496
 s13|13|95@gmail.com|42545|22|Male|30496
 s14|14|995@gmail.com|42545|30|Male|30496

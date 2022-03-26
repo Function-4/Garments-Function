@@ -20,7 +20,7 @@
 
 
     <center>
-        <form method="POST" action="Company/views/login.php">
+        <form method="POST" action="views/login.php">
             <input type="submit" name="login" value="Login" style="height:150px; width:300px">
         </form>
         <br>

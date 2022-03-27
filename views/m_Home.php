@@ -23,8 +23,8 @@ require('../controllers/header.php');
 		<table  width="100%">
 			<tr>
 				<td><br>
-					<form method="POST" action="view_worker.php">
-            		<input type="submit" name="vWorker" value="View Employee" style="height:100px; width:200px">
+					<form method="POST" action="view_Employee.php">
+            		<input type="submit" name="" value="View Employee" style="height:100px; width:200px">
         			</form>
 
 					<form method="POST" action="add_Employee.php">

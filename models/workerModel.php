@@ -1,9 +1,17 @@
 <?php 
 
-	require('db.php');
+function w_getConnection(){
+	$host = "localhost";
+	$dbname= "garments";
+	$dbuser = "root";
+	$dbpass = "";
 
-	function login($username, $password){
-		$con = getConnection();
+	$con = mysqli_connect($host, $dbuser, $dbpass, $dbname);
+	return $con;
+}
+
+	function wlogin($username, $password){
+		$con = w_getConnection();
 
 		$sql = "select * from Manager where UserName='{$username}' and Password='{$password}'";
 		$result = mysqli_query($con, $sql);
@@ -14,9 +22,9 @@
 		}
 	}
 
-	function signup($username, $password, $email){
-		$con = getConnection();
-		$sql = "insert into users values('', '{$username}', '{$password}', '{$email}', 'user')";
+	function w_reg($username, $password, $first, $last, $email, $number){
+		$con = w_getConnection();
+		$sql = "insert into worker values ('', '{$username}', '{$password}', '{$first}', '{$last}', '{$email}', '{$number}','20000')";
 
 		if(mysqli_query($con, $sql)){
 			return true;
@@ -27,7 +35,7 @@
 
 	function view_worker()
 	{
-		$con = getConnection();
+		$con = w_getConnection();
 		$sql = "SELECT Serial,UserName,FirstName,LastName,Email,ContactNumber FROM worker";
 		//global $c ;
 		//$c = 0 ;

@@ -6,7 +6,7 @@ if(isset($_REQUEST['vSeller']))
     ?>
 <html>
 <head>
-	<title>Worker List</title>
+	<title>Seller List</title>
 </head>
 <table border = "2" width=100%>  
         <tr>

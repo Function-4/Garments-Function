@@ -17,7 +17,7 @@
     </center>
 
 
-    <form method="POST" action="../con/loginCheck.php">
+    <form method="POST" action="../controllers/loginCheck.php">
 
         <center>
             <p style="font-size: 30px;">User Name</p> <input type="text" name="username" value="" />

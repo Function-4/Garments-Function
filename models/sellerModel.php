@@ -1,9 +1,16 @@
 <?php 
+	function s_getConnection(){
+		$host = "localhost";
+		$dbname= "garments";
+		$dbuser = "root";
+		$dbpass = "";
 
-	require('db.php');
+		$con = mysqli_connect($host, $dbuser, $dbpass, $dbname);
+		return $con;
+	}
 
-	function login($username, $password){
-		$con = getConnection();
+	function slogin($username, $password){
+		$con = s_getConnection();
 
 		$sql = "select * from Manager where UserName='{$username}' and Password='{$password}'";
 		$result = mysqli_query($con, $sql);
@@ -14,9 +21,9 @@
 		}
 	}
 
-	function signup($username, $password, $email){
-		$con = getConnection();
-		$sql = "insert into users values('', '{$username}', '{$password}', '{$email}', 'user')";
+	function s_reg($username, $password, $first, $last, $email, $number){
+		$con = s_getConnection();
+		$sql = "insert into seller values ('', '{$username}', '{$password}', '{$first}', '{$last}', '{$email}', '{$number}','20000')";
 
 		if(mysqli_query($con, $sql)){
 			return true;
@@ -27,7 +34,7 @@
 
 	function view_seller()
 	{
-		$con = getConnection();
+		$con = s_getConnection();
 		$sql = "SELECT Serial,UserName,FirstName,LastName,Email,ContactNumber FROM seller";
 		//global $c ;
 		//$c = 0 ;

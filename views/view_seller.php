@@ -1,7 +1,7 @@
 <?php
 require('../controllers/header.php');
-require('../models/workerModel.php');
-if(isset($_REQUEST['vWorker']))
+require_once('../models/sellerModel.php');
+if(isset($_REQUEST['vSeller']))
 {
     ?>
 <html>
@@ -30,7 +30,7 @@ if(isset($_REQUEST['vWorker']))
 			</tr>
 
 			<?php 
-				$row = view_worker();
+				$row = view_seller();
 				while($row = mysqli_fetch_assoc($result))
 			{
 				  

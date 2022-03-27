@@ -25,10 +25,10 @@
 		}
 	}
 
-	function view_worker()
+	function view_seller()
 	{
 		$con = getConnection();
-		$sql = "SELECT Serial,UserName,FirstName,LastName,Email,ContactNumber FROM worker";
+		$sql = "SELECT Serial,UserName,FirstName,LastName,Email,ContactNumber FROM seller";
 		//global $c ;
 		//$c = 0 ;
 		global $result ; 

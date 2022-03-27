@@ -31,19 +31,18 @@ if(isset($_REQUEST['vWorker']))
 
 			<?php 
 				$row = view_worker();
-				//$result = global $r ;  
-				for($i = 0 ; $c > $i ; $c--) {
-					//echo "Serial : " . $row["Serial"]. " - Name: " . $row["FirstName"]. " " . "<br>";
+				while($row = mysqli_fetch_assoc($result))
+			{
 				  
 			?>
 
 			<tr>
-				<td><?=$row['Serial'.$c]?></td>
-				<td><?=$row['UserName'.$c]?></td>
-				<td><?=$row['FirstName'.$c]?></td>
-				<td><?=$row['LastName'.$c]?></td>
-				<td><?=$row['Email'.$c]?></td>
-				<td><?=$row['ContactNumber'.$c]?></td>
+				<td><?=$row['Serial']?></td>
+				<td><?=$row['UserName']?></td>
+				<td><?=$row['FirstName']?></td>
+				<td><?=$row['LastName']?></td>
+				<td><?=$row['Email']?></td>
+				<td><?=$row['ContactNumber']?></td>
 				
 				
 			</tr>

@@ -29,14 +29,14 @@
 	{
 		$con = getConnection();
 		$sql = "SELECT Serial,UserName,FirstName,LastName,Email,ContactNumber FROM worker";
-		global $c ;
-		$c = 0 ;
+		//global $c ;
+		//$c = 0 ;
 		global $result ; 
-		$array = array();
+		//$array = array();
 		$result = mysqli_query($con, $sql) ;
 
 		if(mysqli_num_rows($result)){
-			while($row = mysqli_fetch_assoc($result))
+			/*while($row = mysqli_fetch_assoc($result))
 			{
 				$c++;
 				$array['Serial'.$c] = $row['Serial'];
@@ -46,10 +46,10 @@
 				$array['Email'.$c] = $row['Email'];
 				$array['ContactNumber'.$c] = $row['ContactNumber'];
 				
-			}
+			}*/
 
-			
-			return $array;
+			//return true;
+			return $result;
 		}else{
 			return false;
 		}

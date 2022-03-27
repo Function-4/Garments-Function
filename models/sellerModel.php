@@ -50,7 +50,17 @@
 		{
 			return false;
 		}
-		
+	}
+
+	function s_delete($name)
+	{
+		$con = w_getConnection();
+		$sql = "DELETE FROM seller WHERE UserName = '{$name}'";
+		if(mysqli_query($con, $sql)){
+			return true;
+		}else{
+			return false;
+		}
 	}
 
 ?>

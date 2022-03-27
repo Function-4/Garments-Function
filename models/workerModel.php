@@ -53,5 +53,15 @@ function w_getConnection(){
 		}
 		
 	}
+	function w_delete($name)
+	{
+		$con = w_getConnection();
+		$sql = "DELETE FROM worker WHERE UserName = '{$name}'";
+		if(mysqli_query($con, $sql)){
+			return true;
+		}else{
+			return false;
+		}
+	}
 
 ?>

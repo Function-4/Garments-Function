@@ -31,7 +31,7 @@ require('../controllers/header.php');
             		<input type="submit" name="" value="Add Employee" style="height:100px; width:200px">
         			</form>
 
-					<form method="POST" action="deleteUser.php">
+					<form method="POST" action="delete_Employee.php">
             		<input type="submit" name="" value="Delete Employee" style="height:100px; width:200px">
         			</form>
 

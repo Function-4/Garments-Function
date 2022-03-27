@@ -32,8 +32,6 @@
         //$date = date('d/m/y  h:i a');
         //echo $date;
         ?>
-       
-
     </center>
 
 

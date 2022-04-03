@@ -46,6 +46,10 @@ require('../controllers/header.php');
 
 
 				<td>
+					<form method="POST" action="m_reg.php">
+            		<input type="submit" name="m" value="Add New Manager" style="height:100px; width:200px">
+        			</form>
+
 					<form method="POST" action="view_E_complain.php">
             		<input type="submit" name="" value="View Employee's Complain" style="height:100px; width:200px">
         			</form>

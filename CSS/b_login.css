@@ -1,6 +1,6 @@
 body {
     background-color: #6F8FAF;
-    padding-top: 5%;
+    padding-top: 0%;
 }
 
 p1{
@@ -25,7 +25,7 @@ hr.new4 {
     border: 5px solid #87CEEB;
   }
 
-  /*ready acootunt*/
+  /*ready acootunt start*/
 
   a1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -33,3 +33,65 @@ hr.new4 {
     color :black;
   }
   
+  /*ready acootunt end*/
+
+
+ /*Menu= bar start*/
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+    padding-left: 30px;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+/*Menu= bar end*/
+
+
+/*product card start*/
+  .card {
+    padding-left: 120px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 50%;
+  }
+  
+  .card:hover {
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+
+/*product card End*/
+
+
+
+h4{
+    color: black;
+}
+p{
+    color: black;
+}
+
+p4{
+    font-family: 'Times New Roman', Times, serif;
+    font-size :40px;
+}

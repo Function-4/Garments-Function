@@ -5,6 +5,8 @@
 
     <link rel="stylesheet" href="../CSS/b_login.css">
     <p3> 
+    <br>
+    
     <center>Welcome to Buyer Registration </center>
     </p3>
 

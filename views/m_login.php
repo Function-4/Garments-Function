@@ -11,13 +11,13 @@
 </table>
 
 <body>
-	<form method="POST" action="../controllers/loginCheck.php">
+	<form method="POST" action="../controllers/loginCheck.php" onsubmit="return log()">
 		<table width="100%">
 			<tr><br><br><br><br><br><br><br><br><br><br><br>
-				<td> Username : <input type="text" name="username" value=""></td>
+				<td> Username : <input id="name" type="text" name="username" ></td> 
 			</tr>
 			<tr>
-				<td>Password : <input type="password" name="password" value=""></td>
+				<td>Password : <input id="pass" type="password" name="password" ></td>
 			</tr>
 			<tr>
 				<td><input type="submit" name="mLogin" value=" Login "></td>
@@ -34,5 +34,22 @@
 				</td>
 			</tr>
 			</table>
+
+			<script>
+				function log(){
+			let username = document.getElementById('name').value;
+			let pass = document.getElementById('pass').value;
+
+			if(username == ""){
+				alert("Please Provide your Username");
+				return false;
+			}
+			if(pass == ""){
+				alert("Please Provide your Password");
+				return false;
+			}
+			return true;
+		}
+			</script>
 
 </html>

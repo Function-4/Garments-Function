@@ -20,33 +20,32 @@ if(isset($_REQUEST['rWorker'])){
     </table>
 
 <body><br><br>
-	<form method="POST" action="../controllers/regCheck.php">
+	<form method="POST" action="../controllers/regCheck.php" onsubmit="return reg()">
 		<table>
-			<tr>
+		<tr>
 				<td>Username</td>
-				<td><input type="text" name="username" value=""></td>
+				<td><input id="name" type="text" name="username"></td>
 			</tr>
 			<tr>
 				<td>Password</td>
-				<td><input type="password" name="password" value=""></td>
+				<td><input id="pass" type="password" name="password"></td>
 			</tr>
 			<tr>
 				<td>First Name</td>
-				<td><input type="text" name="first" value=""></td>
+				<td><input id="first" type="text" name="first"></td>
 			</tr>
 			<tr>
 				<td>Last Name</td>
-				<td><input type="text" name="last" value=""></td>
+				<td><input id="last" type="text" name="last"></td>
 			</tr>
 			<tr>
 				<td>Email</td>
-				<td><input type="email" name="email" value=""></td>
+				<td><input id="email" type="email" name="email"></td>
 			</tr>
 			<tr>
 				<td>Contact Number</td>
-				<td><input type="number" name="number" value=""></td>
+				<td><input id="number" type="number" name="number"></td>
 			</tr>
-			<tr>
 				<td></td>
 				<td><input type="submit" name="wRegSubmit" value="Submit"></td>
 			</tr>
@@ -62,6 +61,43 @@ if(isset($_REQUEST['rWorker'])){
 				</td>
 			</tr>
 			</table>
+
+			<script>
+				function reg(){
+			let username = document.getElementById('name').value;
+			let pass = document.getElementById('pass').value;
+			let first = document.getElementById('first').value;
+			let last = document.getElementById('last').value;
+			let email = document.getElementById('email').value;
+			let number = document.getElementById('number').value;
+
+			if(username == ""){
+				alert("Please Provide your Username");
+				return false;
+			}
+			if(pass == ""){
+				alert("Please Provide your Password");
+				return false;
+			}
+			if(first == ""){
+				alert("Please Provide your First Name");
+				return false;
+			}
+			if(last == ""){
+				alert("Please Provide your Last Name");
+				return false;
+			}
+			if(email == ""){
+				alert("Please Provide your Email");
+				return false;
+			}
+			if(number == ""){
+				alert("Please Provide your Number");
+				return false;
+			}
+			return true;
+		}
+			</script>
 
 </html>
 <?php

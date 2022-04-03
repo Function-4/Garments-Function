@@ -30,6 +30,11 @@
         </form>
 
 
+        <form method="POST" action="views/test.php">
+            <input type="submit" name="bReg" value="TEST" style="height:150px; width:300px">
+        </form>
+
+
         <?php
 
         //date_default_timezone_set('Asia/Dhaka');

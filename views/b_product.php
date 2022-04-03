@@ -5,7 +5,7 @@
 <ul>
   <li><a href="b_home.php">Home</a></li>
   <li><a href="b_product.php">Product</a></li>
-  <li><a href="#contact">Oder Product</a></li>
+  <li><a href="b_order.php">Oder Product</a></li>
   <li><a href="#about">Complain</a></li>
   <li><a href="#about">Feedback</a></li>
   <li><a href="#about">Request for Product</a></li>

@@ -2,7 +2,7 @@
 
 function b_getConnection(){
     $host = "localhost";
-    $dbname= "germents";
+    $dbname= "garments";
     $dbuser = "root";
     $dbpass = "";
 

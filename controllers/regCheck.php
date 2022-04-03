@@ -64,20 +64,19 @@
 
 
 
-
 	if(isset($_REQUEST['bRegSubmit']))
 	{
-		
+		$first = $_REQUEST['first'];
+		$last = $_REQUEST['last'];
 		$username = $_REQUEST['username'];
 		$password = $_REQUEST['password'];
 		$email = $_REQUEST['email'];
 		$number = $_REQUEST['contact'];
-		$first = $_REQUEST['1name'];
-		$last = $_REQUEST['2name'];
+		
 		
 		if($username != null && $password != null && $first != null && $last != null && $email != null && $number != null)
 		{
-			$status = b_reg($username, $password, $first, $last, $email, $number);
+			$status = b_reg($first,$last,$username,$password,$email,$number);
 			if($status)
 			{
 				echo "Sucessfull reg";
@@ -93,5 +92,8 @@
 			echo "null submission";
 		}
 	}
+
+
+	
 
 ?>

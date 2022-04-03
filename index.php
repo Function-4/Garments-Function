@@ -37,9 +37,6 @@
         //echo $date;
         ?>
     </center>
-
-
-
     
     <table border="2" width=100%>
         <tr rowspan="4">

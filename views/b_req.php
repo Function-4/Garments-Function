@@ -16,19 +16,19 @@
 
     <form method="POST" action="../controllers/regCheck.php">
         <center>
-            <table style="width:50%" c>
+            <table style="width:50%">
 
             <tr>
                 <td>
                     <center>
-                        <p style="font-size: 30px;">First Name</p> <input type="text" name="1name" value="" />
+                        <p style="font-size: 30px;">First Name</p> <input type="text" name="first" value="" />
                     </center>
                     <br><br>
                 </td>
 
                 <td>
                     <center>
-                        <p style="font-size: 30px;">Last Name</p> <input type="text" name="2name" value="" />
+                        <p style="font-size: 30px;">Last Name</p> <input type="text" name="last" value="" />
                     </center>
                     <br><br>
                 </td>
@@ -75,6 +75,8 @@
         
         <center> <input type="submit" name="bRegSubmit" value="Submit" style="height:50px; width:100px"> </center>
     </form>
+
+    
 
    <center><a1> <a href = "b_login.php"> Already have a Account ?? </a></a1></center>
 </body>

@@ -2,7 +2,7 @@
 require('../controllers/header.php');
 ?>
 <html>
-
+<link rel="stylesheet" href="../CSS/m_home.css">
 <head>
 	<title>Manager Home</title>
 </head>
@@ -10,19 +10,19 @@ require('../controllers/header.php');
 <body>
 <title> Feedback </title>
 
-<table border = "2" width=100%>  
-    <tr>
-        <td><h1 style=font-size:50px><center>Garments Function</center></h1></td>
-		<td><center><p style=font-size:30px><a href="../index.php">Home</a></center></td>
-		<td><center><form method="POST" action="../controllers/logout.php">
-            		<input type="submit" name="m_logout" value="Logout" style="height:50px; width:70px">
-        			</form></center></td>
-    </tr>
-</table>
+	<header id="header">
+	<nav class="links" style="--items: 3;">
+	<h1 style=font-size:50px><center>Garments Function</center></h1>
+	<a href="../index.php">Home</a>
+	<a href="../controllers/logout.php?id=m">Logout</a>
+	<span class="line"></span>
+	</nav>
+	</header>
+
 <table>
 		<table  width="100%">
 			<tr>
-				<td><br>
+				<td><br><br><br><br><br>
 					<form method="POST" action="view_Employee.php">
             		<input type="submit" name="" value="View Employee" style="height:100px; width:200px">
         			</form>
@@ -45,7 +45,7 @@ require('../controllers/header.php');
 				</td>
 
 
-				<td>
+				<td><br><br><br><br><br>
 					<form method="POST" action="m_reg.php">
             		<input type="submit" name="m" value="Add New Manager" style="height:100px; width:200px">
         			</form>

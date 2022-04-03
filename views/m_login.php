@@ -1,14 +1,16 @@
 <html>
-
+<link rel="stylesheet" href="../CSS/m_home.css">
 <head>
 	<title>Manager </title>
 </head>
-<table border = "2" width=100%>  
-    <tr>
-        <td><h1 style=font-size:50px><center>Garments Function</center></h1></td>
-		<td><center><p style=font-size:30px><a href="../index.php">Home</a></center></td>
-    </tr>
-</table>
+
+	<header id="header">
+	<nav class="links" style="--items: 2;">
+	<h1 style=font-size:50px><center>Garments Function</center></h1>
+	<a href="../index.php">Home</a>
+	<span class="line"></span>
+	</nav>
+	</header>
 
 <body>
 	<form method="POST" action="../controllers/loginCheck.php" onsubmit="return log()">

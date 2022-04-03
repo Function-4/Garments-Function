@@ -1,37 +1,36 @@
-<?php
-//echo "buyer";
-?>
 <html>
-
 <body>
-    <title> Home Page </title>
-    <table border="2" width=100%>
-        <tr>
-            <td>
-                <h1 style=font-size:50px>Welcome to Germents Function ,</h1>
-            </td>
-        </tr>
-    </table>
+    <title> Buyer Login </title>
+
+    <link rel="stylesheet" href="../CSS/b_login.css">
     <center>
-        <p style="font-size: 50px;"><b>Log in as Buyer</b></p>
-    </center>
+        <p1><b>Log-in As Buyer</b></p1>
+</center>
+    <center>
+      
 
+            <form method="POST" action="../controllers/loginCheck.php">
 
-    <form method="POST" action="../controllers/loginCheck.php">
+            
+                <p style="font-size: 30px;">User Name</p> <input type="text" name="username" value="" />
+           
+          
+                <p style="font-size: 30px;">Password</p> <input type="password" name="password" value="" />
+           
 
-        <center>
-            <p style="font-size: 30px;">User Name</p> <input type="text" name="username" value="" />
-        </center>
-        <center>
-            <p style="font-size: 30px;">Password</p> <input type="password" name="password" value="" />
-        </center>
-        <br>
-        <br>
+            <br>
+            <br>
 
-        <center> <input type="submit" name="bLogin" value="Submit" style="height:50px; width:100px"> </center>
-    </form>
+            <input type="submit" name="bLogin" value="Submit" style="height:50px; width:100px"> 
+            </form>       
+</center>
 
-
+<center>
+    <br>
+<p2>
+   New As Buyer ??  <a href="b_req.php">Sign UP !!</a>
+</p2>
+<center>
 </body>
 
 </html>

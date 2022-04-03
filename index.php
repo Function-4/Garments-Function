@@ -24,10 +24,14 @@
             <input type="submit" name="login" value="Login" style="height:150px; width:300px">
         </form>
         <br>
-        <form method="POST" action="Buyer/b_views/b_reg.php">
+
+        <form method="POST" action="views/b_req.php">
             <input type="submit" name="bReg" value="Sign up as Buyer" style="height:150px; width:300px">
         </form>
+
+
         <?php
+
         //date_default_timezone_set('Asia/Dhaka');
         //$date = date('d/m/y  h:i a');
         //echo $date;

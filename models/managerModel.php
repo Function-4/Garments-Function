@@ -14,9 +14,9 @@
 		}
 	}
 
-	function signup($username, $password, $email){
-		$con = getConnection();
-		$sql = "insert into users values('', '{$username}', '{$password}', '{$email}', 'user')";
+	function m_reg($username, $password, $first, $last, $email, $number){
+		$con = s_getConnection();
+		$sql = "insert into manager values ('', '{$username}', '{$password}', '{$first}', '{$last}', '{$email}', '{$number}')";
 
 		if(mysqli_query($con, $sql)){
 			return true;

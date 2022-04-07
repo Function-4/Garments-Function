@@ -1,7 +1,8 @@
+<script type="text/javascript" src="../assets/fv.js"></script>
 <html>
 <link rel="stylesheet" href="../CSS/m_home.css">
 <head>
-	<title>Manager </title>
+<title>Manager </title>
 </head>
 
 	<header id="header">
@@ -14,12 +15,12 @@
 
 <body>
 	<form method="POST" action="../controllers/loginCheck.php" onsubmit="return log()">
-		<table width="100%">
+		<table>
 			<tr><br><br><br><br><br><br><br><br><br><br><br>
-				<td> Username : <input id="name" type="text" name="username" ></td> 
+				<td> Username : <input id="name" type="text" name="username"></td><td id="usernameError"></td>
 			</tr>
 			<tr>
-				<td>Password : <input id="pass" type="password" name="password" ></td>
+				<td>Password : <input id="pass" type="password" name="password" ></td><td id="passError"></td>  
 			</tr>
 			<tr>
 				<td><input type="submit" name="mLogin" value=" Login "></td>
@@ -36,22 +37,5 @@
 				</td>
 			</tr>
 			</table>
-
-			<script>
-				function log(){
-			let username = document.getElementById('name').value;
-			let pass = document.getElementById('pass').value;
-
-			if(username == ""){
-				alert("Please Provide your Username");
-				return false;
-			}
-			if(pass == ""){
-				alert("Please Provide your Password");
-				return false;
-			}
-			return true;
-		}
-			</script>
-
+<html>
 </html>

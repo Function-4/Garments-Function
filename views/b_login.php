@@ -3,6 +3,10 @@
     <title> Buyer Login </title>
 
     <link rel="stylesheet" href="../CSS/b_login.css">
+    <br><br><br><br>
+    <br><br><br><br>
+    
+    
     <center>
         <p1><b>Log-in As Buyer</b></p1>
 </center>

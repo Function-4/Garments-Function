@@ -4,22 +4,21 @@ if(isset($_REQUEST['m'])){
 ?>
 <script type="text/javascript" src="../assets/fv.js"></script>
 <html>
-
+<link rel="stylesheet" href="../CSS/m_home.css">
 <head>
 	<title>Add Worker</title>
 </head>
-	<table border = "2" width=100%>  
-    <tr>
-	<td><h1 style=font-size:50px><center>Garments Function</center></h1></td>
-                <td><center><p style=font-size:30px><a href="../index.php">Home</a></center></td>
-		<td><center><p style=font-size:30px><a href="m_Home.php">Profile</a></center></td>
-		<td><center><form method="POST" action="../controllers/logout.php">
-            		<input type="submit" name="m_logout" value="Logout" style="height:50px; width:70px">
-        			</form></center></td>
-    </tr>
-    </table>
+	<header id="header">
+	<nav class="links" style="--items: 4;">
+	<h1 style=font-size:50px><center>Garments Function</center></h1>
+	<a href="../index.php">Home</a>
+	<a href="m_Home.php">Profile</a>
+	<a href="../controllers/logout.php?id=m">Logout</a>
+	<span class="line"></span>
+	</nav>
+	</header>
 
-<body><br><br>
+<body><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	<form method="POST" action="../controllers/regCheck.php" onsubmit="return reg()">
 		<table>
 			<tr>

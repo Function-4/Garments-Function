@@ -1,8 +1,7 @@
 <html>
     <body>
-    <title> Buyer Homepage </title>
+    <title> Product </title>
     <link rel="stylesheet" href="../CSS/b_login.css">
-
 <ul>
   <li><a href="b_home.php">Home</a></li>
   <li><a href="b_product.php">Product</a></li>
@@ -20,12 +19,17 @@
 
 <br>
 <br>
+
+<center><p4>Available Product</p4></center>
+
+<br>
+<br>
 <table width="100%">
 <tr>
 
 
 <td height="100%">
-<a href="b_product.php">
+<a href="tshirt.php">
         <div class="card" >
             <img src="../assets/1.jpg" alt="peojuct" style="width:100%">
                 <div class="container">
@@ -37,7 +41,7 @@
     </td>
 
     <td> 
-        <a href="b_product.php">
+        <a href="shirt.php">
         <div class="card" >
             <img src="../assets/1.jpg" alt="peojuct" style="width:100%">
                 <div class="container">
@@ -50,7 +54,7 @@
 
 
     <td height="100%">
-    <a href="b_product.php">
+    <a href="pant.php">
         <div class="card" >
             <img src="../assets/1.jpg" alt="peojuct" style="width:100%">
                 <div class="container">
@@ -66,7 +70,7 @@
 <tr>
 
 <td height="100%">
-<a href="b_product.php">
+<a href="jacket.php">
         <div class="card" >
             <img src="../assets/1.jpg" alt="peojuct" style="width:100%">
                 <div class="container">
@@ -78,7 +82,7 @@
     </td>
 
     <td>
-    <a href="b_product.php">
+    <a href="trouser.php">
         <div class="card" >
             <img src="../assets/1.jpg" alt="peojuct" style="width:100%">
                 <div class="container">
@@ -91,7 +95,7 @@
 
 
     <td height="100%">
-    <a href="b_product.php">
+    <a href="shorts.php">
         <div class="card" >
             <img src="../assets/1.jpg" alt="peojuct" style="width:100%">
                 <div class="container">

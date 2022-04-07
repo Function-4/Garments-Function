@@ -91,6 +91,7 @@
 	}
 
 
+//buyer
 
 	if(isset($_REQUEST['bRegSubmit']))
 	{
@@ -107,7 +108,7 @@
 			$status = b_reg($first,$last,$username,$password,$email,$number);
 			if($status)
 			{
-				echo "Sucessfull reg";
+				echo "Sucessfull Reg";
 			}
 			else 
 			{

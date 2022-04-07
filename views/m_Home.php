@@ -12,7 +12,7 @@ require('../controllers/header.php');
 
 	<header id="header">
 	<nav class="links" style="--items: 3;">
-	<h1 style=font-size:50px><center>Garments Function</center></h1>
+	<a href="../index.php"><h1 style=font-size:40px>Garments Function</h1></a>
 	<a href="../index.php">Home</a>
 	<a href="../controllers/logout.php?id=m">Logout</a>
 	<span class="line"></span>

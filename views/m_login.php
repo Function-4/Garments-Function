@@ -7,7 +7,7 @@
 
 	<header id="header">
 	<nav class="links" style="--items: 2;">
-	<h1 style=font-size:50px><center>Garments Function</center></h1>
+	<a href="../index.php"><h1 style=font-size:40px>Garments Function</h1></a>
 	<a href="../index.php">Home</a>
 	<span class="line"></span>
 	</nav>

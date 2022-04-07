@@ -25,7 +25,8 @@ function b_getConnection(){
 
 	
 
-	function b_reg($first, $last, $username, $password,$email, $number){
+	function b_reg($first, $last, $username, $password,$email, $number)
+	{
 		$con = b_getConnection();
 		$sql = "insert into buyer values ('', '{$first}', '{$last}', '{$username}', '{$password}', '{$email}', '{$number}')";
 

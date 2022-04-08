@@ -69,16 +69,8 @@ require('../controllers/header.php');
 
 
 			</tr>
-			</table>
-			<table border="1"  width="100%">
-			<tr>
-				<td>
-					<h4>
-						<center> &copy; 2022 Function,inc.</center>
-					</h4>
-				</td>
-			</tr>
-			</table>
+			</table><br><br>
+			<element id= "footer"><a><ul> &copy; 2022 Function,inc.</ul></a></element>
 		
 </body>
 

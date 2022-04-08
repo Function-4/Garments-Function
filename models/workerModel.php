@@ -73,5 +73,17 @@ function w_getConnection(){
 			return false;
 		}
 	}
+	function w_salary($ammount,$name)
+	{
+		$con = w_getConnection();
+		$sql = "UPDATE worker SET Salary = '{$ammount}' WHERE UserName = '{$name}'";
+		
+		$result = mysqli_query($con, $sql) ;
+		if($result){
+			return true;
+		}else{
+			return false;
+		}
+	}
 
 ?>

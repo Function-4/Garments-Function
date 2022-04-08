@@ -35,7 +35,7 @@ require('../controllers/header.php');
             		<input type="submit" name="" value="Delete Employee">
         			</form>
 
-					<form method="POST" action="provideSalary.php">
+					<form method="POST" action="provide_salary.php">
             		<input type="submit" name="" value="Provide Salary">
         			</form>
 

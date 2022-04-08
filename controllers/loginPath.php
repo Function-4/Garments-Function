@@ -14,7 +14,7 @@
         }
         else if($selected=='s')
         {
-            header('location: ../../Seller\s_views\s_login.php');
+            header('location: ../views/s_login.php');
         }
         else if($selected=='b')
         {

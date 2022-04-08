@@ -2,43 +2,38 @@
 require('../controllers/header.php');
 ?>
 <html>
+<link rel="stylesheet" href="../CSS/test.css">
     <head>
 	    <title>Add Employee</title>
     </head>
-    <table border = "2" width=100%>  
-    <tr>
-        <td><h1 style=font-size:50px><center>Garments Function</center></h1></td>
-        <td><center><p style=font-size:30px><a href="../../index.php">Home</a></center></td>
-		<td><center><p style=font-size:30px><a href="m_Home.php">Profile</a></center></td>
-		<td><center><p style=font-size:30px><a href="../m_controllers/m_logout.php">Logout</a></center></td>
-    </tr>
-    </table>
-    <table>
+    <header id="header">
+	<nav class="links" style="--items: 4;">
+	<a href="../index.php"><h1 style=font-size:40px>Garments Function</h1></a>
+	<a href="../index.php">Home</a>
+    <a href="m_Home.php">Profile</a>
+	<a href="../controllers/logout.php?id=m">Logout</a>
+	<span class="line"></span>
+	</nav>
+	</header><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <body>
+        <center>
         <table>
             <tr>
                 <td><br><br><br>
                     <form method="POST" action="w_reg.php">
-            		<input type="submit" name="rWorker" value="Add Worker" style="height:150px; width:300px">
+            		<input type="submit" name="rWorker" value="Add Worker">
         			</form>
                 </td>
             </tr>
             <tr>
                 <td><br><br>
                     <form method="POST" action="s_reg.php">
-            		<input type="submit" name="rSeller" value="Add Seller" style="height:150px; width:300px">
+            		<input type="submit" name="rSeller" value="Add Seller">
         			</form>
                 </td>
             </tr>
         </table>
+        </center>
     </body><br><br>
-            <table border="1"  width="100%">
-			<tr>
-				<td>
-					<h4>
-						<center> &copy; 2022 Function,inc.</center>
-					</h4>
-				</td>
-			</tr>
-			</table>
+    <element id= "footer"><a><ul> &copy; 2022 Function,inc.</ul></a></element>
 </html>

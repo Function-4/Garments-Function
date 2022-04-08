@@ -24,7 +24,7 @@ require('../controllers/header.php');
 			<tr>
 				<td><br><br><br><br><br>
 					<form method="POST" action="view_Employee.php">
-            		<input type="submit" name="" value="View Employee" style="height:100px; width:200px">
+            		<input type="submit" name="" value="View Employee">
         			</form>
 
 					<form method="POST" action="add_Employee.php">

@@ -2,7 +2,7 @@
 require('../controllers/header.php');
 ?>
 <html>
-<link rel="stylesheet" href="../CSS/m_home.css">
+<link rel="stylesheet" href="../CSS/test.css">
 <head>
 	<title>Manager Home</title>
 </head>
@@ -28,42 +28,42 @@ require('../controllers/header.php');
         			</form>
 
 					<form method="POST" action="add_Employee.php">
-            		<input type="submit" name="" value="Add Employee" style="height:100px; width:200px">
+            		<input type="submit" name="" value="Add Employee">
         			</form>
 
 					<form method="POST" action="delete_Employee.php">
-            		<input type="submit" name="" value="Delete Employee" style="height:100px; width:200px">
+            		<input type="submit" name="" value="Delete Employee">
         			</form>
 
 					<form method="POST" action="provideSalary.php">
-            		<input type="submit" name="" value="Provide Salary" style="height:100px; width:200px">
+            		<input type="submit" name="" value="Provide Salary">
         			</form>
 
 					<form method="POST" action="provideBonus.php">
-            		<input type="submit" name="" value="Provide Bonus to Worker" style="height:100px; width:200px">
+            		<input type="submit" name="" value="Provide Bonus to Worker">
         			</form>
 				</td>
 
 
 				<td><br><br><br><br><br>
 					<form method="POST" action="m_reg.php">
-            		<input type="submit" name="m" value="Add New Manager" style="height:100px; width:200px">
+            		<input type="submit" name="m" value="Add New Manager">
         			</form>
 
 					<form method="POST" action="view_E_complain.php">
-            		<input type="submit" name="" value="View Employee's Complain" style="height:100px; width:200px">
+            		<input type="submit" name="" value="View Employee's Complain">
         			</form>
 
 					<form method="POST" action="view_overtime.php">
-            		<input type="submit" name="" value="Worker's Overtime Request" style="height:100px; width:200px">
+            		<input type="submit" name="" value="Worker's Overtime Request">
         			</form>
 
 					<form method="POST" action="view_E_vacation.php">
-            		<input type="submit" name="" value="View Employee's Application" style="height:100px; width:200px">
+            		<input type="submit" name="" value="View Employee's Application">
         			</form>
 
 					<form method="POST" action="viewProduct.php">
-            		<input type="submit" name="" value="View Company's Product" style="height:100px; width:200px">
+            		<input type="submit" name="" value="View Company's Product">
         			</form>
 				</td>
 

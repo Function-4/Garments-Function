@@ -39,7 +39,7 @@ require('../controllers/header.php');
             		<input type="submit" name="" value="Provide Salary">
         			</form>
 
-					<form method="POST" action="provideBonus.php">
+					<form method="POST" action="provide_bonus.php">
             		<input type="submit" name="" value="Provide Bonus to Worker">
         			</form>
 				</td>

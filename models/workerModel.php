@@ -36,7 +36,7 @@ function w_getConnection(){
 	function view_worker()
 	{
 		$con = w_getConnection();
-		$sql = "SELECT Serial,UserName,FirstName,LastName,Email,ContactNumber FROM worker";
+		$sql = "SELECT Serial,UserName,FirstName,LastName,Email,ContactNumber,Salary FROM worker";
 		//global $c ;
 		//$c = 0 ;
 		global $result ; 
@@ -57,6 +57,16 @@ function w_getConnection(){
 	{
 		$con = w_getConnection();
 		$sql = "DELETE FROM worker WHERE UserName = '{$name}'";
+		if(mysqli_query($con, $sql)){
+			return true;
+		}else{
+			return false;
+		}
+	}
+	function w_bonus($name,$current,$bonus)
+	{
+		$con = w_getConnection();
+		$sql = "UPDATE worker SET Salary = {$current}+{$bonus} WHERE UserName = '{$name}'";
 		if(mysqli_query($con, $sql)){
 			return true;
 		}else{

@@ -1,6 +1,6 @@
 <script type="text/javascript" src="../assets/fv.js"></script>
 <html>
-<link rel="stylesheet" href="../CSS/m_home.css">
+<link rel="stylesheet" href="../CSS/test.css">
 <head>
 <title>Manager </title>
 </head>
@@ -25,7 +25,7 @@
 			</tr>
 			<tr>
 				
-				<td><input type="submit" name="mLogin" value=" Login "></td><br><br><br><br>
+				<td><input type="submit" name="mLogin" value="Login" style="height: 50px;width: 170px;"></td><br><br><br><br>
 			</tr>
 		</table>
 	</form>

@@ -1,7 +1,7 @@
 <?php 
 	function s_getConnection(){
 		$host = "localhost";
-		$dbname= "germents";
+		$dbname= "garments";
 		$dbuser = "root";
 		$dbpass = "";
 
@@ -35,7 +35,7 @@
 	function view_seller()
 	{
 		$con = s_getConnection();
-		$sql = "SELECT Serial,UserName,FirstName,LastName,Email,ContactNumber FROM seller";
+		$sql = "SELECT Serial,UserName,FirstName,LastName,Email,ContactNumber,Salary FROM seller";
 		//global $c ;
 		//$c = 0 ;
 		global $result ; 
@@ -54,9 +54,21 @@
 
 	function s_delete($name)
 	{
-		$con = w_getConnection();
+		$con = s_getConnection();
 		$sql = "DELETE FROM seller WHERE UserName = '{$name}'";
 		if(mysqli_query($con, $sql)){
+			return true;
+		}else{
+			return false;
+		}
+	}
+	function s_salary($ammount,$name)
+	{
+		$con = s_getConnection();
+		$sql = "UPDATE seller SET Salary = '{$ammount}' WHERE UserName = '{$name}'";
+		
+		$result = mysqli_query($con, $sql) ;
+		if($result){
 			return true;
 		}else{
 			return false;

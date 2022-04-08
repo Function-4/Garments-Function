@@ -10,7 +10,7 @@
     </p3>
     <br>
     <br>
-    <form method="POST" action="../controllers/regCheck.php">
+    <form method="POST" action="../controllers/regCheck.php" onsubmit="return reg()">
         <center>
             <table style="width:50%">
             <tr>
@@ -66,5 +66,43 @@
     </form>
     
    <center><a1> <a href = "b_login.php"> Already have a Account ?? </a></a1></center>
+
+   <script>
+				function reg(){
+			let username = document.getElementById('name').value;
+			let pass = document.getElementById('pass').value;
+			let first = document.getElementById('first').value;
+			let last = document.getElementById('last').value;
+			let email = document.getElementById('email').value;
+			let number = document.getElementById('number').value;
+
+			if(username == ""){
+				alert("Please Provide your Username");
+				return false;
+			}
+			if(pass == ""){
+				alert("Please Provide your Password");
+				return false;
+			}
+			if(first == ""){
+				alert("Please Provide your First Name");
+				return false;
+			}
+			if(last == ""){
+				alert("Please Provide your Last Name");
+				return false;
+			}
+			if(email == ""){
+				alert("Please Provide your Email");
+				return false;
+			}
+			if(number == ""){
+				alert("Please Provide your Number");
+				return false;
+			}
+			return true;
+		}
+			</script>
+
 </body>
 </html>

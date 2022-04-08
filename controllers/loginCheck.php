@@ -2,6 +2,7 @@
 session_start();
 require('../models/managerModel.php');
 require('../models/Buyermodel.php');
+require('../models/sellermodel.php');
 // MANAGER LOGIN
 if(isset($_REQUEST['mLogin']))
 {
@@ -62,5 +63,35 @@ if(isset($_REQUEST['bLogin']))
     }
 }
 
+
+
+
+//seller login 
+
+if(isset($_REQUEST['sLogin']))
+{
+		
+    $username = $_REQUEST['username'];
+    $password = $_REQUEST['password'];
+
+    if($username != null && $password != null){
+
+        $status = sLogin($username, $password);
+
+     if($status)
+    {
+        setcookie('s_status', 'true', time()+8600, '/');
+        header('location: ../views/s_home.php');
+    }
+    else {
+        echo "not ok";
+
+    }       
+        //echo 'invalid username/password   <br><br><a href="../m_views/m_login.php">Back</a>';
+        }
+        else{
+        echo 'null submission  <br><br>';
+    }
+}
 
 ?>

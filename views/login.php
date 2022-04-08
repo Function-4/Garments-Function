@@ -31,8 +31,7 @@
     </select>
     <br>
     <br>
-    <br>
-    
+    <br>    
     <input type="submit" name="loginSubmit" value="Login">
 </form>
 

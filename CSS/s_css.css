@@ -1,0 +1,27 @@
+body
+{
+    background-color: #22577E;
+}
+div {
+    background-color:#5584AC;
+    width: 300px;
+    border:0solid ;
+    padding: 50px;
+    margin-top: 15%;
+    height: 200px;
+    box-shadow: 30%;
+
+  }
+
+  table{
+      margin-top:5%;
+  }
+
+  p2{
+     font-size: 30;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+p3{
+    font-size:35;
+}

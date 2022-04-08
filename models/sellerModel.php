@@ -1,7 +1,7 @@
 <?php 
 	function s_getConnection(){
 		$host = "localhost";
-		$dbname= "garments";
+		$dbname= "germents";
 		$dbuser = "root";
 		$dbpass = "";
 
@@ -9,10 +9,10 @@
 		return $con;
 	}
 
-	function slogin($username, $password){
+	function sLogin($username, $password){
 		$con = s_getConnection();
 
-		$sql = "select * from Manager where UserName='{$username}' and Password='{$password}'";
+		$sql = "select * from seller where UserName='{$username}' and Password='{$password}'";
 		$result = mysqli_query($con, $sql);
 		if(mysqli_num_rows($result)){
 			return true;

@@ -14,19 +14,22 @@
 	</header>
 
 <body>
+	<center>
 	<form method="POST" action="../controllers/loginCheck.php" onsubmit="return log()">
 		<table>
 			<tr><br><br><br><br><br><br><br><br><br><br><br>
-				<td> Username : <input id="name" type="text" name="username"></td><td id="usernameError"></td>
+				<td> Username : <input id="name" type="text" name="username"></td><td id="usernameError">
 			</tr>
 			<tr>
-				<td>Password : <input id="pass" type="password" name="password" ></td><td id="passError"></td>  
+				<td>Password : <input id="pass" type="password" name="password" ></td><td id="passError"><br><br><br>
 			</tr>
 			<tr>
-				<td><input type="submit" name="mLogin" value=" Login "></td>
+				
+				<td><input type="submit" name="mLogin" value=" Login "></td><br><br><br><br>
 			</tr>
 		</table>
 	</form>
+	</center>
 </body><br><br><br><br><br><br><br><br><br>
 			<table border="1"  width="100%">
 			<tr>

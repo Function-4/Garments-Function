@@ -128,12 +128,13 @@ code {
 .links > a:nth-of-type(9):hover ~ .line { --index: 9; }
 .links > a:nth-of-type(10):hover ~ .line { --index: 10; }
 .links > a:last-of-type:hover ~ .line { --index: var(--items); }
-
 input[type=button], input[type=submit], input[type=reset] {
-	background-color: #04AA6D;
+	background-color: #09bf79;
 	border: none;
-	color: white;
+	color: rgb(78, 16, 16);
+    height: 100px; 
+    width: 270px;
 	padding: 16px 32px;
-	text-decoration: none;
+    font: 18px Arial, sans-serif;
 	margin: 4px 2px;
 	cursor: pointer;}

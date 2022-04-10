@@ -2,7 +2,7 @@
 
 function w_getConnection(){
 	$host = "localhost";
-	$dbname= "garments";
+	$dbname= "germents";
 	$dbuser = "root";
 	$dbpass = "";
 
@@ -10,10 +10,10 @@ function w_getConnection(){
 	return $con;
 }
 
-	function wlogin($username, $password){
+	function wLogin($username, $password){
 		$con = w_getConnection();
 
-		$sql = "select * from Manager where UserName='{$username}' and Password='{$password}'";
+		$sql = "select * from worker where UserName='{$username}' and Password='{$password}'";
 		$result = mysqli_query($con, $sql);
 		if(mysqli_num_rows($result)){
 			return true;

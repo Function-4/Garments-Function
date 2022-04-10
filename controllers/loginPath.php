@@ -10,7 +10,7 @@
         }
         else if($selected=='w')
         {
-            header('location: ../../Worker\w_views\w_login.php');
+            header('location: ../views/w_login.php');
         }
         else if($selected=='s')
         {

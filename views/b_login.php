@@ -19,7 +19,7 @@
                 <p style="font-size: 30px;">User Name</p> <input type="text" name="username" value="" />
            
           
-                <p style="font-size: 30px;">Password</p> <input type="password" name="password" value="" />
+                <p style="font-size: 30px;">Password</p> <input type="password" name="password" value=""/>
            
 
             <br>

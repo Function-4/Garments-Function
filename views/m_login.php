@@ -30,15 +30,7 @@
 		</table>
 	</form>
 	</center>
-</body><br><br><br><br><br><br><br><br><br>
-			<table border="1"  width="100%">
-			<tr>
-				<td>
-					<h4>
-						<center> &copy; 2022 Function,inc.</center>
-					</h4>
-				</td>
-			</tr>
-			</table>
+</body>
+<element id= "footer"><a><ul> &copy; 2022 Function,inc.</ul></a></element>
 <html>
 </html>

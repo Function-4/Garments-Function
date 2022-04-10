@@ -1,5 +1,5 @@
 <html>
-
+<script type="text/javascript" src="../assets/fv.js"></script>
 <body>
     <title> Buyer Registration </title>
     <link rel="stylesheet" href="../CSS/b_login.css">
@@ -19,13 +19,13 @@
                         <p style="font-size: 30px;">First Name</p> <input type="text" name="first" value="" />
                     </center>
                     <br><br>
-                </td>
+                </td><td id="firstError"></td>
                 <td>
                     <center>
                         <p style="font-size: 30px;">Last Name</p> <input type="text" name="last" value="" />
                     </center>
                     <br><br>
-                </td>
+                </td><td id="lastError"></td>
             </tr>
             <hr class="new4">
             <tr>
@@ -34,13 +34,13 @@
                     <p style="font-size: 30px;">User Name </p> <input type="text" name="username" value="" />
                 </center>
                 <br><br>
-            </td>
+            </td><td id="usernameError"></td>
                 <td>
                         <center>
                             <p style="font-size: 30px;">Password</p> <input type="password" name="password" value="" />
                         </center>
                         <br><br>
-                </td>
+                </td></td><td id="passError"></td>
             </tr>
             <tr>
                     <td>
@@ -48,13 +48,13 @@
                             <p style="font-size: 30px;"> Email</p> <input type="email" name="email" value="" />
                         </center>
                         <br><br>
-                    </td>
+                    </td><td id="emailError"></td>
                     <td>
                         <center>
                             <p style="font-size: 30px;">Phone no.</p> <input type="number" name="contact" value="" />
                         </center>
                         <br><br>
-                    </td>
+                    </td><td id="numberError"></td>
             </tr>
             </table>
         </center>

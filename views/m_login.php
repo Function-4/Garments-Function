@@ -2,7 +2,7 @@
 <html>
 <link rel="stylesheet" href="../CSS/test.css">
 <head>
-<title>Manager </title>
+<title> Manager </title>
 </head>
 
 	<header id="header">

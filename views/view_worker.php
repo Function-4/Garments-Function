@@ -1,8 +1,9 @@
 <?php
+sleep(4);
 require('../controllers/header.php');
 require('../models/workerModel.php');
 if(isset($_REQUEST['vWorker']))
-{//d
+{
     ?>
 <html>
 <head>

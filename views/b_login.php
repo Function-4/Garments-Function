@@ -3,6 +3,8 @@
     <title> Buyer Login </title>
 
     <link rel="stylesheet" href="../CSS/b_login.css">
+    <link rel="stylesheet" href="../CSS/buyer2.css">
+    <script type="text/javascript" src="../assets/fv.js"></script>
     <br><br><br><br>
     <br><br><br><br>
     
@@ -10,25 +12,24 @@
     <center>
         <p1><b>Log-in As Buyer</b></p1>
 </center>
-    <center>
-      
+<center>
+	
 
-            <form method="POST" action="../controllers/loginCheck.php">
-
-            
-                <p style="font-size: 30px;">User Name</p> <input type="text" name="username" value="" />
-           
-          
-                <p style="font-size: 30px;">Password</p> <input type="password" name="password" value=""/>
-           
-
-            <br>
-            <br>
-
-            <input type="submit" name="bLogin" value="Submit" style="height:50px; width:100px"> 
-            </form>       
-</center>
-
+    <div>
+    <form method="POST" action="../controllers/loginCheck.php" onsubmit="return log()">
+		<table>
+			<tr>
+            <td> Username : <input id="name" type="text" name="username"></td><td id="usernameError">
+			</tr>
+			<tr>
+				<td>Password : <input id="pass" type="password" name="password" ></td><td id="passError"><br><br><br>
+			</tr>
+		</table>
+        <center><td><input type="submit" name="bLogin" value="Login" style="height: 50px;width: 170px;"></td></center>
+    </div>
+    
+	</form>
+	</center>
 <center>
     <br>
 <p2>

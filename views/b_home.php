@@ -2,6 +2,8 @@
     <body>
     <title> Buyer Homepage </title>
     <link rel="stylesheet" href="../CSS/b_login.css">
+    <link rel="stylesheet" href="../CSS/buyer2.css">
+
 
 <ul>
   <li><a href="b_home.php">Home</a></li>
@@ -16,98 +18,40 @@
                 </li>
 </ul>
 
+<br><br><br><br><br><br><br><br>
+<center>
+                <div>
 
+                <table>
+                    <br>
+                    <tr>
+                        <td width="400px">
+                        <button class="button button1">Product</button>
+                        </td>
+                        <td>
+                        <button class="button button1">Oder Product</button>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td height="90px"></td>
+                        </tr>
+                        
+                    <tr>
+                        <td>
+                        <button class="button button1">Complain</button>
+                        </td>
 
-<br>
-<br>
-<table width="100%">
-<tr>
+                        <td>
+                        <button class="button button1">Feedback</button>
+                        </td>
+                    </tr>
+                </table>  
 
-
-<td height="100%">
-<a href="b_product.php">
-        <div class="card" >
-            <img src="../assets/1.jpg" alt="peojuct" style="width:100%">
-                <div class="container">
-                   <center> <h4><b>T-shirt</b></h4></center>
-                    <center><p>Order Now</p> </center>
-                </div>
-        </div>
-</a> 
-    </td>
-
-    <td> 
-        <a href="b_product.php">
-        <div class="card" >
-            <img src="../assets/1.jpg" alt="peojuct" style="width:100%">
-                <div class="container">
-                   <center> <h4><b>Shirt</b></h4></center>
-                   <center><p>Order Now</p> </center>
-                </div>
-        </div>
-        </a>        
-    </td>
-
-
-    <td height="100%">
-    <a href="b_product.php">
-        <div class="card" >
-            <img src="../assets/1.jpg" alt="peojuct" style="width:100%">
-                <div class="container">
-                   <center> <h4><b>Pant</b></h4></center>
-                   <center><p>Order Now</p> </center>
-                </div>
-        </div>
-</a>
-    </td>
-
-</tr>
-
-<tr>
-
-<td height="100%">
-<a href="b_product.php">
-        <div class="card" >
-            <img src="../assets/1.jpg" alt="peojuct" style="width:100%">
-                <div class="container">
-                   <center> <h4><b>Jackets</b></h4></center>
-                   <center><p>Order Now</p> </center>
-                </div>
-        </div>
-</a>
-    </td>
-
-    <td>
-    <a href="b_product.php">
-        <div class="card" >
-            <img src="../assets/1.jpg" alt="peojuct" style="width:100%">
-                <div class="container">
-                   <center> <h4><b>trouser</b></h4></center>
-                   <center><p>Order Now</p> </center>
-                </div>
-        </div>
-</a>
-    </td>
-
-
-    <td height="100%">
-    <a href="b_product.php">
-        <div class="card" >
-            <img src="../assets/1.jpg" alt="peojuct" style="width:100%">
-                <div class="container">
-                   <center><h4><b>Shorts</b></h4></center>
-                   <center><p>Order Now</p> </center>
-                </div>
-        </div>
-    </td>
-</a>
-
-</tr>
-
-</table>
-<br>
-
-
+                <br><br>
+                         <center><button class="button button1">Request for product</button></center>
+</div>
+                </center>
+               
 
     </body>
 </html>

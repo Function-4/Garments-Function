@@ -8,3 +8,14 @@ div {
   body{
       background-color: #5cdb95 ;
   }
+
+  .button {
+    font-size: 15px;
+    background-color: #379683; 
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    height: 100px;
+    width: 150px;
+  }

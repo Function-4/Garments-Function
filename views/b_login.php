@@ -3,6 +3,7 @@
     <title> Buyer Login </title>
 
     <link rel="stylesheet" href="../CSS/b_login.css">
+    <link rel="stylesheet" href="../CSS/buyer2.css">
     <script type="text/javascript" src="../assets/fv.js"></script>
     <br><br><br><br>
     <br><br><br><br>
@@ -12,7 +13,10 @@
         <p1><b>Log-in As Buyer</b></p1>
 </center>
 <center>
-	<form method="POST" action="../controllers/loginCheck.php" onsubmit="return log()">
+	
+
+    <div>
+    <form method="POST" action="../controllers/loginCheck.php" onsubmit="return log()">
 		<table>
 			<tr>
             <td> Username : <input id="name" type="text" name="username"></td><td id="usernameError">
@@ -20,11 +24,10 @@
 			<tr>
 				<td>Password : <input id="pass" type="password" name="password" ></td><td id="passError"><br><br><br>
 			</tr>
-			<tr>
-				
-				<td><input type="submit" name="bLogin" value="Login" style="height: 50px;width: 170px;"></td><br><br><br><br>
-			</tr>
 		</table>
+        <center><td><input type="submit" name="bLogin" value="Login" style="height: 50px;width: 170px;"></td></center>
+    </div>
+    
 	</form>
 	</center>
 <center>

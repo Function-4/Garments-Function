@@ -3,6 +3,7 @@
     <title> Product </title>
     <link rel="stylesheet" href="../CSS/b_login.css">
     <link rel="stylesheet" href="../CSS/s_css.css">
+    <script type="text/javascript" src="../assets/fv.js"></script>
 <ul>
   <li><a href="s_home.php">Home</a></li>
   <li><a href="s_application.php">Application</a></li>
@@ -15,16 +16,16 @@
                 </li>
 </ul>
 
-<div2>
+
 <center>
 <table>
                     <br>
                     <tr id="r">
                         <td width="400px">
-                        <button class="button button1" onclick="b_product()">Application</button>
+                        <button class="button button1" onclick="s_application()">Application</button>
                         </td>
                         <td>
-                        <button class="button button1" onclick="b_order()">Complain</button>
+                        <button class="button button1" onclick="s_complain()">Complain</button>
                         </td>
                     </tr>
                         <tr>
@@ -33,18 +34,17 @@
                         
                     <tr>
                         <td>
-                        <button class="button button1"onclick="b_complain()">Feedback</button>
+                        <button class="button button1"onclick="s_Feedback()">Feedback</button>
                         </td>
 
                         <td>
-                        <button class="button button1"onclick="b_feedback()" >View product Request</button>
+                        <button class="button button1"onclick="s_viewreq()" >View product Request</button>
                         </td>
                     </tr>
                 </table>  
 </center>
 
-</div2>
 
-
+<p id="view"></p>
     </body>
 </html>

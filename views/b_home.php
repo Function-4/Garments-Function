@@ -3,6 +3,7 @@
     <title> Buyer Homepage </title>
     <link rel="stylesheet" href="../CSS/b_login.css">
     <link rel="stylesheet" href="../CSS/buyer2.css">
+    <script type="text/javascript" src="../assets/fv.js"></script>
 
 
 <ul>
@@ -24,12 +25,12 @@
 
                 <table>
                     <br>
-                    <tr>
+                    <tr id="r">
                         <td width="400px">
-                        <button class="button button1">Product</button>
+                        <button class="button button1" onclick="b_product()">Product</button>
                         </td>
                         <td>
-                        <button class="button button1">Oder Product</button>
+                        <button class="button button1" onclick="b_order()">Oder Product</button>
                         </td>
                     </tr>
                         <tr>
@@ -38,20 +39,20 @@
                         
                     <tr>
                         <td>
-                        <button class="button button1">Complain</button>
+                        <button class="button button1"onclick="b_complain()">Complain</button>
                         </td>
 
                         <td>
-                        <button class="button button1">Feedback</button>
+                        <button class="button button1"onclick="b_feedback()" >Feedback</button>
                         </td>
                     </tr>
                 </table>  
 
                 <br><br>
-                         <center><button class="button button1">Request for product</button></center>
+                         <center><button class="button button1" onclick=" b_reqproduct()">Request for product</button></center>
 </div>
                 </center>
                
-
+                <p id="view"></p>
     </body>
 </html>

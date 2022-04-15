@@ -1,7 +1,7 @@
 <?php 
 	function s_getConnection(){
 		$host = "localhost";
-		$dbname= "garments";
+		$dbname= "germents";
 		$dbuser = "root";
 		$dbpass = "";
 

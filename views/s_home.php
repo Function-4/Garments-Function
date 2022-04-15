@@ -15,8 +15,35 @@
                 </li>
 </ul>
 
+<div2>
+<center>
+<table>
+                    <br>
+                    <tr id="r">
+                        <td width="400px">
+                        <button class="button button1" onclick="b_product()">Application</button>
+                        </td>
+                        <td>
+                        <button class="button button1" onclick="b_order()">Complain</button>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td height="90px"></td>
+                        </tr>
+                        
+                    <tr>
+                        <td>
+                        <button class="button button1"onclick="b_complain()">Feedback</button>
+                        </td>
 
+                        <td>
+                        <button class="button button1"onclick="b_feedback()" >View product Request</button>
+                        </td>
+                    </tr>
+                </table>  
+</center>
 
+</div2>
 
 
     </body>

@@ -31,3 +31,14 @@ p5{
 }
 
 
+div2 {
+    background-color:#5584AC;
+    width: 300px;
+    border:0solid ;
+    padding: 50px;
+    margin-top: 15%;
+    height: 200px;
+    box-shadow: 30%;
+
+  }
+

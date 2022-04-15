@@ -75,3 +75,89 @@ function view_s(){
 		}
 	}
 }
+
+
+
+
+function b_product(){
+	let role = document.getElementById('r').value;
+	let http = new XMLHttpRequest();
+	http.open('GET', '../views/b_product.php', true);
+	http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	http.send('uname='+role);
+	http.onreadystatechange = function(){
+		
+		if(this.readyState == 4 && this.status == 200){
+			document.getElementById('view').innerHTML= this.responseText;
+		}
+	}
+}
+
+
+
+
+
+function b_order(){
+	let role = document.getElementById('r').value;
+	let http = new XMLHttpRequest();
+	http.open('GET', '../views/b_order.php', true);
+	http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	http.send('uname='+role);
+	http.onreadystatechange = function(){
+		
+		if(this.readyState == 4 && this.status == 200){
+			document.getElementById('view').innerHTML= this.responseText;
+		}
+	}
+}
+
+
+function b_complain(){
+	let role = document.getElementById('r').value;
+	let http = new XMLHttpRequest();
+	http.open('GET', '../views/b_complain.php', true);
+	http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	http.send('uname='+role);
+	http.onreadystatechange = function(){
+		
+		if(this.readyState == 4 && this.status == 200){
+			document.getElementById('view').innerHTML= this.responseText;
+		}
+	}
+}
+
+
+function b_feedback(){
+	let role = document.getElementById('r').value;
+	let http = new XMLHttpRequest();
+	http.open('GET', '../views/b_Feedback.php', true);
+	http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	http.send('uname='+role);
+	http.onreadystatechange = function(){
+		
+		if(this.readyState == 4 && this.status == 200){
+			document.getElementById('view').innerHTML= this.responseText;
+		}
+	}
+}
+
+
+
+
+function b_reqproduct(){
+	let role = document.getElementById('r').value;
+	let http = new XMLHttpRequest();
+	http.open('GET', '../views/b_reqforproduct.php', true);
+	http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	http.send('uname='+role);
+	http.onreadystatechange = function(){
+		
+		if(this.readyState == 4 && this.status == 200){
+			document.getElementById('view').innerHTML= this.responseText;
+		}
+	}
+}
+
+
+
+

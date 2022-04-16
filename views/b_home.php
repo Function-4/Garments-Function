@@ -49,7 +49,7 @@
                 </table>  
 
                 <br><br>
-                         <center><button class="button button1" onclick=" b_reqproduct()">Request for product</button></center>
+                         <center><button class="button button1" onclick="b_reqproduct()">Request for product</button></center>
 </div>
                 </center>
                

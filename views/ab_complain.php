@@ -2,6 +2,7 @@
     <body>
     <title> Product </title>
     <link rel="stylesheet" href="../CSS/b_login.css">
+    <link rel="stylesheet" href="../CSS/buyer2.css">
 
 
 

@@ -3,6 +3,7 @@
 <body>
     <title> Buyer Registration </title>
     <link rel="stylesheet" href="../CSS/b_login.css">
+    <link rel="stylesheet" href="../CSS/buyer2.css">
     <p3> 
     <br>
     

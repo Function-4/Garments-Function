@@ -1,63 +1,59 @@
 <html>
+    <title>HomePage</title>
+    <link rel="stylesheet" href="CSS/home.css">
+    <body>
 
-<body>
-    <title> Home Page </title>
-    <table border="2" width=100%>
-        <tr>
-            <td>
-                <center>
-                    <h1 style=font-size:50px>Germents Function</h1>
-                </center>
-            </td>
-        </tr>
-    </table>
+    <div1>
+       <center><p1> Garments Function</p1></center> 
+       <br><br>
+       <center><p2>Welcome to HomePage</p2></center>
+    </div1>
+<br><br>
 
-    <h1>
-        <center>
-            <p style="font-size: 40px;">Welcome</p>
-        </center>
-    </h1>
+<center>
+     <div>
 
 
-    <center>
-        <form method="POST" action="views/login.php">
-            <input type="submit" name="login" value="Login" style="height:150px; width:300px">
+     <form method="POST" action="views/login.php">
+     <button class="button button1" type="submit" name="login" value="Login" >Log-In</button>
         </form>
-        <br>
+     
 
         <form method="POST" action="views/b_req.php">
-            <input type="submit" name="bReg" value="Sign up as Buyer" style="height:150px; width:300px">
+        <button class="button button1"  type="submit" name="bReg">Sing-Up As buyer</button>
         </form>
+    </div>
+</center>
+<br>
 
-        <?php
-        //date_default_timezone_set('Asia/Dhaka');
-        //$date = date('d/m/y  h:i a');
-        //echo $date;
-        ?>
-    </center>
-    
-    <table border="2" width=100%>
-        <tr rowspan="4">
-            <td>
-                <p style="font-size: 40px;">Get in Touch</p< /td>
-            <td rowspan="2">
-                <center>
-                    <p style="font-size: 40px;">
-                    <pre><p style="font-size: 20px;"><a href="#"><b>Product</b></a></p></pre>
-                    <pre><p style="font-size: 20px;"><a href="#"><b>Service</b></a></p></pre>
-                    <pre><p style="font-size: 20px;"><a href="#"><b>Contact Us</b></a></p></pre>
-                    <pre><p style="font-size: 20px;"><a href="#"><b>About Us</b></a></p></pre>
-                    </p>
-                </center>
-            </td>
+<center>
+
+    <footer>
+    <j>
+<br>
+<p3>Get In Touch </p3> 
+    <table>
+        <tr>
+            <td><p4><a href="#">GitHub</a></p4></td>
+            <td><p5><a href="#">Product</a></p5></td>
         </tr>
         <tr>
-            <td>
-                <p style="font-size: 40px;"><a href="#">Facebook</a> <a href="#">Twitter</a> <a href="#">Instagram</a></p>
-            </td>
+            <td><p4><a href="#">Facebook</a></p4></td>
+            <td><p5><a href="#">Service</a></p5></td>
         </tr>
+        <tr>
+            <td><p4><a href="#">Twitter</a></p4></td>
+            <td><p5><a href="#">About Us</a></p5></td>
+        </tr>
+
     </table>
+</j>
+</footer>
+  
 
-</body>
+</center>
 
+
+
+    </body>
 </html>

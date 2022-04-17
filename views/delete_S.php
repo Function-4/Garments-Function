@@ -6,18 +6,9 @@ require('../models/sellerModel.php');
 <head>
 	<title>Remove Seller</title>
 </head>
-	<table border = "2" width=100%>  
-   		 <tr>
-                <td><h1 style=font-size:50px><center>Garments Function</center></h1></td>
-                <td><center><p style=font-size:30px><a href="../index.php">Home</a></center></td>
-		<td><center><p style=font-size:30px><a href="m_Home.php">Profile</a></center></td>
-		<td><center><form method="POST" action="../controllers/logout.php">
-            		<input type="submit" name="m_logout" value="Logout" style="height:50px; width:70px">
-        			</form></center></td>
-        </tr>
-    </table>
 <body><br>
         <table border="1">
+		<tr><td colspan="7"><center><h1> DELETE   SELLER </h1></center></td></tr>
 			<tr>
                 
 				<td>Serial</td>
@@ -43,28 +34,16 @@ require('../models/sellerModel.php');
 				<td><?=$row['Email']?></td>
 				<td><?=$row['ContactNumber']?></td>
 				<td><form method="POST" action="../controllers/remove_Employee.php?id=<?=$row['UserName']?>">
-                <input type="submit" name="rSeller" value="Remove this Seller" style="height:50px; width:150px">
+                <input type="submit" name="rSeller" value="Remove this Seller" style="height:50px; width:220px">
                 </form></td>
 
 			</tr>
 
 			<?php
 				}
-			?>
-			
-			
-			
+			?>	
 		</table>
 		</fieldset>
 	</form>
-</body><br>
-			<table border="1"  width="100%">
-			<tr>
-				<td>
-					<h4>
-						<center> &copy; 2022 Function,inc.</center>
-					</h4>
-				</td>
-			</tr>
-			</table>
+</body>
 </html>

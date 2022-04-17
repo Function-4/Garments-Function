@@ -2,6 +2,7 @@
 require('../controllers/header.php');
 ?>
 <html>
+<script type="text/javascript" src="../assets/fv.js"></script>
 <link rel="stylesheet" href="../CSS/test.css">
     <head>
 	    <title>Delete Employee</title>
@@ -18,23 +19,29 @@ require('../controllers/header.php');
 	</header><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <body>
     <center>
-    <table>
-            <tr>
-                <td>
-                    <form method="POST" action="delete_W.php">
-            		<input type="submit" name="dWorker" value="Delete worker">
-        			</form>
+        <table>
+            <tr id="r">
+                <br><br>
+                   <!-- <form method="POST" action="w_reg.php">
+            		<input type="submit" name="rWorker" value="Add Worker">
+        			</form> -->
+                
+                    <td><input type="button" name="" value="Delete Worker" onclick="del_w()"></td>
+                
+                
+                <td><br><br>
+                    <!-- <form method="POST" action="s_reg.php">
+            		<input type="submit" name="rSeller" value="Add Seller">
+        			</form> -->
+
+                    <td><input type="button" name="" value="Delete Seller" onclick="del_s()"></td>
                 </td>
-            </tr>
-            <tr>
-                <td><br>
-                    <form method="POST" action="delete_S.php">
-            		<input type="submit" name="dSeller" value="Delete Seller">
-        			</form>
-                </td>
+            
+                
             </tr>
         </table>
-    </center>
+        <h1 id="view"></h1>
+        </center>
        
     </body>
     <element id= "footer"><a><ul> &copy; 2022 Function,inc.</ul></a></element>

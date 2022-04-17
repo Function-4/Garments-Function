@@ -1,4 +1,4 @@
-<script type="text/javascript" src="../assets/fv.js"></script>
+<script type="text/javascript" src="../assets/manager.js"></script>
 <html>
 <link rel="stylesheet" href="../CSS/test.css">
 <head>

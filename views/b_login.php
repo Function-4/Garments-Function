@@ -4,7 +4,7 @@
 
     <link rel="stylesheet" href="../CSS/b_login.css">
     <link rel="stylesheet" href="../CSS/buyer2.css">
-    <script type="text/javascript" src="../assets/fv.js"></script>
+    <script type="text/javascript" src="../assets/manager.js"></script>
     <br><br><br><br>
     <br><br><br><br>
     

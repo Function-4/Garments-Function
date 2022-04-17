@@ -14,6 +14,7 @@
 				w_salary($ammount,$name);
 				
 			}
+			sleep(3);
 			header('location: ../views/provide_salary.php');
 	}
 
@@ -29,6 +30,7 @@
 				s_salary($ammount,$name);
 				
 			}
+			sleep(3);
 			header('location: ../views/provide_salary.php');
 	}
 ?>

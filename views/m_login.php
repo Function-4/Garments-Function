@@ -18,10 +18,10 @@
 	<form method="POST" action="../controllers/loginCheck.php" onsubmit="return log()">
 		<table>
 			<tr><br><br><br><br><br><br><br><br><br><br><br>
-				<td> Username : <input id="name" type="text" name="username"></td><td id="usernameError">
+				<td> Username : <input id="name" type="text" name="username"></td><td id="usernameError"></td>
 			</tr>
 			<tr>
-				<td>Password : <input id="pass" type="password" name="password" ></td><td id="passError"><br><br><br>
+				<td>Password : <input id="pass" type="password" name="password" ></td><td id="passError"></td><br><br><br>
 			</tr>
 			<tr>
 				

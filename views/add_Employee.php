@@ -2,7 +2,7 @@
 require('../controllers/header.php');
 ?>
 <html>
-<script type="text/javascript" src="../assets/manager.js"></script>
+<script type="text/javascript" src="../assets/fv.js"></script>
 <link rel="stylesheet" href="../CSS/test.css">
     <head>
 	    <title>Add Employee</title>

@@ -2,7 +2,7 @@
 require('../controllers/header.php');
 if(isset($_REQUEST['m'])){
 ?>
-<script type="text/javascript" src="../assets/manager.js"></script>
+<script type="text/javascript" src="../assets/fv.js"></script>
 <html>
 <link rel="stylesheet" href="../CSS/m_home.css">
 <head>

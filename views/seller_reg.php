@@ -1,7 +1,7 @@
 <?php
 require('../controllers/header.php');
 ?>
-<script type="text/javascript" src="../assets/manager.js"></script>
+<script type="text/javascript" src="../assets/fv.js"></script>
 <html>
 <head>
 	<title>Add Seller</title>

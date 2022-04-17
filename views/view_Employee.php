@@ -2,7 +2,7 @@
 require('../controllers/header.php');
 ?>
 <html>
-<script type="text/javascript" src="../assets/manager.js"></script>
+<script type="text/javascript" src="../assets/fv.js"></script>
 <link rel="stylesheet" href="../CSS/test.css">
     <head>
 	    <title>View Employee</title>
@@ -18,7 +18,7 @@ require('../controllers/header.php');
 	<a href="../controllers/logout.php?id=m">Logout</a>
 	<span class="line"></span>
 	</nav>
-	</header><br><br><br><br><br><br><br><br>
+	</header><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <body>
     <center>
         <table>

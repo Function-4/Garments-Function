@@ -3,22 +3,23 @@ require('../controllers/header.php');
 require('../models/workerModel.php');
 ?>
 <html>
+<script type="text/javascript" src="../assets/fv.js"></script>
+<link rel="stylesheet" href="../CSS/test.css">
 <head>
 	<title>Provide Bonus to Worker</title>
 </head>
-	<table border = "2" width=100%>  
-    	<tr>
-                <td><h1 style=font-size:50px><center>Garments Function</center></h1></td>
-                <td><center><p style=font-size:30px><a href="../index.php">Home</a></center></td>
-		<td><center><p style=font-size:30px><a href="m_Home.php">Profile</a></center></td>
-		<td><center><form method="POST" action="../controllers/logout.php">
-            		<input type="submit" name="m_logout" value="Logout" style="height:50px; width:70px">
-        			</form></center></td>
-        </tr>
-    </table>
+<header id="header">
+	<nav class="links" style="--items: 3;">
+	<a href="../index.php"><h1 style=font-size:40px>Garments Function</h1></a>
+	<a href="m_Home.php">Profile</a>
+	<a href="../controllers/logout.php?id=m">Logout</a>
+	<span class="line"></span>
+	</nav>
+	</header><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <body><br>
         <center>
 		<table border="1">
+		<tr><td colspan="8" id="bError"></td></tr>
 			<tr>
                 
 				<td>Serial</td>
@@ -44,11 +45,11 @@ require('../models/workerModel.php');
 				<td><?=$row['LastName']?></td>
 				<td><?=$row['Email']?></td>
 				<td><?=$row['ContactNumber']?></td>
-				<form method="POST" action="../controllers/bonus.php?id=<?=$row['UserName']?> & current=<?=$row['Salary']?>">
-				<td><input type="number" name="bAmmount"style="height:50px; width:150px">
+				<form method="POST" action="../controllers/bonus.php?id=<?=$row['UserName']?> & current=<?=$row['Salary']?>" onsubmit="return bonus()">
+				<td><input id="b" type="number" name="bAmmount"style="height:50px; width:150px">
                 </td>
 				<td>
-                <input type="submit" name="bWorker" value="Provide Bonus for this Worker" style="height:50px; width:200px">
+                <input type="submit" name="bWorker" value="Provide Bonus for this Worker" style="height:50px; width:290px">
                 </form></td>
 			</tr>
 			<?php
@@ -59,13 +60,5 @@ require('../models/workerModel.php');
 		</fieldset>
 	</form>
 </body><br>
-			<table border="1"  width="100%">
-			<tr>
-				<td>
-					<h4>
-						<center> &copy; 2022 Function,inc.</center>
-					</h4>
-				</td>
-			</tr>
-			</table>
+<element id= "footer"><a><ul> &copy; 2022 Function,inc.</ul></a></element>
 </html>

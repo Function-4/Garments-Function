@@ -2,16 +2,16 @@
 require('../controllers/header.php');
 if(isset($_REQUEST['m'])){
 ?>
-<script type="text/javascript" src="../assets/fv.js"></script>
 <html>
-<link rel="stylesheet" href="../CSS/m_home.css">
+<link rel="stylesheet" href="../CSS/test.css">
+<script type="text/javascript" src="../assets/fv.js"></script>
+
 <head>
 	<title>Add Worker</title>
 </head>
 	<header id="header">
-	<nav class="links" style="--items: 4;">
-	<h1 style=font-size:50px><center>Garments Function</center></h1>
-	<a href="../index.php">Home</a>
+	<nav class="links" style="--items: 3;">
+	<a href="../index.php"><h1 style=font-size:40px>Garments Function</h1></a>
 	<a href="m_Home.php">Profile</a>
 	<a href="../controllers/logout.php?id=m">Logout</a>
 	<span class="line"></span>
@@ -20,48 +20,41 @@ if(isset($_REQUEST['m'])){
 
 <body><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	<form method="POST" action="../controllers/regCheck.php" onsubmit="return reg()">
+		<center>
 		<table>
 			<tr>
-				<td>Username</td>
+				<td height = "50px">Username</td>
 				<td><input id="name" type="text" name="username"></td><td id="usernameError"></td>
 			</tr>
 			<tr>
-				<td>Password</td>
+				<td height = "50px">Password</td>
 				<td><input id="pass" type="password" name="password"></td><td id="passError"></td>
 			</tr>
 			<tr>
-				<td>First Name</td>
+				<td height = "50px">First Name</td>
 				<td><input id="first" type="text" name="first"></td><td id="firstError"></td>
 			</tr>
 			<tr>
-				<td>Last Name</td>
+				<td height = "50px">Last Name</td>
 				<td><input id="last" type="text" name="last"></td><td id="lastError"></td>
 			</tr>
 			<tr>
-				<td>Email</td>
+				<td height = "50px">Email</td>
 				<td><input id="email" type="email" name="email"></td><td id="emailError"></td>
 			</tr>
 			<tr>
-				<td>Contact Number</td>
+				<td height = "50px">Contact Number</td>
 				<td><input id="number" type="number" name="number"></td><td id="numberError"></td>
 			</tr>
 			<tr>
 				<td></td>
-				<td><input type="submit" name="mRegSubmit" value="Register"></td>
+				<td><input type="submit" name="mRegSubmit" value="Register" style="height: 50px; width: 200px;"></td>
 			</tr>
 		</table>
+		</center>
 	</form>
-</body><br><br>
-			<table border="1"  width="100%">
-			<tr>
-				<td>
-					<h4>
-						<center> &copy; 2022 Function,inc.</center>
-					</h4>
-				</td>
-			</tr>
-			</table>
-
+</body>
+<element id= "footer"><a><ul> &copy; 2022 Function,inc.</ul></a></element>
 </html>
 <?php
 }

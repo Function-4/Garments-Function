@@ -302,3 +302,20 @@ function fv_salary_S()
 			document.getElementById('ssalError').innerHTML = "Salary Sent Successfully";
 			return true;	
 }
+
+function bonus()
+{
+		let bonus = document.getElementById('b').value;
+		//if(bonus == ""){
+			//document.getElementById('bError').innerHTML = "<span>&#9888;</span> Please provide Bonus";
+		//return false;
+		//}
+		//if(bonus<=999){
+			//document.getElementById('bError').innerHTML = "<span>&#9888;</span> Please Provide Valid Ammount of Bonus";
+		//return false;
+		//}
+			document.getElementById('bError').innerHTML = "Bonus Sent Successfully";
+			return true;	
+
+			
+}

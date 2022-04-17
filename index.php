@@ -34,16 +34,16 @@
 <p3>Get In Touch </p3> 
     <table>
         <tr>
-            <td><p4><a href="#">GitHub</a></p4></td>
-            <td><p5><a href="#">Product</a></p5></td>
+            <td><p4><a href="https://github.com/Function-4/Garments-Function">GitHub</a></p4></td>
+            <td><p5><a href="views/product.php">Product</a></p5></td>
         </tr>
         <tr>
-            <td><p4><a href="#">Facebook</a></p4></td>
-            <td><p5><a href="#">Service</a></p5></td>
+            <td><p4><a href="https://www.facebook.com/">Facebook</a></p4></td>
+            <td><p5><a href="views/service.php">Service</a></p5></td>
         </tr>
         <tr>
-            <td><p4><a href="#">Twitter</a></p4></td>
-            <td><p5><a href="#">About Us</a></p5></td>
+            <td><p4><a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D">Twitter</a></p4></td>
+            <td><p5><a href="views/aboutus.php">About Us</a></p5></td>
         </tr>
 
     </table>

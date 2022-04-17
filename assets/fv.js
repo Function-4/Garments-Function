@@ -216,3 +216,20 @@ function s_viewreq(){
 		}
 	}
 }
+
+
+
+
+function w_withdraw(){
+	let role = document.getElementById('r').value;
+	let http = new XMLHttpRequest();
+	http.open('GET', '../views/w_withdraw.php', true);
+	http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	http.send('uname='+role);
+	http.onreadystatechange = function(){
+		
+		if(this.readyState == 4 && this.status == 200){
+			document.getElementById('view').innerHTML= this.responseText;
+		}
+	}
+}

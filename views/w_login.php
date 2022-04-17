@@ -17,7 +17,7 @@
 
   <p2>Password</p2>
 
-  <input type="text" name="password" value=""/>
+  <input type="password" name="password" value=""/>
 
   <input type="submit" name="wLogin" value="Submit">
 </form>

@@ -4,6 +4,7 @@
     </title>
     <link rel="stylesheet" href="../CSS/w_css.css">
     <link rel="stylesheet" href="../CSS/w2_css.css">
+        <script type="text/javascript" src="../assets/fv.js"></script>
     <body>
      
     <ul>
@@ -23,9 +24,9 @@
 
                 <table>
                     <br>
-                    <tr>
+                    <tr id="r">
                         <td width="400px">
-                        <button class="button button1">View-Salary</button>
+                        <button class="button button1" onclick="w_withdraw()">View-Salary</button>
                         </td>
                         <td>
                         <button class="button button1">Daily-Cost</button>
@@ -48,7 +49,7 @@
                 </p>
                 </center>
                
-             
+             <p10 id="view"></p10>
 
 
     </body>

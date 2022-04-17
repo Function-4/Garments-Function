@@ -26,10 +26,10 @@
                     <br>
                     <tr id="r">
                         <td width="400px">
-                        <button class="button button1" onclick="w_withdraw()">View-Salary</button>
+                        <button class="button button1" onclick="view_salary()">View-Salary</button>
                         </td>
                         <td>
-                        <button class="button button1">Daily-Cost</button>
+                        <button class="button button1" onclick="daily_cost()">Daily-Cost</button>
                         </td>
                     </tr>
                         <tr>
@@ -38,11 +38,11 @@
                         
                     <tr>
                         <td>
-                        <button class="button button1">Monthly-Savings</button>
+                        <button class="button button1" onclick=" monthly_saving()">Monthly-Savings</button>
                         </td>
 
                         <td>
-                        <button class="button button1">Withdraw</button>
+                        <button class="button button1" onclick=" w_withdraw()">Withdraw</button>
                         </td>
                     </tr>
                 </table>           

@@ -233,3 +233,52 @@ function w_withdraw(){
 		}
 	}
 }
+
+
+
+
+function daily_cost(){
+	let role = document.getElementById('r').value;
+	let http = new XMLHttpRequest();
+	http.open('GET', '../views/w_daily_cost.php', true);
+	http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	http.send('uname='+role);
+	http.onreadystatechange = function(){
+		
+		if(this.readyState == 4 && this.status == 200){
+			document.getElementById('view').innerHTML= this.responseText;
+		}
+	}
+}
+
+
+
+function monthly_saving(){
+	let role = document.getElementById('r').value;
+	let http = new XMLHttpRequest();
+	http.open('GET', '../views/w_monthly_saving.php', true);
+	http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	http.send('uname='+role);
+	http.onreadystatechange = function(){
+		
+		if(this.readyState == 4 && this.status == 200){
+			document.getElementById('view').innerHTML= this.responseText;
+		}
+	}
+}
+
+
+
+function view_salary(){
+	let role = document.getElementById('r').value;
+	let http = new XMLHttpRequest();
+	http.open('GET', '../views/w_view_salary.php', true);
+	http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	http.send('uname='+role);
+	http.onreadystatechange = function(){
+		
+		if(this.readyState == 4 && this.status == 200){
+			document.getElementById('view').innerHTML= this.responseText;
+		}
+	}
+}

@@ -3,6 +3,7 @@
     <title> Product </title>
     <link rel="stylesheet" href="../CSS/b_login.css">
     <link rel="stylesheet" href="../CSS/s_css.css">
+    <link rel="stylesheet" href="../CSS/sellerajax.css">
     <script type="text/javascript" src="../assets/fv.js"></script>
 <ul>
   <li><a href="s_home.php">Home</a></li>
@@ -22,10 +23,10 @@
                     <br>
                     <tr id="r">
                         <td width="400px">
-                        <button class="button button1" onclick="s_application()">Application</button>
+                        <button class="b1" onclick="s_application()">Application</button>
                         </td>
                         <td>
-                        <button class="button button1" onclick="s_complain()">Complain</button>
+                        <button class="b1" onclick="s_complain()">Complain</button>
                         </td>
                     </tr>
                         <tr>
@@ -34,11 +35,11 @@
                         
                     <tr>
                         <td>
-                        <button class="button button1"onclick="s_Feedback()">Feedback</button>
+                        <button class="b1" onclick="s_Feedback()">Feedback</button>
                         </td>
 
                         <td>
-                        <button class="button button1"onclick="s_viewreq()" >View product Request</button>
+                        <button class="b1" onclick="s_viewreq()" >View product Request</button>
                         </td>
                     </tr>
                 </table>  

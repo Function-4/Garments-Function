@@ -4,7 +4,7 @@
     </title>
     <link rel="stylesheet" href="../CSS/w_css.css">
     <link rel="stylesheet" href="../CSS/w2_css.css">
-        <script type="text/javascript" src="../assets/fv.js"></script>
+    <script type="text/javascript" src="../assets/fv.js"></script>
     <body>
      
     <ul>

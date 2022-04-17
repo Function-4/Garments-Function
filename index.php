@@ -35,7 +35,7 @@
     <table>
         <tr>
             <td><p4><a href="#">GitHub</a></p4></td>
-            <td><p5><a href="#">Product</a></p5></td>
+            <td><p5><a href="views/product.php">Product</a></p5></td>
         </tr>
         <tr>
             <td><p4><a href="#">Facebook</a></p4></td>

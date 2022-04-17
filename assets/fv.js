@@ -272,3 +272,33 @@ function del_s(){
 		}
 	}
 }
+
+function fv_salary()
+{
+		let w_sal = document.getElementById('wsal').value;
+		if(w_sal == ""){
+			document.getElementById('wsalError').innerHTML = "<span>&#9888;</span> Please provide Salary";
+		return false;
+		}
+		if(w_sal<=9999){
+			document.getElementById('wsalError').innerHTML = "<span>&#9888;</span> Please Provide Valid Ammount of Salary";
+		return false;
+		}
+			document.getElementById('wsalError').innerHTML = "Salary Sent Successfully";
+			return true;
+}
+
+function fv_salary_S()
+{
+		let s_sal = document.getElementById('ssal').value;
+		if(s_sal == ""){
+			document.getElementById('ssalError').innerHTML = "<span>&#9888;</span> Please provide Salary";
+		return false;
+		}
+		if(s_sal<=9999){
+			document.getElementById('ssalError').innerHTML = "<span>&#9888;</span> Please Provide Valid Ammount of Salary";
+		return false;
+		}
+			document.getElementById('ssalError').innerHTML = "Salary Sent Successfully";
+			return true;	
+}

@@ -7,7 +7,6 @@ require('../controllers/header.php');
     <head>
 	    <title>Delete Employee</title>
     </head>
-    </head>
     <header id="header">
 	<nav class="links" style="--items: 4;">
 	<a href="../index.php"><h1 style=font-size:40px>Garments Function</h1></a>

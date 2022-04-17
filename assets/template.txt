@@ -1,0 +1,160 @@
+#include<cstdio>
+#include <GL/gl.h>
+#include <GL/glut.h>
+#include<math.h>
+
+void window()
+{
+glBegin(GL_QUADS);
+    glColor3ub(0, 102, 204);          // window right full window
+    glVertex2f(1.0f, 1.0f);
+    glVertex2f(1.0f, -1.0f);
+    glVertex2f(0.95f, -1.0f);
+    glVertex2f(0.95f, 1.0f);
+
+    glVertex2f(-1.0f, 1.0f);          // window left
+    glVertex2f(-1.0f, -1.0f);
+    glVertex2f(-0.95f, -1.0f);
+    glVertex2f(-0.95f, 1.0f);
+
+    glVertex2f(-1.0f, 1.0f);          // window top
+    glVertex2f(-1.0f, 0.9f);
+    glVertex2f(1.0f, 0.9f);
+    glVertex2f(1.0f, 1.0f);
+
+    glVertex2f(-1.0f, -1.0f);          // window bottom
+    glVertex2f(-1.0f, -0.9f);
+    glVertex2f(1.0f, -0.9f);
+    glVertex2f(1.0f, -1.0f);
+
+
+glColor3ub(176,224,230); // Shade TOP
+glVertex2f(-1.0f, 0.6f);
+glVertex2f(-1.0f, 0.5f);
+glVertex2f(-0.4f, 1.0f);
+glVertex2f(-0.5f, 1.0f);
+
+glVertex2f(-1.0f, 0.0f); // MIDDLE
+glVertex2f(-1.0f, -0.2f);
+glVertex2f(-0.4f, 0.3f);
+glVertex2f(-0.4f, 0.5f);
+
+glVertex2f(-1.0f, -0.8f); //DOWN
+glVertex2f(-1.0f, -0.9f);
+glVertex2f(-0.4f, -0.4f);
+glVertex2f(-0.4f, -0.3f);
+
+glColor3ub(255, 0, 204); // window L small window
+glVertex2f(-1.0f, 1.0f);
+glVertex2f(-1.0f, -1.0f);
+glVertex2f(-0.95f, -1.0f);
+glVertex2f(-0.95f, 1.0f);
+
+glColor3ub(255, 0, 204); // window T
+glVertex2f(-1.0f, 1.0f);
+glVertex2f(-0.95f, 0.9f);
+glVertex2f(-0.4f, 0.9f);
+glVertex2f(-0.4f, 1.0f);
+
+glColor3ub(255, 0, 204); // window D
+glVertex2f(-1.0f, -0.9f);
+glVertex2f(-1.0f, -1.0f);
+glVertex2f(-0.4f, -1.0f);
+glVertex2f(-0.4f, -0.9f);
+
+glColor3ub(255, 0, 204); // window R
+glVertex2f(-0.45f, 1.0f);
+glVertex2f(-0.45f, -1.0f);
+glVertex2f(-0.4f, -1.0f);
+glVertex2f(-0.4f, 1.0f);
+glEnd();
+
+// delete this
+    glBegin(GL_LINES);
+    glColor3f(1.0f, 0.0f, 0.0f);      //  border between sky and building
+	glVertex2f(-1.0f, 0.45f);
+	glVertex2f( 1.0f, 0.45f);
+///
+
+glEnd();
+}
+
+void road()
+{
+    glBegin(GL_QUADS);
+	glColor3ub(0, 0, 0);              // Road
+    glVertex2f(-1.0f, -0.5f);          // x, y
+    glVertex2f(1.0f, -0.5f);
+    glVertex2f(1.0f, -1.0f);
+    glVertex2f(-1.0f, -1.0f);
+    glEnd();
+
+    glLineWidth(7.5);
+    glBegin(GL_LINES);
+    glColor3f(1.0f, 1.0f, 1.0f);      // White Line
+	glVertex2f(-1.0f, -0.55f);
+	glVertex2f( 1.0f, -0.55f);
+
+	glVertex2f(-1.0f, -0.7f);
+	glVertex2f(-0.7f, -0.7f);
+
+	glVertex2f(-0.5f, -0.7f);
+	glVertex2f(-0.1f, -0.7f);
+
+	glVertex2f( 0.1f, -0.7f);
+	glVertex2f( 0.5f, -0.7f);
+
+	glVertex2f( 1.0f, -0.7f);
+	glVertex2f( 0.7f, -0.7f);
+
+	glEnd();
+}
+
+void roadbar()
+{
+    float x = -1.0f;
+    float y = -0.5f;
+        for (float x = -2.0f; x<= 2.0f; x+=0.05f)
+
+         {
+        glBegin(GL_QUADS);
+        glColor3f(1.0f, 1.0f, 0.0f);
+        glVertex2f(x,y);
+        glVertex2f(x+0.05f,y);
+        glVertex2f(x+0.05f,y+0.05f);
+        glVertex2f(x,y+0.05f);
+        glEnd();
+
+          }
+
+        for (float x = -2.0f; x<= 2.0f; x+=0.1f)
+
+         {
+        glBegin(GL_QUADS);
+        glColor3f(1.0f, 0.0f, 0.0f);
+        glVertex2f(x,y);
+        glVertex2f(x+0.05f,y);
+        glVertex2f(x+0.05f,y+0.05f);
+        glVertex2f(x,y+0.05f);
+        glEnd();
+
+          }
+}
+
+void display() {
+glClearColor(0.0f, 1.0f, 1.0f, 1.0f);
+glClear(GL_COLOR_BUFFER_BIT);
+road();
+roadbar();
+window();
+glFlush();
+}
+int main(int argc, char** argv) {
+glutInit(&argc, argv);
+glutInitWindowSize(900, 680);
+glutInitWindowPosition(0,0);
+glutCreateWindow("Translation Animation");
+glutDisplayFunc(display);
+glutMainLoop();
+return 0;
+}

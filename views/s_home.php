@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <html>
     <body>
     <title> Product </title>
@@ -41,6 +44,7 @@
                         <button class="button button1"onclick="s_viewreq()" >View product Request</button>
                         </td>
                     </tr>
+                    
                 </table>  
 </center>
 

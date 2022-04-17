@@ -75,4 +75,25 @@
 		}
 	}
 
+	function userInfo($username) 
+	{
+		$con = s_getConnection();
+		$sql = "select * from seller where UserName = '{$username}'";
+		$result = mysqli_query($con, $sql);
+		$row = mysqli_fetch_assoc($result);
+		return $row;
+	}
+
+	function send_app($name,$file)
+	{
+		$con = s_getConnection();
+		$sql = "INSERT INTO application VALUES ('','{$name}','Seller','{$file}')";
+
+		if(mysqli_query($con, $sql)){
+			return true;
+		}else{
+			return false;
+		}
+	}
+
 ?>

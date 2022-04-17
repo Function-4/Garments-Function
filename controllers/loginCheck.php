@@ -82,6 +82,7 @@ if(isset($_REQUEST['sLogin']))
      if($status)
     {
         setcookie('s_status', 'true', time()+8600, '/');
+        $_SESSION['current_user'] = userInfo($username);
         header('location: ../views/s_home.php');
     }
     else {

@@ -8,10 +8,9 @@ require('../controllers/header.php');
 	    <title>Provide Salary</title>
     </head>
     <header id="header">
-	<nav class="links" style="--items: 4;">
+	<nav class="links" style="--items: 3;">
 	<a href="../index.php"><h1 style=font-size:40px>Garments Function</h1></a>
-	<a href="../index.php">Home</a>
-    <a href="m_Home.php">Profile</a>
+	<a href="m_Home.php">Profile</a>
 	<a href="../controllers/logout.php?id=m">Logout</a>
 	<span class="line"></span>
 	</nav>

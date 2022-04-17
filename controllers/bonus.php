@@ -15,7 +15,7 @@
 			{
 				echo "Error";	
 			}
-
+            sleep(3);
 			header('location: ../views/provide_bonus.php');
     }
     else

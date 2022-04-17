@@ -67,47 +67,6 @@
 
 </tr>
 
-<tr>
-
-<td height="100%">
-<a href="b_order.php">
-        <div class="card" >
-            <img src="../assets/1.jpg" alt="peojuct" style="width:100%">
-                <div class="container">
-                   <center> <h4><b>tshirt 4</b></h4></center>
-                   <center><p>Order Now</p> </center>
-                </div>
-        </div>
-</a>
-    </td>
-
-    <td>
-    <a href="b_order.php">
-        <div class="card" >
-            <img src="../assets/1.jpg" alt="peojuct" style="width:100%">
-                <div class="container">
-                   <center> <h4><b>tshirt 5</b></h4></center>
-                   <center><p>Order Now</p> </center>
-                </div>
-        </div>
-</a>
-    </td>
-
-
-    <td height="100%">
-    <a href="b_order.php">
-        <div class="card" >
-            <img src="../assets/1.jpg" alt="peojuct" style="width:100%">
-                <div class="container">
-                   <center><h4><b>tshirt 6</b></h4></center>
-                   <center><p>Order Now</p> </center>
-                </div>
-        </div>
-    </td>
-</a>
-
-</tr>
-
 </table>
 <br>
 

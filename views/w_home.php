@@ -4,6 +4,7 @@
     </title>
     <link rel="stylesheet" href="../CSS/w_css.css">
     <link rel="stylesheet" href="../CSS/w2_css.css">
+    <script type="text/javascript" src="../assets/fv.js"></script>
     <body>
      
     <ul>
@@ -21,14 +22,14 @@
                 <center>
                 <p>
 
-                <table>
+                <table >
                     <br>
-                    <tr>
+                    <tr id='r'>
                         <td width="400px">
-                        <button class="button button1">View-Salary</button>
+                        <button class="button button1" onclick="w_viewsalary()">View-Salary</button>
                         </td>
                         <td>
-                        <button class="button button1">Daily-Cost</button>
+                        <button class="button button1" onclick=" w_dailycost()" >Daily-Cost</button>
                         </td>
                     </tr>
                         <tr>
@@ -37,18 +38,18 @@
                         
                     <tr>
                         <td>
-                        <button class="button button1">Monthly-Savings</button>
+                        <button class="button button1" onclick=" w_monthlysaving()" >Monthly-Savings</button>
                         </td>
 
                         <td>
-                        <button class="button button1">Withdraw</button>
+                        <button class="button button1" onclick="  w_withdraw()">Withdraw</button>
                         </td>
                     </tr>
                 </table>           
                 </p>
                 </center>
                
-             
+             <p3 id ="view"></p3>
 
 
     </body>

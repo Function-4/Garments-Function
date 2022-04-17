@@ -2,6 +2,7 @@
 require('../controllers/header.php');
 ?>
 <html>
+<script type="text/javascript" src="../assets/fv.js"></script>
 <link rel="stylesheet" href="../CSS/test.css">
     <head>
 	    <title>Add Employee</title>
@@ -18,22 +19,29 @@ require('../controllers/header.php');
     <body>
         <center>
         <table>
-            <tr>
-                <td><br><br><br>
-                    <form method="POST" action="w_reg.php">
+            <tr id="r">
+                <br><br>
+                   <!-- <form method="POST" action="w_reg.php">
             		<input type="submit" name="rWorker" value="Add Worker">
-        			</form>
-                </td>
-            </tr>
-            <tr>
+        			</form> -->
+                
+                    <td><input type="button" name="" value="Add Worker" onclick="w_reg()"></td>
+                
+                
                 <td><br><br>
-                    <form method="POST" action="s_reg.php">
+                    <!-- <form method="POST" action="s_reg.php">
             		<input type="submit" name="rSeller" value="Add Seller">
-        			</form>
+        			</form> -->
+
+                    <td><input type="button" name="" value="Add Seller" onclick="s_reg()"></td>
                 </td>
+            
+                
             </tr>
         </table>
+        <h1 id="view"></h1>
         </center>
+        
     </body><br><br>
     <element id= "footer"><a><ul> &copy; 2022 Function,inc.</ul></a></element>
 </html>

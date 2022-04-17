@@ -21,7 +21,7 @@ if(isset($_REQUEST['mLogin']))
         header('location: ../views/m_Home.php');
     }
     else {
-        echo "not ok";
+         header('location: ../views/error.php');
 
     }
            
@@ -54,7 +54,7 @@ if(isset($_REQUEST['bLogin']))
         header('location: ../views/b_home.php');
     }
     else {
-        echo "not ok";
+        header('location: ../views/error.php');
 
     }       
         //echo 'invalid username/password   <br><br><a href="../m_views/m_login.php">Back</a>';
@@ -85,7 +85,7 @@ if(isset($_REQUEST['sLogin']))
         header('location: ../views/s_home.php');
     }
     else {
-        echo "not ok";
+        header('location: ../views/error.php');
 
     }       
         //echo 'invalid username/password   <br><br><a href="../m_views/m_login.php">Back</a>';
@@ -115,7 +115,7 @@ if(isset($_REQUEST['wLogin']))
         header('location: ../views/w_home.php');
     }
     else {
-        echo "not ok";
+        header('location: ../views/error.php');
 
     }       
         //echo 'invalid username/password   <br><br><a href="../m_views/m_login.php">Back</a>';

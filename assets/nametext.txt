@@ -1,0 +1,198 @@
+#include <GL/gl.h>
+#include <GL/glu.h>
+#include <GL/glut.h>
+#include <cstdio>
+#include<cstring>
+
+
+
+
+GLfloat position = 0.0f;
+GLfloat p = 0.0f;
+GLfloat speed = 0.1f;
+
+
+
+void update(int value) {
+
+
+
+if(position <-1.0)
+position = 1.0f;
+
+
+
+position -= speed;
+
+if(p <-1.0)
+p = 1.0f;
+
+
+
+p -= 0.15;
+
+
+
+glutPostRedisplay();
+
+
+
+
+glutTimerFunc(100, update, 0);
+}
+char text1[] = "HAFSA NUR";
+char text2[] = "20-42477-1";
+char text3[] = "senary";
+char text4[] = "click '5'";
+
+
+
+
+char text5[] = "MD. RAIHANUL ISLAM RAFI";
+char text6[] = "19-41790-3";
+char text7[] = "City view";
+char text8[] = "click '1'";
+
+
+
+
+char text9[] = "FARDIN RAHMAN";
+char text10[] = "19-41789-3";
+char text11[] = "Rural view";
+char text12[] = "click '2'";
+
+
+
+
+char text13[] = "Mushfiq Anjum Rafi";
+char text14[] = "19-41757-3";
+char text15[] = "Desert view";
+char text16[] = "click '4'";
+
+
+
+char text17[] = "MEHENAZ TABASSOOM";
+char text18[] = "19-41398-3";
+char text19[] = "Winter View";
+char text20[] = "click '3'";
+
+
+
+char text21[] = "Bhromon";
+
+
+
+void text( float x, float y, char *st)
+{
+    int l,i;
+
+
+    l=strlen(st); // see how many characters are in text string.
+    //glColor3f(0.0,1.0,0.7);
+    //glDisable(GL_LIGHTING);
+    glRasterPos2f( x, y); // location to start printing text
+    for( i=0; i < l; i++) // loop until i is greater then l
+    {
+        glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, st[i]);
+
+    }
+}
+
+
+
+void display() {
+glClearColor(299.0f,33.0f,101.0f,1.0f);
+glClear(GL_COLOR_BUFFER_BIT);
+
+
+
+//glPushMatrix();
+//glTranslatef(-position,position, 0.0f);
+
+
+glColor3ub(13,17,55) ;
+text(-0.5,0.5,text5);
+text(-0.5,0.4,text6);
+text(-0.5,0.3,text7);
+text(-0.5,0.2,text8);
+
+
+text(-0.1,0.5,text9);
+text(-0.1,0.4,text10);
+text(-0.1,0.3,text11);
+text(-0.1,0.2,text12);
+
+text(0.2,0.5,text17);
+text(0.2,0.4,text18);
+text(0.2,0.3,text19);
+text(0.2,0.2,text20);
+
+text(-0.45,0.0,text13);
+text(-0.45,-0.1,text14);
+text(-0.45,-0.2,text15);
+text(-0.45,-0.3,text16);
+
+
+text(0.05,0.0,text1);
+text(0.05,-0.1,text2);
+text(0.05,-0.2,text3);
+text(0.05,-0.3,text4);
+
+text(-0.1,0.9,text21);
+
+
+
+
+
+
+//glPopMatrix();
+
+
+
+
+
+glFlush();
+}
+
+
+
+void handleMouse(int button, int state, int x, int y) {
+if (button == GLUT_LEFT_BUTTON)
+{ speed += 0.1f;
+}
+if (button == GLUT_RIGHT_BUTTON)
+{speed -= 0.1f; }
+glutPostRedisplay();}
+
+
+
+
+void handleKeypress(unsigned char key, int x, int y) {
+switch (key) {
+case 'a':
+speed = 0.0f;
+break;
+case 'w':
+speed = 0.1f;
+break;
+glutPostRedisplay();
+}}
+
+
+
+
+int main(int argc, char** argv) {
+glutInit(&argc, argv);
+glutInitWindowSize(1920, 1080);
+glutInitWindowPosition(50, 50);
+glutCreateWindow("Translation Animation");
+glutDisplayFunc(display);
+glutTimerFunc(100, update, 0);
+glutKeyboardFunc(handleKeypress);
+glutMouseFunc(handleMouse);
+
+
+
+glutMainLoop();
+return 0;
+}

@@ -23,12 +23,12 @@ if(isset($_REQUEST['s_app']))
 			}
 			else 
 			{
-				echo "Error reg";	
+				echo "Error";	
 			}
 		}
 if(isset($_REQUEST['w_app']))
     {
-         $name = $_SESSION['current_user']['UserName'] ;
+         $name = "w123" ;
          if ($_FILES['pdf']['size'] == 0) 
           {
               echo "File is not selected.". "<br>";
@@ -40,14 +40,14 @@ if(isset($_REQUEST['w_app']))
                 move_uploaded_file($src, $des);
             }
     
-                $status = send_app($name,$_FILES['pdf']['name']);
+                $status = send_app_w($name,$_FILES['pdf']['name']);
                 if($status)
                 {
-                    header('location: ../views/s_home.php');
+                    header('location: ../views/w_appvac.php');
                 }
                 else 
                 {
-                    echo "Error reg";	
+                    echo "Error";	
                 }
             }
 ?>

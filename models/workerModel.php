@@ -86,4 +86,25 @@ function w_getConnection(){
 		}
 	}
 
+	function userInfo_w($username_w) 
+	{
+		$con = w_getConnection();
+		$sql = "select * from worker where UserName = '{$username_w}'";
+		$result = mysqli_query($con, $sql);
+		$row = mysqli_fetch_assoc($result);
+		return $row;
+	}
+
+	function send_app_w($name,$file)
+	{
+		$con = w_getConnection();
+		$sql = "INSERT INTO application VALUES ('','{$name}','Worker','{$file}')";
+
+		if(mysqli_query($con, $sql)){
+			return true;
+		}else{
+			return false;
+		}
+	}
+
 ?>

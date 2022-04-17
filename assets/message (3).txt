@@ -1,0 +1,653 @@
+#include<cstdio>
+#include <windows.h> // for MS Windows
+#include <GL/glut.h> // GLUT, include glu.h and gl.h
+#include<math.h>>
+#define PI 3.14159265358979323846
+GLfloat f_i = 0.0f;
+void f_Idle()
+{
+glutPostRedisplay();//// marks the current window as needing to be redisplayed
+}
+
+void f_display1() {
+glClearColor(1.0f, 1.0f, 1.0f, 0.0f);
+glClear(GL_COLOR_BUFFER_BIT);
+
+
+    glBegin(GL_QUADS);
+	glColor3ub(0, 0, 0);              // Road
+    glVertex2f(-1.0f, -0.5f);          // x, y
+    glVertex2f(1.0f, -0.5f);
+    glVertex2f(1.0f, -1.0f);
+    glVertex2f(-1.0f, -1.0f);
+    glEnd();
+
+    glLineWidth(7.5);
+    glBegin(GL_LINES);
+    glColor3f(1.0f, 1.0f, 1.0f);      // White Line
+	glVertex2f(-1.0f, -0.55f);
+	glVertex2f( 1.0f, -0.55f);
+
+	glVertex2f(-1.0f, -0.7f);
+	glVertex2f(-0.7f, -0.7f);
+
+	glVertex2f(-0.5f, -0.7f);
+	glVertex2f(-0.1f, -0.7f);
+
+	glVertex2f( 0.1f, -0.7f);
+	glVertex2f( 0.5f, -0.7f);
+
+	glVertex2f( 1.0f, -0.7f);
+	glVertex2f( 0.7f, -0.7f);
+
+	glEnd();
+
+
+	 glBegin(GL_QUADS);
+	glColor3ub(119,139,165);              // sky
+    glVertex2f(-1.0f, -0.5f);// x, y
+    glVertex2f(1.0f, -0.5f);
+    //glColor3ub(45, 72, 93);
+    glVertex2f(1.0f, 1.0f);
+
+    glVertex2f(-1.0f, 1.0f);
+    glEnd();
+
+
+
+glBegin(GL_QUADS);
+glColor3ub(46,139,87);//road 3
+glVertex2f(-1.0f,-0.20f);
+glVertex2f(1.0f,-0.20f);
+glVertex2f(1.0f,-0.50f);
+glVertex2f(-1.0f,-0.50f);
+  glEnd();
+
+///////////////////////////////////////////////////
+//////////////////////////////////////////////
+////////////////////////////////
+
+///////////////////////////////////////////////////////////////
+
+
+glBegin(GL_QUADS);
+glColor3f(0.8,0.6,0.4);//bari 1
+glVertex2f(-0.95f,-0.30f);
+glVertex2f(-0.60f,-0.30f);
+glVertex2f(-0.60f,0.50f);
+glVertex2f(-0.95f,0.50f);
+
+glColor3ub(222,184,135);//bari middle
+glVertex2f(-0.96f,0.08f);
+glVertex2f(-0.59f,0.08f);
+glVertex2f(-0.59f,0.12f);
+glVertex2f(-0.96f,0.12f);
+
+glColor3f(0.8,0.4,0.2);//bari low
+glVertex2f(-0.97f,-0.30f);
+glVertex2f(-0.58f,-0.30f);
+glVertex2f(-0.58f,-0.27f);
+glVertex2f(-0.97f,-0.27f);
+
+glColor3f(0.8,0.4,0.2);//bari up1
+glVertex2f(-0.95f,0.55f);
+glVertex2f(-0.90f,0.55f);
+glVertex2f(-0.90f,0.62f);
+glVertex2f(-0.95f,0.62f);
+
+glColor3f(0.8,0.4,0.2);//bari up2
+glVertex2f(-0.96f,0.62f);
+glVertex2f(-0.89f,0.62f);
+glVertex2f(-0.89f,0.64f);
+glVertex2f(-0.96f,0.64f);
+
+glColor3f(0.8,0.4,0.2);//bari up
+glVertex2f(-0.97f,0.50f);
+glVertex2f(-0.58f,0.50f);
+glVertex2f(-0.58f,0.55f);
+glVertex2f(-0.97f,0.55f);
+
+glColor3ub(133,109,77);//bari get
+glVertex2f(-0.93f,-0.275f);
+glVertex2f(-0.85f,-0.275f);
+glVertex2f(-0.85f,-0.11f);
+glVertex2f(-0.93f,-0.11f);
+
+glColor3f(0.8,0.9,1);//bari janala 1
+glVertex2f(-0.68f,-0.20f);
+glVertex2f(-0.75f,-0.20f);
+glVertex2f(-0.75f,-0.10f);
+glVertex2f(-0.68f,-0.10f);
+
+
+glColor3f(0.8,0.9,1);//bari janala 2
+glVertex2f(-0.62f,0.35f);
+glVertex2f(-0.69f,0.35f);
+glVertex2f(-0.69f,0.25f);
+glVertex2f(-0.62f,0.25f);
+
+
+glColor3f(0.8,0.9,1);//bari janala 3
+glVertex2f(-0.75f,0.35f);
+glVertex2f(-0.82f,0.35f);
+glVertex2f(-0.82f,0.25f);
+glVertex2f(-0.75f,0.25f);
+
+glColor3f(0.8,0.9,1);//bari janala 4
+glVertex2f(-0.87f,0.35f);
+glVertex2f(-0.94f,0.35f);
+glVertex2f(-0.94f,0.25f);
+glVertex2f(-0.87f,0.25f);
+glEnd();
+
+glBegin(GL_TRIANGLES);
+
+glColor3ub(32,178,170);//bari janala matha 1
+glVertex2f(-0.68f,-0.10f);
+glVertex2f(-0.75f,-0.10f);
+glVertex2f(-0.715f,-0.05f);
+
+glColor3ub(32,178,170);//bari janala 2
+glVertex2f(-0.62f,0.35f);
+glVertex2f(-0.69f,0.35f);
+glVertex2f(-0.655f,0.40f);
+
+glColor3ub(32,178,170);//bari janala 3
+glVertex2f(-0.75f,0.35f);
+glVertex2f(-0.82f,0.35f);
+glVertex2f(-0.785f,0.40f);
+
+glColor3ub(32,178,170);//bari janala 4
+glVertex2f(-0.87f,0.35f);
+glVertex2f(-0.94f,0.35f);
+glVertex2f(-0.905f,0.40f);
+glEnd();
+
+glBegin(GL_LINES);
+////////////////////////////
+    ////////j1/////////
+glColor3f(0,0,0);
+glVertex2f(-0.68f,-0.15f);
+glVertex2f(-0.75f,-0.15f);
+
+glVertex2f(-0.715f,-0.20f);
+glVertex2f(-0.715f,-0.10f);
+/////////////////////////////
+     ////j2///////
+glVertex2f(-0.62f,0.30f);
+glVertex2f(-0.69f,0.30f);
+
+glVertex2f(-0.655f,0.25f);
+glVertex2f(-0.655f,0.35f);
+///////////////////////////
+  /////////j3////////
+  glVertex2f(-0.75f,0.30f);
+glVertex2f(-0.82f,0.30f);
+
+
+ glVertex2f(-0.785f,0.25f);
+ glVertex2f(-0.785f,0.35f);
+/////////////////////////////////////
+   /////////j4/////////
+
+   glVertex2f(-0.87f,0.30f);
+glVertex2f(-0.94f,0.30f);
+
+glVertex2f(-0.905f,0.25f);
+glVertex2f(-0.905f,0.35f);
+
+
+glEnd();
+
+/////////////////////////////////////
+  //////////////Bari 6////////
+
+glBegin(GL_QUADS);
+glColor3ub(169,169,169);//bari 6 pison a
+glVertex2f(-0.25f,-0.30f);
+glVertex2f(0.05f,-0.30f);
+glVertex2f(0.05f,0.15f);
+glVertex2f(-0.25f,0.15f);
+
+glColor3ub(105,105,105);//bari 6 pison low
+glVertex2f(-0.25f,-0.30f);
+glVertex2f(0.05f,-0.30f);
+glVertex2f(0.05f,-0.27f);
+glVertex2f(-0.25f,-0.27f);
+
+glColor3ub(105,105,105);//bari 6 pison up1
+glVertex2f(-0.27f,0.15f);
+glVertex2f(0.05f,0.15f);
+glVertex2f(0.05f,0.18f);
+glVertex2f(-0.27f,0.18f);
+
+glColor3ub(117,117,117);//bari 6 pison up2
+glVertex2f(-0.26f,0.18f);
+glVertex2f(0.05f,0.18f);
+glVertex2f(0.05f,0.21f);
+glVertex2f(-0.26f,0.21f);
+
+glColor3ub(117,117,117);//bari 6 pison up3
+glVertex2f(-0.24f,0.21f);
+glVertex2f(-0.20f,0.21f);
+glVertex2f(-0.20f,0.26f);
+glVertex2f(-0.24f,0.26f);
+
+glColor3ub(117,117,117);//bari 6 pison up3
+glVertex2f(-0.25f,0.26f);
+glVertex2f(-0.19f,0.26f);
+glVertex2f(-0.19f,0.28f);
+glVertex2f(-0.25f,0.28f);
+
+glColor3ub(68,76,56);//bari 6 pison get
+glVertex2f(-0.19f,-0.27f);
+glVertex2f(-0.11f,-0.27f);
+glVertex2f(-0.11f,-0.05f);
+glVertex2f(-0.19f,-0.05f);
+glEnd();
+
+glBegin(GL_TRIANGLES);
+
+glColor3ub(70,89,69);//bari janala matha 1
+glVertex2f(-0.20f,-0.05f);
+glVertex2f(-0.10f,-0.05f);
+glVertex2f(-0.15f,0.05f);
+glEnd();
+
+
+////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+glBegin(GL_QUADS);
+
+glColor3ub(254,90,29);//bari 2
+glVertex2f(-0.50f,-0.30f);
+glVertex2f(-0.20f,-0.30f);
+glVertex2f(-0.20f,0.05f);
+glVertex2f(-0.50f,0.05f);
+
+glColor3ub(222,184,135);//bari 2 low
+glVertex2f(-0.52f,-0.30f);
+glVertex2f(-0.18f,-0.30f);
+glVertex2f(-0.18f,-0.27f);
+glVertex2f(-0.52f,-0.27f);
+
+glColor3ub(222,184,135);//bari 2 get
+glVertex2f(-0.48f,-0.30f);
+glVertex2f(-0.42f,-0.30f);
+glVertex2f(-0.42f,-0.10f);
+glVertex2f(-0.48f,-0.10f);
+
+glColor3ub(136,216,192);//bari 2 janala
+glVertex2f(-0.36f,-0.23f);
+glVertex2f(-0.26f,-0.23f);
+glVertex2f(-0.26f,-0.15f);
+glVertex2f(-0.36f,-0.15f);
+
+glEnd();
+
+glBegin(GL_TRIANGLES);
+
+glColor3ub(254,90,29);//bari 2
+glVertex2f(-0.50f,0.05f);
+glVertex2f(-0.20f,0.05f);
+glVertex2f(-0.35f,0.15f);
+
+glColor3ub(32,178,170);//bari 2 janala
+glVertex2f(-0.36f,-0.15f);
+glVertex2f(-0.26f,-0.15f);
+glVertex2f(-0.31f,-0.05f);
+
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3ub(152,118,84);//bari 2 chal ar upor
+glVertex2f(-0.50f,0.10f);
+glVertex2f(-0.45f,0.10f);
+glVertex2f(-0.45f,0.20f);
+glVertex2f(-0.50f,0.20f);
+
+glColor3ub(152,118,84);//bari 2 chal ar upor
+glVertex2f(-0.51f,0.20f);
+glVertex2f(-0.44f,0.20f);
+glVertex2f(-0.44f,0.22f);
+glVertex2f(-0.51f,0.22f);
+
+glColor3ub(152,118,84);//bari 2 chal
+glVertex2f(-0.17f,0.09f);
+glVertex2f(-0.35f,0.25f);
+glVertex2f(-0.35f,0.15f);
+glVertex2f(-0.17f,0.00f);
+
+glColor3ub(152,118,84);//bari 2 chal
+glVertex2f(-0.53f,0.09f);
+glVertex2f(-0.35f,0.25f);
+glVertex2f(-0.35f,0.15f);
+glVertex2f(-0.53f,0.00f);
+glEnd();
+
+glBegin(GL_LINES);
+glColor3f(0,0,0);
+glVertex2f(-0.26f,-0.19f);
+glVertex2f(-0.36f,-0.19f);
+
+glVertex2f(-0.31f,-0.23f);
+glVertex2f(-0.31f,-0.15f);
+
+
+glEnd();
+
+////////////////////////////////////////////////////////////
+         ////////////////tree/////////////
+
+
+
+  glBegin(GL_QUADS);
+glColor3ub(72,6,7);//tree
+glVertex2f(0.18f,-0.30f);
+glVertex2f(0.21f,-0.30f);
+glVertex2f(0.21f,-0.15f);
+glVertex2f(0.18f,-0.15f);
+glEnd();
+
+glBegin(GL_TRIANGLES);
+glColor3ub(34,139,34);//tree
+glVertex2f(0.15f,-0.20f);
+glVertex2f(0.24f,-0.20f);
+glVertex2f(0.195f,-0.00f);
+
+glVertex2f(0.15f,-0.15f);
+glVertex2f(0.24f,-0.15f);
+glVertex2f(0.195f,0.05f);
+
+glVertex2f(0.15f,-0.10f);
+glVertex2f(0.24f,-0.10f);
+glVertex2f(0.195f,0.10f);
+
+glEnd();
+
+////////////////////////////////////////////////
+    ////////////BARI 3///////////////
+
+
+glBegin(GL_QUADS);
+glColor3ub(115,134,120);//bari 3
+glVertex2f(-0.10f,-0.30f);
+glVertex2f(0.15f,-0.30f);
+glVertex2f(0.15f,0.40f);
+glVertex2f(-0.10f,0.40f);
+
+
+glColor3ub(38,67,72);//bari 3
+glVertex2f(-0.12f,-0.30f);
+glVertex2f(0.17f,-0.30f);
+glVertex2f(0.17f,-0.27f);
+glVertex2f(-0.12f,-0.27f);
+
+glEnd();
+
+glBegin(GL_TRIANGLES);
+
+glColor3ub(120,134,107);//bari 3 matha
+glVertex2f(-0.10f,0.40f);
+glVertex2f(0.15f,0.40f);
+glVertex2f(0.025f,0.55f);
+glEnd();
+
+GLfloat x_2 =0.025; GLfloat y_2 = 0.455; GLfloat radius_2 =0.03;//ghori
+int triangleAmount = 20; //# of triangles used to draw circle
+
+GLfloat f_radius = 0.8f; //radius
+GLfloat f_twicePi = 2.0f * PI;
+
+glBegin(GL_TRIANGLE_FAN);//chaka1
+glColor3ub(255,255,255);
+glVertex2f(x_2 , y_2); // center of circle
+for(int f_i = 0; f_i <= triangleAmount;f_i++) {
+glVertex2f(
+x_2 + (radius_2 * cos(f_i * f_twicePi / triangleAmount)),
+y_2 + (radius_2 * sin(f_i * f_twicePi / triangleAmount))
+);
+}
+glEnd();
+
+
+glLoadIdentity();
+glPushMatrix(); //glPushMatrix copies the top matrix and pushes it onto the stack, while glPopMatrix pops the top matrix off the stack
+glTranslatef(.025,0.45,0);
+glRotatef(f_i,0,0,.2);//f_i=how many degree you want to rotate around an axis
+
+
+
+glBegin(GL_LINES);
+glColor3ub(0,0,0);
+glVertex2f(0.0,0.0);
+glVertex2f(0.0,0.015);
+
+glEnd();
+
+glPopMatrix();
+f_i-=0.05f;
+glLoadIdentity();
+
+glBegin(GL_LINES);
+glLineWidth(05);
+glColor3ub(248,248,255);
+glVertex2f(-0.05f,-0.27f);
+glVertex2f(-0.05f,0.40f);
+
+glVertex2f(-0.0f,-0.27f);
+glVertex2f(-0.0f,0.40f);
+
+glVertex2f(0.05f,-0.27f);
+glVertex2f(0.05f,0.40f);
+
+glVertex2f(0.10f,-0.27f);
+glVertex2f(0.10f,0.40f);
+
+glEnd();
+//////////////////////////////////////////////////
+    //////////////////bari 7/////////////
+
+
+
+    glBegin(GL_QUADS);
+glColor3ub(172,30,68);//bari 7
+glVertex2f(0.30f,-0.30f);
+glVertex2f(0.63f,-0.30f);
+glVertex2f(0.63f,0.30f);
+glVertex2f(0.30f,0.30f);
+
+glColor3ub(209,0,86);//bari 7up
+glVertex2f(0.28f,0.30f);
+glVertex2f(0.65f,0.30f);
+glVertex2f(0.65f,0.35f);
+glVertex2f(0.28f,0.35f);
+
+
+glColor3ub(176,48,96);//bari 7 up
+glVertex2f(0.60f,0.35f);
+glVertex2f(0.55f,0.35f);
+glVertex2f(0.55f,0.42f);
+glVertex2f(0.60f,0.42f);
+
+glColor3ub(176,48,96);//bari 7 up
+glVertex2f(0.61f,0.42f);
+glVertex2f(0.54f,0.42f);
+glVertex2f(0.54f,0.44f);
+glVertex2f(0.61f,0.44f);
+
+
+glColor3ub(229,228,226);//bari 7 up j1
+glVertex2f(0.33f,0.20f);
+glVertex2f(0.39f,0.20f);
+glVertex2f(0.39f,0.13f);
+glVertex2f(0.33f,0.13f);
+
+glColor3ub(229,228,226);//bari 7 upj2
+glVertex2f(0.42f,0.20f);
+glVertex2f(0.48f,0.20f);
+glVertex2f(0.48f,0.13f);
+glVertex2f(0.42f,0.13f);
+
+glColor3ub(229,228,226);//bari 7 low j
+glVertex2f(0.42f,-0.17f);
+glVertex2f(0.48f,-0.17f);
+glVertex2f(0.48f,-0.10f);
+glVertex2f(0.42f,-0.10f);
+
+glColor3ub(229,228,226);//bari 7 up 3
+glVertex2f(0.52f,0.20f);
+glVertex2f(0.58f,0.20f);
+glVertex2f(0.58f,0.13f);
+glVertex2f(0.52f,0.13f);
+
+glEnd();
+
+//////////////////////////////////////////////
+      ///////////bari 4////////////
+
+
+    glBegin(GL_QUADS);
+glColor3ub(191, 121, 36);//bari 4
+glVertex2f(0.25f,-0.30f);
+glVertex2f(0.55f,-0.30f);
+glVertex2f(0.55f,0.10f);
+glVertex2f(0.25f,0.10f);
+
+glColor3ub(89,39,32);//bari down
+glVertex2f(0.24f,-0.27f);
+glVertex2f(0.56f,-0.27f);
+glVertex2f(0.56f,-0.30f);
+glVertex2f(0.24f,-0.30f);
+
+
+
+glColor3ub(90, 0, 0);//bari up
+glVertex2f(0.25f,0.10f);
+glVertex2f(0.55f,0.10f);
+glVertex2f(0.60f,-0.05f);
+glVertex2f(0.20f,-0.05f);
+
+glColor3ub(222,184,135);//bari get
+glVertex2f(0.53f,-0.27f);
+glVertex2f(0.46f,-0.27f);
+glVertex2f(0.46f,-0.10f);
+glVertex2f(0.53f,-0.10f);
+
+glColor3ub(250,235,215);//bari 4 janala
+glVertex2f(0.32f,-0.23f);
+glVertex2f(0.40f,-0.23f);
+glVertex2f(0.40f,-0.15f);
+glVertex2f(0.32f,-0.15f);
+
+glEnd();
+
+//////////////////////////////////////////////
+  /////////////////Bari 5//////////
+glBegin(GL_QUADS);
+glColor3ub(201, 135, 19);//bari 5
+glVertex2f(0.97f,-0.30f);
+glVertex2f(0.65f,-0.30f);
+glVertex2f(0.65f,0.05f);
+glVertex2f(0.97f,0.05f);
+
+glColor3ub(103, 64, 59);//bari 5
+glVertex2f(0.99f,0.05f);
+glVertex2f(0.63f,0.05f);
+glVertex2f(0.63f,0.07f);
+glVertex2f(0.99f,0.07f);
+
+glColor3ub(201, 135, 19);//bari 5
+glVertex2f(0.93f,0.07f);
+glVertex2f(0.70f,0.07f);
+glVertex2f(0.70f,0.20f);
+glVertex2f(0.93f,0.20f);
+
+glColor3ub(103, 64, 59);//bari 5 low
+glVertex2f(0.99f,-0.30f);
+glVertex2f(0.63f,-0.30f);
+glVertex2f(0.63f,-0.27f);
+glVertex2f(0.99f,-0.27f);
+
+glColor3ub(103, 64, 59);//bari 5 get
+glVertex2f(0.77f,-0.27f);
+glVertex2f(0.87f,-0.27f);
+glVertex2f(0.87f,-0.10f);
+glVertex2f(0.77f,-0.10f);
+
+glColor3ub(112,128,144);//bari 5 get
+glVertex2f(0.79f,-0.27f);
+glVertex2f(0.85f,-0.27f);
+glVertex2f(0.85f,-0.14f);
+glVertex2f(0.79f,-0.14f);
+
+glColor3ub(0,0,0);//bari 5 janala 1
+glVertex2f(0.69f,-0.25f);
+glVertex2f(0.74f,-0.25f);
+glVertex2f(0.74f,-0.19f);
+glVertex2f(0.69f,-0.19f);
+
+glVertex2f(0.69f,-0.17f);//janala 2
+glVertex2f(0.74f,-0.17f);
+glVertex2f(0.74f,-0.11f);
+glVertex2f(0.69f,-0.11f);
+
+glVertex2f(0.69f,-0.09f);//janala 3
+glVertex2f(0.74f,-0.09f);
+glVertex2f(0.74f,-0.03f);
+glVertex2f(0.69f,-0.03f);
+
+
+glColor3ub(0,0,0);//bari 5 janala 4
+glVertex2f(0.95f,-0.25f);
+glVertex2f(0.90f,-0.25f);
+glVertex2f(0.90f,-0.19f);
+glVertex2f(0.95f,-0.19f);
+
+glVertex2f(0.95f,-0.17f);//janala 5
+glVertex2f(0.90f,-0.17f);
+glVertex2f(0.90f,-0.11f);
+glVertex2f(0.95f,-0.11f);
+
+glVertex2f(0.95f,-0.09f);//janala 6
+glVertex2f(0.90f,-0.09f);
+glVertex2f(0.90f,-0.03f);
+glVertex2f(0.95f,-0.03f);
+glEnd();
+
+glBegin(GL_TRIANGLES);
+
+glColor3ub(103, 64, 59);//bari 5 matha
+glVertex2f(0.68f,0.20f);
+glVertex2f(0.95f,0.20f);
+glVertex2f(0.815f,0.30f);
+
+glColor3ub(72,6,7);//bari 5 matha
+glVertex2f(0.75f,-0.10f);
+glVertex2f(0.89f,-0.10f);
+glVertex2f(0.82f,-0.05f);
+
+glEnd();
+
+
+glFlush();
+}
+
+
+
+int main(int argc, char** argv) {
+glutInit(&argc, argv);
+glutCreateWindow("f_Test");
+glutInitWindowSize(1920, 1080);
+glutDisplayFunc(f_display1);
+glutIdleFunc(f_Idle);
+//glutKeyboardFunc(handleKeypress);
+//glutMouseFunc(handleMouse);
+//glutSpecialFunc(SpecialInput);
+//glutTimerFunc(100, update, 0);
+//glutTimerFunc(100, update1, 0);
+//glutTimerFunc(100, update2, 0);
+glutMainLoop();
+return 0;
+}

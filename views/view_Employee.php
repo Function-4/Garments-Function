@@ -18,7 +18,7 @@ require('../controllers/header.php');
 	<a href="../controllers/logout.php?id=m">Logout</a>
 	<span class="line"></span>
 	</nav>
-	</header><br><br><br><br><br><br><br><br>
+	</header><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <body>
     <center>
         <table>

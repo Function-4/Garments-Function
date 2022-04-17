@@ -230,10 +230,39 @@ function w_reg(){
 		}
 	}
 }
+
 function s_reg(){
 	let role = document.getElementById('r').value;
 	let http = new XMLHttpRequest();
 	http.open('GET', '../views/seller_reg.php', true);
+	http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	http.send('uname='+role);
+	http.onreadystatechange = function(){
+		
+		if(this.readyState == 4 && this.status == 200){
+			document.getElementById('view').innerHTML= this.responseText;
+		}
+	}
+}
+
+function del_w(){
+	let role = document.getElementById('r').value;
+	let http = new XMLHttpRequest();
+	http.open('GET', '../views/delete_W.php', true);
+	http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	http.send('uname='+role);
+	http.onreadystatechange = function(){
+		
+		if(this.readyState == 4 && this.status == 200){
+			document.getElementById('view').innerHTML= this.responseText;
+		}
+	}
+}
+
+function del_s(){
+	let role = document.getElementById('r').value;
+	let http = new XMLHttpRequest();
+	http.open('GET', '../views/delete_S.php', true);
 	http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	http.send('uname='+role);
 	http.onreadystatechange = function(){

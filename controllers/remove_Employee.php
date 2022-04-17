@@ -15,7 +15,7 @@
 				echo "Error";	
 			}
 
-			header('location: ../views/delete_W.php');
+			header('location: ../views/delete_Employee.php');
     }
     else
     {
@@ -35,7 +35,7 @@
 				echo "Error";	
 			}
 
-			header('location: ../views/delete_S.php');
+			header('location: ../views/delete_Employee.php');
     }
     else
     {

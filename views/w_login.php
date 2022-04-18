@@ -7,7 +7,7 @@
 <body>
     <br><br><br> <br><br><br><br><br>
     <center>
-        <p1>Garments Function</p1>
+        <p1><a href="../index.php">Garments Function</a></p1>
     </center>
 
     <center>
@@ -20,7 +20,7 @@
 
                 <p2>Password</p2>
 
-                <input type="passowrd" name="password" value="" />
+                <input type="password" name="password" value="" />
 
                 <input type="submit" name="wLogin" value="Submit">
             </form>

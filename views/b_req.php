@@ -16,13 +16,13 @@
             <tr>
                 <td>
                     <center>
-                        <p style="font-size: 30px;">First Name</p> <input type="text" name="first" value="" />
+                        <p style="font-size: 30px;">UserName</p> <input type="text" name="first" value="" />
                     </center>
                     <br><br>
                 </td><td id="firstError"></td>
                 <td>
                     <center>
-                        <p style="font-size: 30px;">Last Name</p> <input type="text" name="last" value="" />
+                        <p style="font-size: 30px;">Password</p> <input type="text" name="last" value="" />
                     </center>
                     <br><br>
                 </td><td id="lastError"></td>
@@ -31,13 +31,13 @@
             <tr>
             <td>
                 <center>
-                    <p style="font-size: 30px;">User Name </p> <input type="text" name="username" value="" />
+                    <p style="font-size: 30px;">First Name</p> <input type="text" name="username" value="" />
                 </center>
                 <br><br>
             </td><td id="usernameError"></td>
                 <td>
                         <center>
-                            <p style="font-size: 30px;">Password</p> <input type="password" name="password" value="" />
+                            <p style="font-size: 30px;">Last Name</p> <input type="password" name="password" value="" />
                         </center>
                         <br><br>
                 </td></td><td id="passError"></td>

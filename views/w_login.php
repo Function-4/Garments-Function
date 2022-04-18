@@ -1,29 +1,33 @@
 <html>
-    <title>
+<title>
 
-    </title>
-    <link rel="stylesheet" href="../CSS/w_css.css">
-    <body>
-        <br><br><br> <br><br><br><br><br>
-       <center><p1>Garments Function</p1></center> 
+</title>
+<link rel="stylesheet" href="../CSS/w_css.css">
 
-       <center>
-           <div>
-           
-    <form method="POST" action="../controllers/loginCheck.php">
-    <p2>User-Name</p2>
- 
-  <input type="text"  name="username" value=""/>
+<body>
+    <br><br><br> <br><br><br><br><br>
+    <center>
+        <p1>Garments Function</p1>
+    </center>
 
-  <p2>Password</p2>
+    <center>
+        <div>
 
-  <input type="text" name="password" value=""/>
+            <form method="POST" action="../controllers/loginCheck.php">
+                <p2>User-Name</p2>
 
-  <input type="submit" name="wLogin" value="Submit">
-</form>
+                <input type="text" name="username" value="" />
 
-    
-           </div>
-       </center>
-    </body>
+                <p2>Password</p2>
+
+                <input type="passowrd" name="password" value="" />
+
+                <input type="submit" name="wLogin" value="Submit">
+            </form>
+
+
+        </div>
+    </center>
+</body>
+
 </html>

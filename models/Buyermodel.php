@@ -36,4 +36,20 @@ function b_getConnection(){
 			return false;
 		}
 	}
+
+
+
+
+
+	function send_file($name,$file)
+	{
+		$con = s_getConnection();
+		$sql = "INSERT INTO feedback VALUES ('','{$name}','buyer','{$file}')";
+
+		if(mysqli_query($con, $sql)){
+			return true;
+		}else{
+			return false;
+		}
+	}
 ?>

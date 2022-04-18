@@ -1,0 +1,100 @@
+<center> <form action="../b_controllers/b_feedbackcheck.php" method="post">
+    <center>
+<label><p style=font-size:60px> Add Car Description</p> <br> <textarea cols="60" row="50" name="mes"></textarea></label><br>
+
+    </center>
+
+    <center><p style=font-size:60px>Add Car Photos</p></center>
+    <br><br>
+    <input type="file" id="myfile" name="myfile" multiple><br><br>
+
+    <br><br>
+    <center> <input type="submit" name="bsubmit" value="Submit" style="height:50px; width:100px"> </center>
+
+    
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+controllers
+
+
+
+<?php 
+	session_start();
+	require('../models/smodel.php');
+	
+	if(isset($_REQUEST['submit']))
+	{
+		
+		$name = $_REQUEST['name'];
+		$price = $_REQUEST['price'];
+		
+
+		if ($_FILES['pic']['size'] == 0) 
+		{
+			echo "Profile picture is not selected.". "<br>";
+		}else
+		{
+			$src = $_FILES['pic']['tmp_name'];
+			$des = "../assets/".$_FILES['pic']['name'];
+			move_uploaded_file($src, $des);
+		}
+
+
+		
+		
+			$status = addCar($name,$price,$_FILES['pic']['name']);
+			if($status)
+			{
+				header('location: ../views/new_car.php');
+			}
+			else 
+			{
+				echo "Error reg";	
+			}
+			
+
+		}
+    
+	?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+models
+
+
+function  addCar($name,$price,$pic) 
+	{
+		$con = getConnection('localhost', 'root', '', 'final_project');
+		$sql = "insert into newcars values('','{$name}','miraj','{$price}','{$pic}','Active')";;
+
+		if (mysqli_query($con, $sql)) {
+			return true;
+		}else {
+			return false;
+		}
+	}

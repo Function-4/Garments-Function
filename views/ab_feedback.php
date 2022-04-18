@@ -7,18 +7,13 @@
 <br>
 <br>
 
-<form action="../b_controllers/b_feedbackcheck.php" method="post">
-    <center>
-<label><p style=font-size:60px> Feedback</p> <br> <textarea cols="60" row="50" name="mes"></textarea></label><br>
-    </center>
-    <br><br>
-    
-    <center><input type="file" id="myFile" name="filename"></center>
-    <br><br>
-    <center> <input type="submit" name="bsubmit" value="Submit" style="height:50px; width:100px"> </center>
-    
-</form>
 
+
+<form action="../controllers/feedcheck.php" method="post">    
+    <center><input type="file" id="s_application" name="filename"></center>
+    <br><br><br>
+    <center> <input type="submit" name="b_file" value="Submit" style="height:50px; width:100px"> </center>
+</form>
 
     </body>
 </html>

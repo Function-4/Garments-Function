@@ -1,14 +1,5 @@
 <?php
 require('../controllers/header.php');
-$error = "";
-if(isset($_GET['msg'])){
-		if($_GET['msg'] == 'error'){
-			$error = "<span>&#9888;</span>  Invalid Username or Password";
-		}
-        if($_GET['msg'] == 'ok'){
-			$error = "<span>&#10003;</span>   Registration Done Sucessfully";
-		}
-	}
 ?>
 <html>
 <script type="text/javascript" src="../assets/fv.js"></script>
@@ -23,22 +14,20 @@ if(isset($_GET['msg'])){
 	<a href="../controllers/logout.php?id=m">Logout</a>
 	<span class="line"></span>
 	</nav>
-	</header><br><br><br><br><br><br>
+	</header><br><br><br><br><br><br><br>
     <body>
         <center>
         <table>
             <tr id="r">
                 <br><br>
-                    <td><input type="button" name="" value="Add Worker" onclick="w_reg()"></td>
+                    <td><input type="button" name="" value="View Employee's Application" onclick="e_app()"></td>
                 <td><br><br>
-                    <td><input type="button" name="" value="Add Seller" onclick="s_reg()"></td>
+                    <td><input type="button" name="" value="View Employee's Complain" onclick="e_com()"></td>
                 </td>
             </tr>
         </table>
         <h1 id="view"></h1>
-        <h1><?=$error?></h1>
         </center>
-        
     </body><br><br>
     <element id= "footer"><a><ul> &copy; 2022 Function,inc.</ul></a></element>
 </html>

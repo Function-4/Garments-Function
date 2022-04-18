@@ -50,19 +50,16 @@ require('../controllers/header.php');
             		<input type="submit" name="m" value="Add New Manager">
         			</form>
 
-					<form method="POST" action="view_E_complain.php">
-            		<input type="submit" name="" value="View Employee's Complain">
+					<form method="POST" action="view_doc.php">
+            		<input type="submit" name="" value="View Document">
         			</form>
 
 					<form method="POST" action="view_overtime.php">
             		<input type="submit" name="" value="Worker's Overtime Request">
         			</form>
 
-					<form method="POST" action="view_E_vacation.php">
-            		<input type="submit" name="" value="View Employee's Application">
-        			</form>
 
-					<form method="POST" action="viewProduct.php">
+					<form method="POST" action="m_product.php">
             		<input type="submit" name="" value="View Company's Product">
         			</form>
 				</td>

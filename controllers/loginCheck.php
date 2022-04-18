@@ -10,6 +10,7 @@ if(isset($_REQUEST['mLogin']))
 		
     $username = $_REQUEST['username'];
     $password = $_REQUEST['password'];
+    $emsg = $_REQUEST['msg'];
 
     if($username != null && $password != null){
 
@@ -21,7 +22,7 @@ if(isset($_REQUEST['mLogin']))
         header('location: ../views/m_Home.php');
     }
     else {
-        echo "not ok";
+       header('location: ../views/m_login.php?msg=error');
 
     }
            

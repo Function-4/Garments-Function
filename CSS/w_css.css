@@ -68,7 +68,7 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #1f2833;
-  height: 64px;
+  height: 61px;
 
 }
 
@@ -80,7 +80,7 @@ li a {
   display: block;
   color: #66fcf1;
   text-align: center;
-  padding: 22px 30px;
+  padding: 22px 31px;
   text-decoration: none;
 }
 

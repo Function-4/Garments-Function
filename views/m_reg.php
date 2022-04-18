@@ -1,6 +1,15 @@
 <?php
 require('../controllers/header.php');
-if(isset($_REQUEST['m'])){
+$error = "";
+if(isset($_GET['msg'])){
+		if($_GET['msg'] == 'error'){
+			$error = "<span>&#9888;</span>  Invalid Username or Password";
+		}
+        if($_GET['msg'] == 'ok'){
+			$error = "<span>&#10003;</span>   Registration Done Sucessfully";
+		}
+	}
+
 ?>
 <html>
 <link rel="stylesheet" href="../CSS/test.css">
@@ -18,7 +27,7 @@ if(isset($_REQUEST['m'])){
 	</nav>
 	</header>
 
-<body><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<body><br><br><br><br><br><br><br><br>
 	<form method="POST" action="../controllers/regCheck.php" onsubmit="return reg()">
 		<center>
 		<table>
@@ -50,12 +59,11 @@ if(isset($_REQUEST['m'])){
 				<td></td>
 				<td><input type="submit" name="mRegSubmit" value="Register" style="height: 50px; width: 200px;"></td>
 			</tr>
+			<tr><td colspan="2"><h2><?=$error?></h2></td></tr>
+			
 		</table>
 		</center>
 	</form>
 </body>
 <element id= "footer"><a><ul> &copy; 2022 Function,inc.</ul></a></element>
 </html>
-<?php
-}
-?>

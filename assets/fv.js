@@ -306,14 +306,6 @@ function fv_salary_S()
 function bonus()
 {
 		let bonus = document.getElementById('b').value;
-		//if(bonus == ""){
-			//document.getElementById('bError').innerHTML = "<span>&#9888;</span> Please provide Bonus";
-		//return false;
-		//}
-		//if(bonus<=999){
-			//document.getElementById('bError').innerHTML = "<span>&#9888;</span> Please Provide Valid Ammount of Bonus";
-		//return false;
-		//}
 			document.getElementById('bError').innerHTML = "Bonus Sent Successfully";
 			return true;	
 
@@ -371,6 +363,34 @@ function w_withdraw(){
 	let role = document.getElementById('r').value;
 	let http = new XMLHttpRequest();
 	http.open('GET', '../views/w_withdraw.php', true);
+	http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	http.send('uname='+role);
+	http.onreadystatechange = function(){
+		
+		if(this.readyState == 4 && this.status == 200){
+			document.getElementById('view').innerHTML= this.responseText;
+		}
+	}
+}
+
+function e_app(){
+	let role = document.getElementById('r').value;
+	let http = new XMLHttpRequest();
+	http.open('GET', '../views/view_app.php', true);
+	http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	http.send('uname='+role);
+	http.onreadystatechange = function(){
+		
+		if(this.readyState == 4 && this.status == 200){
+			document.getElementById('view').innerHTML= this.responseText;
+		}
+	}
+}
+
+function e_com(){
+	let role = document.getElementById('r').value;
+	let http = new XMLHttpRequest();
+	http.open('GET', '../views/view_comp.php', true);
 	http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	http.send('uname='+role);
 	http.onreadystatechange = function(){

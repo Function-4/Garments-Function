@@ -23,12 +23,59 @@ function getConnection(){
 	}
 
 	function m_reg($username, $password, $first, $last, $email, $number){
-		$con = s_getConnection();
+		$con = getConnection();
 		$sql = "insert into manager values ('', '{$username}', '{$password}', '{$first}', '{$last}', '{$email}', '{$number}')";
 
 		if(mysqli_query($con, $sql)){
 			return true;
 		}else{
+			return false;
+		}
+	}
+
+	function view_app()
+	{
+		$con = getConnection();
+		$sql = "SELECT * FROM application";
+		global $result ; 
+		$result = mysqli_query($con, $sql) ;
+		if(mysqli_num_rows($result))
+		{
+			return $result;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	function view_comp()
+	{
+		$con = getConnection();
+		$sql = "SELECT * FROM complain";
+		global $result ; 
+		$result = mysqli_query($con, $sql) ;
+		if(mysqli_num_rows($result))
+		{
+			return $result;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	
+	function view_overtime()
+	{
+		$con = getConnection();
+		$sql = "SELECT * FROM overtime";
+		global $result ; 
+		$result = mysqli_query($con, $sql) ;
+		if(mysqli_num_rows($result))
+		{
+			return $result;
+		}
+		else
+		{
 			return false;
 		}
 	}

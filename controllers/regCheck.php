@@ -19,11 +19,11 @@
 			$status = m_reg($username, $password, $first, $last, $email, $number);
 			if($status)
 			{
-				echo "Sucessfull reg";
+				header('location: ../views/m_reg.php?msg=ok');
 			}
 			else 
 			{
-				echo "Error reg";	
+				header('location: ../views/m_reg.php?msg=error');	
 			}
 			
 		}
@@ -47,11 +47,11 @@
 			$status = s_reg($username, $password, $first, $last, $email, $number);
 			if($status)
 			{
-				echo "Sucessfull reg";
+				header('location: ../views/add_Employee.php?msg=ok');
 			}
 			else 
 			{
-				echo "Error reg";	
+				header('location: ../views/add_Employee.php?msg=error');	
 			}
 			
 		}
@@ -76,11 +76,11 @@
 			$status = w_reg($username, $password, $first, $last, $email, $number);
 			if($status)
 			{
-				echo "Sucessfull reg";
+				header('location: ../views/add_Employee.php?msg=ok');
 			}
 			else 
 			{
-				echo "Error reg";	
+				header('location: ../views/add_Employee.php?msg=error');	
 			}
 			
 		}

@@ -50,5 +50,6 @@ session_start();
 
 
 <p id="view"></p>
+
     </body>
 </html>

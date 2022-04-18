@@ -43,7 +43,7 @@
         <div class="card" >
             <img src="../assets/s1.png" alt="peojuct" style="width:100%">
                 <div class="container">
-                   <center> <h4><b>T-Shirt</b></h4></center>
+                   <center> <h4><b>Pant</b></h4></center>
                    <center><p>Order Now</p> </center>
                 </div>
         </div>
@@ -52,46 +52,7 @@
 
 </tr>
 
-<tr>
 
-<td height="100%">
-<a href="jacket.php">
-        <div class="card" >
-            <img src="../assets/s2.png" alt="peojuct" style="width:100%">
-                <div class="container">
-                   <center> <h4><b>Shirt</b></h4></center>
-                   <center><p>Order Now</p> </center>
-                </div>
-        </div>
-</a>
-    </td>
-
-    <td>
-    <a href="trouser.php">
-        <div class="card" >
-            <img src="../assets/s1.png" alt="peojuct" style="width:100%">
-                <div class="container">
-                   <center> <h4><b>t-Shirt</b></h4></center>
-                   <center><p>Order Now</p> </center>
-                </div>
-        </div>
-</a>
-    </td>
-
-
-    <td height="100%">
-    <a href="shorts.php">
-        <div class="card" >
-            <img src="../assets/s2.png" alt="peojuct" style="width:100%">
-                <div class="container">
-                   <center><h4><b>Shirt</b></h4></center>
-                   <center><p>Order Now</p> </center>
-                </div>
-        </div>
-    </td>
-</a>
-
-</tr>
 
 </table>
 

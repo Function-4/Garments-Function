@@ -26,9 +26,10 @@
 			</tr>
 		</table>
         <center><td><input type="submit" name="bLogin" value="Login" style="height: 50px;width: 170px;"></td></center>
-    </div>
+  
     
 	</form>
+    </div>
 	</center>
 <center>
     <br>

@@ -46,7 +46,7 @@ require('../models/workerModel.php');
 				<td><?=$row['Email']?></td>
 				<td><?=$row['ContactNumber']?></td>
 				<form method="POST" action="../controllers/bonus.php?id=<?=$row['UserName']?> & current=<?=$row['Salary']?>" onsubmit="return bonus()">
-				<td><input id="b" type="number" name="bAmmount"style="height:50px; width:150px">
+				<td><input id="b" type="number" name="bAmmount"style="height:50px; width:150px" required>
                 </td>
 				<td>
                 <input type="submit" name="bWorker" value="Provide Bonus for this Worker" style="height:50px; width:290px">

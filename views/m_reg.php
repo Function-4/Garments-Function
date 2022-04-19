@@ -3,7 +3,7 @@ require('../controllers/header.php');
 $error = "";
 if(isset($_GET['msg'])){
 		if($_GET['msg'] == 'error'){
-			$error = "<span>&#9888;</span>  Invalid Username or Password";
+			$error = "<span>&#9888;</span>  Invalid Registration";
 		}
         if($_GET['msg'] == 'ok'){
 			$error = "<span>&#10003;</span>   Registration Done Sucessfully";

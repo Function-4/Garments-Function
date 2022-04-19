@@ -18,7 +18,7 @@ session_start();
 <form action="../controllers/b_compcheck.php" method="post" enctype="multipart/form-data">
    
     
-    <center><input type="file" id="myFile" name="pdf"></center>
+    <center><input type="file" id="ab_complain" name="pdf"></center>
     <center> <input type="submit" name="b_submit" value="Submit" style="height:50px; width:100px"> </center>
     
 </form>

@@ -106,5 +106,16 @@ function w_getConnection(){
 			return false;
 		}
 	}
+	function send_comp_w($name,$file)
+	{
+		$con = w_getConnection();
+		$sql = "INSERT INTO complain VALUES ('','{$name}','Worker','{$file}')";
+
+		if(mysqli_query($con, $sql)){
+			return true;
+		}else{
+			return false;
+		}
+	}
 
 ?>

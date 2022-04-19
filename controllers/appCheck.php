@@ -28,7 +28,7 @@ if(isset($_REQUEST['s_app']))
 		}
 if(isset($_REQUEST['w_app']))
     {
-         $name = "w123" ;
+         $name = $_SESSION['current_user_w']['UserName'] ;
          if ($_FILES['pdf']['size'] == 0) 
           {
               echo "File is not selected.". "<br>";

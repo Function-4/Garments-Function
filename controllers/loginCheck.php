@@ -114,7 +114,7 @@ if(isset($_REQUEST['wLogin']))
      if($status)
     {
         setcookie('s_status', 'true', time()+8600, '/');
-        $_SESSION['current_user_w'] = userInfo_w($username_w);
+        $_SESSION['current_user_w'] = userInfo_w($username);
         header('location: ../views/w_home.php');
     }
     else {

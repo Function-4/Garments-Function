@@ -20,14 +20,16 @@
 <br>
 <br>
 
-<form action="../b_controllers/b_feedbackcheck.php" method="post">
+<form action="../controllers/complaincheck.php" method="post">
     <center>
-<label><p style=font-size:60px> Complain</p> <br> <textarea cols="60" row="50" name="mes"></textarea></label><br>
+    <p style="font-size: 30px;">Complain</p> <br>
+    <input type="text" name="com" value="" >
+
     </center>
+
     <br><br>
-    
-    <center><input type="file" id="myFile" name="filename"></center>
-    <center> <input type="submit" name="bsubmit" value="Submit" style="height:50px; width:100px"> </center>
+
+    <center> <input type="submit" name="comsubmit" value="Submit" style="height:50px; width:100px"> </center>
     
 </form>
 

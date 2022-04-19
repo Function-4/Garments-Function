@@ -7,10 +7,10 @@
 <br>
 <br>
 
-<center><p4>Order product</p4></center>
+<center><p4>Order for product</p4></center>
 <br><br><br>
 <center>
-    <form action=""> 
+<form method="POST" action="../controllers/productcheck.php">
         
     
     <table>
@@ -48,13 +48,12 @@
     </table>                 
       
             <br><br><br>
-<center> <input type="submit" name="bLogin" value="Submit" style="height:50px; width:100px"> </center>
+<center><input type="submit" name="order" value="Submit" style="height:50px; width:100px"> </center>
 </form>
            
 
                     
 </center>
-
 
     </body>
 </html>

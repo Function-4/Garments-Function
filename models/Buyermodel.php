@@ -53,5 +53,34 @@ function b_getConnection(){
 
 
 
+	function b_order($username, $itemname, $quantity,$color,$size)
+	{
+		$con = b_getConnection();
+		$sql = " insert into order_product values ('', '{$username}', '{$itemname}', '{$quantity}', '{$color}', '{$size}')";
+
+		if(mysqli_query($con, $sql))
+		{
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+
+
+	function  b_complain($complain)
+	{
+		$con = b_getConnection();
+		$sql = " INSERT INTO b_complain VALUES ('','{$complain}')";
+
+		if(mysqli_query($con, $sql))
+		{
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+
 
 ?>

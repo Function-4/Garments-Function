@@ -21,8 +21,10 @@ require('../controllers/header.php');
             <tr id="r">
                 <br><br>
                     <td><input type="button" name="" value="View Employee's Application" onclick="e_app()"></td>
-                <td><br><br>
+                <td>
                     <td><input type="button" name="" value="View Employee's Complain" onclick="e_com()"></td>
+                </td>
+                <td><input type="button" name="" value="View Company's Document" onclick="m_doc()"></td>
                 </td>
             </tr>
         </table>

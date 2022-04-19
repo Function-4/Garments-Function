@@ -50,6 +50,10 @@ require('../controllers/header.php');
             		<input type="submit" name="m" value="Add New Manager">
         			</form>
 
+					<form method="POST" action="upload_doc.php">
+            		<input type="submit" name="" value="Upload Document">
+        			</form>
+
 					<form method="POST" action="view_doc.php">
             		<input type="submit" name="" value="View Document">
         			</form>

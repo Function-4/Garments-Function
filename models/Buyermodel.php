@@ -37,17 +37,5 @@ function b_getConnection(){
 		}
 	}
 
-	function send_app_buyer($name,$file)
-	{
-		$con = b_getConnection();
-		$sql = "INSERT INTO application VALUES ('','{$name}','buyer','{$file}')";
-
-		if(mysqli_query($con, $sql)){
-			return true;
-		}else{
-			return false;
-		}
-	}
-
 
 ?>

@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <html>
     <title>
 
@@ -20,7 +23,7 @@
    <center>
       <br><br><br><br><br>
       
-   <form action="#" method="post">
+   <form action="../controllers/appCheck.php" method="post" enctype="multipart/form-data">
     <center>
         <label> 
         <p1>Apply For Health-Checkup</p1> 
@@ -30,25 +33,18 @@
     <br><br><br>
 
     <center>
-        <input type="file" id="myFile" name="filename">
+        <input type="file" name="pdf">  
     </center>
 
     <br><br>
 
     <center> 
-        <input type="submit" name="bsubmit" value="Submit" style="height:50px; width:100px">
+        <input type="submit" name="w_apph" value="Submit" style="height:50px; width:100px">
      </center>
-
-    
-</form>
-           
-     
-   </center>
   
-
-               
-             
-
+</form>
+          
+   </center>        
 
     </body>
 </html>

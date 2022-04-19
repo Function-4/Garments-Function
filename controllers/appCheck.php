@@ -43,7 +43,7 @@ if(isset($_REQUEST['w_app']))
                 $status = send_app_w($name,$_FILES['pdf']['name']);
                 if($status)
                 {
-                    header('location: ../views/w_appvac.php');
+                    header('location: ../views/w_home.php');
                 }
                 else 
                 {
@@ -68,7 +68,7 @@ if(isset($_REQUEST['w_app']))
                         $status = send_app_w($name,$_FILES['pdf']['name']);
                         if($status)
                         {
-                            header('location: ../views/w_apphel.php');
+                            header('location: ../views/w_home.php');
                         }
                         else 
                         {

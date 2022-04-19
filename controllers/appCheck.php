@@ -50,4 +50,30 @@ if(isset($_REQUEST['w_app']))
                     echo "Error";	
                 }
             }
+
+            if(isset($_REQUEST['w_apph']))
+            {
+                 $name = $_SESSION['current_user_w']['UserName'] ;
+                 if ($_FILES['pdf']['size'] == 0) 
+                  {
+                      echo "File is not selected.". "<br>";
+                  }else
+                   {
+            
+                        $des = '../assets/'.$_FILES['pdf']['name'];
+                        $src = $_FILES['pdf']['tmp_name'];
+                        move_uploaded_file($src, $des);
+                    }
+            
+                        $status = send_app_w($name,$_FILES['pdf']['name']);
+                        if($status)
+                        {
+                            header('location: ../views/w_apphel.php');
+                        }
+                        else 
+                        {
+                            echo "Error";	
+                        }
+                    }
+
 ?>

@@ -52,6 +52,24 @@
 		}
 	}
 
+	
+
+	function view_productReq()
+	{
+		$con = s_getConnection();
+		$sql = "SELECT * FROM product";
+		global $result ; 
+		$result = mysqli_query($con, $sql) ;
+		if(mysqli_num_rows($result))
+		{
+			return $result;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
 	function s_delete($name)
 	{
 		$con = s_getConnection();

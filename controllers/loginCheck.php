@@ -52,6 +52,7 @@ if(isset($_REQUEST['bLogin']))
      if($status)
     {
         setcookie('b_status', 'true', time()+8600, '/');
+        $_SESSION['current_user_b'] = userInfo($username);
         header('location: ../views/b_home.php');
     }
     else {
@@ -113,8 +114,8 @@ if(isset($_REQUEST['wLogin']))
 
      if($status)
     {
-        setcookie('s_status', 'true', time()+8600, '/');
-        $_SESSION['current_user_w'] = userInfo_w($username_w);
+        setcookie('w_status', 'true', time()+8600, '/');
+        $_SESSION['current_user_w'] = userInfo_w($username);
         header('location: ../views/w_home.php');
     }
     else {

@@ -12,7 +12,7 @@ function b_getConnection(){
 
 function b_reg($feedback)
 {
-    $con = b_getConnection();
+    $con = w_getConnection();
     $sql = "insert into buyer values ( '{$feedback}')";
 
     if(mysqli_query($con, $sql)){

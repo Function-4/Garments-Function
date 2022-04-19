@@ -1,10 +1,10 @@
 <?php
 session_start();
-require('../models/sellerModel.php');
+require('../models/Buyermodel.php');
 
-if(isset($_REQUEST['s_app']))
+if(isset($_REQUEST['b_submit']))
 	{
-        $name = $_SESSION['current_user_w']['UserName'] ;
+        $name = $_SESSION['current_user_b']['UserName'] ;
 		if ($_FILES['pdf']['size'] == 0) 
 		{
 			echo "File is not selected.". "<br>";
@@ -16,10 +16,10 @@ if(isset($_REQUEST['s_app']))
 			move_uploaded_file($src, $des);
 		}
 
-            $status = send_app($name,$_FILES['pdf']['name']);
+            $status = send_app_b($name,$_FILES['pdf']['name']);
 			if($status)
 			{
-				header('location: ../views/s_home.php');
+				header('location: ../views/b_home.php');
 			}
 			else 
 			{

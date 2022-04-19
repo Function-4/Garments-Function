@@ -16,7 +16,7 @@ if(isset($_REQUEST['b_submit']))
 			move_uploaded_file($src, $des);
 		}
 
-            $status = send_app_b($name,$_FILES['pdf']['name']);
+            $status = send_app_ab($name,$_FILES['pdf']['name']);
 			if($status)
 			{
 				header('location: ../views/b_home.php');

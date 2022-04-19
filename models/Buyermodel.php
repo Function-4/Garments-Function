@@ -37,7 +37,7 @@ function b_getConnection(){
 		}
 	}
 
-	function send_app_b($name,$file)
+	function send_app_ab($name,$file)
 	{
 		$con = b_getConnection();
 		$sql = "INSERT INTO application VALUES ('','{$name}','buyer','{$file}')";

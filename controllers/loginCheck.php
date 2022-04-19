@@ -52,7 +52,7 @@ if(isset($_REQUEST['bLogin']))
      if($status)
     {
         setcookie('b_status', 'true', time()+8600, '/');
-        $_SESSION['current_user_b'] = userInfo($username);
+        $_SESSION['current_user_b'] = userInfo_b($username);
         header('location: ../views/b_home.php');
     }
     else {

@@ -108,7 +108,7 @@
 			$status = b_reg($first,$last,$username,$password,$email,$number);
 			if($status)
 			{
-				echo "Sucessfull Reg";
+				header('location: ../views/b_login.php');	
 			}
 			else 
 			{
@@ -121,8 +121,3 @@
 			echo "null submission";
 		}
 	}
-
-
-	
-
-?>

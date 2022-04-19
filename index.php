@@ -34,7 +34,7 @@
 <p3>Get In Touch </p3> 
     <table>
         <tr>
-            <td><p4><a href="https://github.com/Function-4/Garments-Function">GitHub</a></p4></td>
+            <td><p4><a href="https://github.com/Function-4">GitHub</a></p4></td>
             <td><p5><a href="views/product.php">Product</a></p5></td>
         </tr>
         <tr>

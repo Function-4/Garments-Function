@@ -39,12 +39,10 @@ function b_getConnection(){
 
 
 
-
-
-	function send_file($name,$file)
+	function b_product($username, $itemname, $quantity,$color,$size)
 	{
-		$con = s_getConnection();
-		$sql = "INSERT INTO feedback VALUES ('','{$name}','buyer','{$file}')";
+		$con = b_getConnection();
+		$sql = " insert into product values ('', '{$username}', '{$itemname}', '{$quantity}', '{$color}', '{$size}')";
 
 		if(mysqli_query($con, $sql)){
 			return true;
@@ -52,4 +50,8 @@ function b_getConnection(){
 			return false;
 		}
 	}
+
+
+
+
 ?>

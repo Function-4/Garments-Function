@@ -18,6 +18,7 @@ if(isset($_REQUEST['mLogin']))
 
      if($status)
     {
+        $_SESSION['current_m'] = mInfo($username);
         setcookie('m_status', 'true', time()+4600, '/');
         header('location: ../views/m_Home.php');
     }

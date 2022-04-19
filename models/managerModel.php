@@ -63,6 +63,21 @@ function getConnection(){
 			return false;
 		}
 	}
+	function view_doc()
+	{
+		$con = getConnection();
+		$sql = "SELECT * FROM document";
+		global $result ; 
+		$result = mysqli_query($con, $sql) ;
+		if(mysqli_num_rows($result))
+		{
+			return $result;
+		}
+		else
+		{
+			return false;
+		}
+	}
 	
 	function view_overtime()
 	{
@@ -76,6 +91,25 @@ function getConnection(){
 		}
 		else
 		{
+			return false;
+		}
+	}
+	function mInfo($name) 
+	{
+		$con = getConnection();
+		$sql = "select * from manager where UserName = '{$name}'";
+		$result = mysqli_query($con, $sql);
+		$row = mysqli_fetch_assoc($result);
+		return $row;
+	}
+	function upload($name,$file)
+	{
+		$con = getConnection();
+		$sql = "INSERT INTO document VALUES ('','{$name}','Manager','{$file}')";
+
+		if(mysqli_query($con, $sql)){
+			return true;
+		}else{
 			return false;
 		}
 	}

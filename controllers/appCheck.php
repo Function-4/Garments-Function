@@ -4,7 +4,7 @@ require('../models/sellerModel.php');
 require('../models/workerModel.php');
 if(isset($_REQUEST['s_app']))
 	{
-        $name = $_SESSION['current_user']['UserName'] ;
+        $name = "admin";
 		if ($_FILES['pdf']['size'] == 0) 
 		{
 			echo "File is not selected.". "<br>";

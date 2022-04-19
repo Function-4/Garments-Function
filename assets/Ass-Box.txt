@@ -1,0 +1,173 @@
+#include <cstdio>
+#include<GL/gl.h>
+#include <GL/glut.h>
+
+void myDisplay(void)
+{
+glClear (GL_COLOR_BUFFER_BIT);
+glColor3ub (128, 128, 128);
+glPointSize(10.0);
+
+
+glBegin(GL_QUADS);
+glColor3ub (255,255,0);
+glVertex2i(170, 160);
+glVertex2i(170, 125);
+glVertex2i(200, 125);
+glVertex2i(200, 160);
+
+glVertex2i(290, 160);
+glVertex2i(290, 125);
+glVertex2i(320, 125);
+glVertex2i(320, 160);
+
+glVertex2i(140, 195);
+glVertex2i(140, 160);
+glVertex2i(230, 160);
+glVertex2i(230, 195);
+
+glVertex2i(260, 195);
+glVertex2i(260, 160);
+glVertex2i(350, 160);
+glVertex2i(350, 195);
+
+glVertex2i(110, 230);
+glVertex2i(110, 195);
+glVertex2i(380, 195);
+glVertex2i(380, 230);
+
+glVertex2i(20, 265);
+glVertex2i(20, 230);
+glVertex2i(170, 230);
+glVertex2i(170, 265);
+
+glVertex2i(200, 265);
+glVertex2i(200, 230);
+glVertex2i(290, 230);
+glVertex2i(290, 265);
+
+glVertex2i(320, 265);
+glVertex2i(320, 230);
+glVertex2i(470, 230);
+glVertex2i(470, 265);
+
+glVertex2i(20, 300);
+glVertex2i(20, 265);
+glVertex2i(140, 265);
+glVertex2i(140, 300);
+
+glVertex2i(170, 300);
+glVertex2i(170, 265);
+glVertex2i(200, 265);
+glVertex2i(200, 300);
+
+glVertex2i(230, 300);
+glVertex2i(230, 265);
+glVertex2i(260, 265);
+glVertex2i(260, 300);
+
+glVertex2i(290, 300);
+glVertex2i(290, 265);
+glVertex2i(320, 265);
+glVertex2i(320, 300);
+
+glVertex2i(350, 300);
+glVertex2i(350, 265);
+glVertex2i(470, 265);
+glVertex2i(470, 300);
+
+glVertex2i(140, 335);
+glVertex2i(140, 300);
+glVertex2i(230, 300);
+glVertex2i(230, 335);
+
+glVertex2i(260, 335);
+glVertex2i(260, 300);
+glVertex2i(350, 300);
+glVertex2i(350, 335);
+
+glVertex2i(110, 370);
+glVertex2i(110, 335);
+glVertex2i(380, 335);
+glVertex2i(380, 370);
+
+glVertex2i(20, 405);
+glVertex2i(20, 370);
+glVertex2i(170, 370);
+glVertex2i(170, 405);
+
+glVertex2i(200, 405);
+glVertex2i(200, 370);
+glVertex2i(290, 370);
+glVertex2i(290, 405);
+
+glVertex2i(320, 405);
+glVertex2i(320, 370);
+glVertex2i(470, 370);
+glVertex2i(470, 405);
+
+glVertex2i(20, 440);
+glVertex2i(20, 405);
+glVertex2i(140, 405);
+glVertex2i(140, 440);
+
+glVertex2i(230, 440);
+glVertex2i(230, 405);
+glVertex2i(260, 405);
+glVertex2i(260, 440);
+
+glVertex2i(350, 440);
+glVertex2i(350, 405);
+glVertex2i(470, 405);
+glVertex2i(470, 440);
+
+glColor3ub (255,255,255);
+glVertex2i(0, 600);
+glVertex2i(0, 0);
+glVertex2i(20, 0);
+glVertex2i(20, 600);
+
+glVertex2i(0, 20);
+glVertex2i(0, 0);
+glVertex2i(490, 0);
+glVertex2i(490, 20);
+
+glVertex2i(470, 600);
+glVertex2i(470, 0);
+glVertex2i(490, 0);
+glVertex2i(490, 600);
+
+glVertex2i(0, 600);
+glVertex2i(0, 580);
+glVertex2i(490, 580);
+glVertex2i(490, 600);
+glEnd();
+
+
+
+glFlush ();
+}
+
+void myInit (void)
+{
+glClearColor(255.0, 0.0, 0.0, 0.0);
+glMatrixMode(GL_PROJECTION);
+glLoadIdentity();
+gluOrtho2D(0.0, 490.0, 0.0, 600.0);
+}
+
+
+
+
+
+int main(int argc, char** argv)
+{
+glutInit(&argc, argv);
+glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB);
+glutInitWindowSize (550, 600);
+glutInitWindowPosition (100, 150);
+glutCreateWindow ("");
+glutDisplayFunc(myDisplay);
+myInit ();
+glutMainLoop();
+}

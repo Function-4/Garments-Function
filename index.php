@@ -43,7 +43,7 @@
         </tr>
         <tr>
             <td><p4><a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D">Twitter</a></p4></td>
-            <td><p5><a href="views/aboutus.php">About Us</a></p5></td>
+            <td><p5><a href="views/aboutus.php">About Us </a></p5></td>
         </tr>
 
     </table>

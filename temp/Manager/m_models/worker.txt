@@ -1,3 +1,0 @@
-10|10|abcd@gmail.com|42545|30|Male|10010
-12|11|rf95@gmail.com|42545|25|Male|10010
-w123|123|abcd@yahoo.com|01255544486|36|Male|20000

@@ -41,7 +41,7 @@ session_start();
                         </td>
 
                         <td>
-                        <button class="button button1"onclick="s_viewreq()" >View product Request</button>
+                        <button class="button button1"onclick="s_viewReq()" >View product Request</button>
                         </td>
                     </tr>
                     

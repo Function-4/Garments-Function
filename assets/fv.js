@@ -217,6 +217,20 @@ function s_viewreq(){
 	}
 }
 
+function s_viewReq(){
+	let role = document.getElementById('r').value;
+	let http = new XMLHttpRequest();
+	http.open('GET', '../views/as_viewreq.php', true);
+	http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	http.send('uname='+role);
+	http.onreadystatechange = function(){
+		
+		if(this.readyState == 4 && this.status == 200){
+			document.getElementById('view').innerHTML= this.responseText;
+		}
+	}
+}
+
 function w_reg(){
 	let role = document.getElementById('r').value;
 	let http = new XMLHttpRequest();

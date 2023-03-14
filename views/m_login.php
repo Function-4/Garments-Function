@@ -30,7 +30,7 @@ if(isset($_GET['msg'])){
 				<td height = "70px"> Username : <input id="name" type="text" name="username"></td><td id="usernameError"></td>
 			</tr>
 			<tr>
-				<td height = "30px">Password : <input id="pass" type="password" name="password" ></td><td id="passError"></td><br><br><br>
+				<td height = "30px"> Password : <input id="pass" type="password" name="password" ></td><td id="passError"></td><br><br><br>
 			</tr>
 			<tr>
 				

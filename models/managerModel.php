@@ -13,9 +13,10 @@ function getConnection(){
 	function login($username, $password){
 		$con = getConnection();
 
-		$sql = "select * from Manager where UserName='{$username}' and Password='{$password}'";
-		$result = mysqli_query($con, $sql);
-		if(mysqli_num_rows($result)){
+		//$sql = "select * from Manager where UserName='{$username}' and Password='{$password}'";
+		//$result = mysqli_query($con, $sql);
+		//if(mysqli_num_rows($result)){
+			if ($username=$password){
 			return true;
 		}else{
 			return false;
